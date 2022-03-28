@@ -1,5 +1,5 @@
 api/.env
 
-bankautomat/build/
+PankkiAutomaatti/build/
 
-bankautomat/*.user
+PankkiAutomaatti/*.user
