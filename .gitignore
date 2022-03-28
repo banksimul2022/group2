@@ -1,0 +1,5 @@
+api/.env
+
+bankautomat/build/
+
+bankautomat/*.user
