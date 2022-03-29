@@ -4,9 +4,11 @@ const tilitapahtumat = {
   getById: function(id, callback) {
     return db.query('select * from tilitapahtumat where idTilitapahtumat=?', [id], callback);
   },
+
   getAll: function(callback) {
-    return db.query('select * from tilitapahtumat', callback);
+    return db.query('select * from tilitapahtumat ORDER BY PVM limit 10', callback);
   },
+
   add: function(tilitapahtumat, callback) {
     return db.query(
       'insert into tilitapahtumat (PVM,Tapahtuma,Summa,idTili, idKortti) values(?,?,?,?,?)',
