@@ -4,12 +4,14 @@ const tili = {
   getById: function(id, callback) {
     return db.query('select * from tili where idTili=?', [id], callback);
   },
+
   getAll: function(callback) {
-    return db.query('select * from tili', callback);
+   return db.query('select Saldo from tili', callback);
   },
+
   add: function(tili, callback) {
     return db.query(
-      'insert into tili (Saldo,Säästötili,Tilinumero) values(?,?,?,?)',
+      'insert into tili (Saldo,Säästötili,Tilinumero) values(?,?,?)',
       [tili.Saldo, tili.Säästötili, tili.Tilinumero],
       callback
     );
