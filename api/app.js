@@ -11,7 +11,7 @@ const korttiRouter = require('./routes/kortti');
 const asiakasRouter = require('./routes/asiakas');
 const asiakas_has_tiliRouter = require('./routes/login');
 
-const loginRouter = require('./routes/asiakas');
+const loginRouter = require('./routes/login');
 
 var app = express();
 
