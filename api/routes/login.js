@@ -5,16 +5,16 @@ const login = require('../models/login_model');
 
 router.post('/', 
   function(request, response) {
-    if(request.body.kortinnumero && request.body.pinkoodi){
+    if(request.body.kortinnumero && request.body.Pinkoodi){
       const kortinnumero = request.body.kortinnumero;
-      const pinkoodi = request.body.pinkoodi;
+      const Pinkoodi = request.body.Pinkoodi;
         login.checkPinkoodi(kortinnumero, function(dbError, dbResult) {
           if(dbError){
             response.json(dbError);
           }
           else{
             if (dbResult.length > 0) {
-              bcrypt.compare(pinkoodi,dbResult[0].pinkoodi, function(err,compareResult) {
+              bcrypt.compare(Pinkoodi,dbResult[0].Pinkoodi, function(err,compareResult) {
                 if(compareResult) {
                   console.log("success");
                   response.send(true);
