@@ -5,10 +5,10 @@ const login = require('../models/login_model');
 
 router.post('/', 
   function(request, response) {
-    if(request.body.kortinnumero && request.body.Pinkoodi){
-      const kortinnumero = request.body.kortinnumero;
+    if(request.body.Kortinnumero && request.body.Pinkoodi){
+      const Kortinnumero = request.body.Kortinnumero;
       const Pinkoodi = request.body.Pinkoodi;
-        login.checkPinkoodi(kortinnumero, function(dbError, dbResult) {
+        login.checkPinkoodi(Kortinnumero, function(dbError, dbResult) {
           if(dbError){
             response.json(dbError);
           }
