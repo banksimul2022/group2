@@ -6,7 +6,7 @@ const tilitapahtumat = {
   },
 
   getAll: function(callback) {
-    return db.query('select * from tilitapahtumat ORDER BY PVM limit 10', callback);
+    return db.query('select * from tilitapahtumat ORDER BY PVM DESC limit 10', callback);
   },
 
   add: function(tilitapahtumat, callback) {

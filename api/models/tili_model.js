@@ -6,7 +6,7 @@ const tili = {
   },
 
   getAll: function(callback) {
-   return db.query('select Saldo from tili', callback);
+   return db.query('select * from tili', callback);
   },
 
   add: function(tili, callback) {
