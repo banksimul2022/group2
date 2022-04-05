@@ -6,11 +6,11 @@ const asiakas = {
   },*/
 
   getById: function(id, callback) {
-    return db.query('select Etunimi, Sukunimi, Henkilötunnus, Osoite, Puhelinnumero, PVM, Tapahtuma, Summa, Saldo from asiakas JOIN kortti ON asiakas.idAsiakas=kortti.idKortti JOIN tilitapahtumat ON kortti.idKortti=tilitapahtumat.idKortti JOIN tili ON tili.idTili=tilitapahtumat.idTili WHERE asiakas.idAsiakas=1 ORDER BY PVM DESC limit 10', [id], callback);
+    return db.query('select Etunimi, Sukunimi, Henkilötunnus, Osoite, Puhelinnumero, PVM, Tapahtuma, Summa, Saldo from asiakas JOIN kortti ON asiakas.idAsiakas=kortti.idKortti JOIN tilitapahtumat ON kortti.idKortti=tilitapahtumat.idKortti JOIN tili ON tili.idTili=tilitapahtumat.idTili WHERE asiakas.idAsiakas=? ORDER BY PVM DESC limit 10', [id], callback);
   },
 
-  getAll: function(callback) {
-    return db.query('select * from asiakas', callback);
+  getNimi: function(callback) {
+    return db.query('select Etunimi, Sukunimi from asiakas', callback);
   },
   add: function(asiakas, callback) {
     return db.query(

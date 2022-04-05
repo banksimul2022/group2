@@ -10,7 +10,6 @@ const tilitapahtumatRouter = require('./routes/tilitapahtumat');
 const tiliRouter = require('./routes/tili');
 const korttiRouter = require('./routes/kortti');
 const asiakasRouter = require('./routes/asiakas');
-const asiakas_has_tiliRouter = require('./routes/asiakas_has_tili');
 
 const loginRouter = require('./routes/login');
 
@@ -24,14 +23,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(helmet());
 app.use(cors());
 
+app.use('/kortti', korttiRouter);
 app.use('/login', loginRouter);
 app.use(authenticateToken);
 
 app.use('/tilitapahtumat', tilitapahtumatRouter);
 app.use('/asiakas', asiakasRouter);
-app.use('/kortti', korttiRouter);
 app.use('/tili', tiliRouter);
-app.use('/asiakas_has_tili', asiakas_has_tiliRouter);
 
 function authenticateToken(req, res, next) {
     const authHeader = req.headers['authorization']
