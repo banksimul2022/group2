@@ -1,8 +1,8 @@
 const db = require('../database');
 
 const tili = {
-  getById: function(id, callback) {
-    return db.query('select * from tili where idTili=?', [id], callback);
+  getNosta: function(Kortinnumero, callback) {
+    return db.query('select etunimi, sukunimi, henkilötunnus, osoite, puhelinnumero, saldo from asiakas JOIN asiakas_has_tili ON asiakas.idAsiakas=asiakas_has_tili.idAsiakas JOIN tili ON asiakas_has_tili.idTili=tili.idTIli JOIN kortti ON tili.idTili=kortti.idTili WHERE Kortinnumero=?', [Kortinnumero], callback);
   },
 
   getAll: function(callback) {

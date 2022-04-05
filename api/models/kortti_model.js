@@ -4,12 +4,14 @@ const bcrypt = require('bcryptjs');
 const saltRounds=10;
 
 const kortti = {
-  getById: function(id, callback) {
-    return db.query('select * from kortti where idKortti=?', [id], callback);
+  getPin: function(Kortinnumero, callback) {
+    return db.query('select Kortinnumero, Pinkoodi from kortti where Kortinnumero=?', [Kortinnumero], callback);
   },
+
   getAll: function(callback) {
     return db.query('select * from kortti', callback);
   },
+
   add: function(kortti, callback) {
     bcrypt.hash(kortti.Pinkoodi, saltRounds, function(err, hash){
     return db.query(

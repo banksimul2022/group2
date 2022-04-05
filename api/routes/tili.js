@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 const tili = require('../models/tili_model');
 
-router.get('/:id?',
+router.get('/:Kortinnumero?',
  function(request, response) {
-  if (request.params.id) {
-    tili.getById(request.params.id, function(err, dbResult) {
+  if (request.params.Kortinnumero) {
+    tili.getNosta(request.params.Kortinnumero, function(err, dbResult) {
       if (err) {
         response.json(err);
       } else {
