@@ -4,7 +4,7 @@
 2. Aja gitBashissa komento: node create_token.js ja kopioi token.
 3. Liitä kopioitu token .env tiedostoon (MY_TOKEN=xxxx...)
 
-## Token Postmanissa.
+## Token Postmanissa
 
 1. Hae token ajamalla Postmanissa tallennettu Login.
 2. Kopioi tulostuva token.
