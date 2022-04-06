@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 const asiakas = require('../models/asiakas_model');
 
-router.get('/:id?',
+router.get('/:Kortinnumero?',
  function(request, response) {
-  if (request.params.id) {
-    asiakas.getById(request.params.id, function(err, dbResult) {
+  if (request.params.Kortinnumero) {
+    asiakas.getAsiakas(request.params.Kortinnumero, function(err, dbResult) {
       if (err) {
         response.json(err);
       } else {

@@ -5,7 +5,7 @@ const tili = require('../models/tili_model');
 router.get('/:Kortinnumero?',
  function(request, response) {
   if (request.params.Kortinnumero) {
-    tili.getNosta(request.params.Kortinnumero, function(err, dbResult) {
+    tili.getSaldo(request.params.Kortinnumero, function(err, dbResult) {
       if (err) {
         response.json(err);
       } else {
