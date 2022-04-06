@@ -9,14 +9,26 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    kirjaudusisaan.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    nostarahaa.cpp \
+    omasumma.cpp \
+    pankkimenu.cpp
 
 HEADERS += \
-    mainwindow.h
+    kirjaudusisaan.h \
+    mainwindow.h \
+    nostarahaa.h \
+    omasumma.h \
+    pankkimenu.h
 
 FORMS += \
-    mainwindow.ui
+    kirjaudusisaan.ui \
+    mainwindow.ui \
+    nostarahaa.ui \
+    omasumma.ui \
+    pankkimenu.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

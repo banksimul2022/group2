@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "kirjaudusisaan.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -15,7 +15,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_kirjaudusisaan_clicked();
+
 private:
     Ui::MainWindow *ui;
+    kirjaudusisaan * pKirjaudusisaan;
 };
 #endif // MAINWINDOW_H
