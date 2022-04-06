@@ -5,7 +5,7 @@ const tilitapahtumat = require('../models/tilitapahtumat_model');
 router.get('/:Kortinnumero?',
  function(request, response) {
   if (request.params.Kortinnumero) {
-    tilitapahtumat.getSaldo(request.params.Kortinnumero, function(err, dbResult) {
+    tilitapahtumat.getTilitapahtumat(request.params.Kortinnumero, function(err, dbResult) {
       if (err) {
         response.json(err);
       } else {

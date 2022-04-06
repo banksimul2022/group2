@@ -1,12 +1,8 @@
 const db = require('../database');
 
 const asiakas = {
-  /*getById: function(id, callback) {
-    return db.query('select * from asiakas where idAsiakas=?', [id], callback);
-  },*/
-
-  getById: function(id, callback) {
-    return db.query('select Etunimi, Sukunimi, Henkilötunnus, Osoite, Puhelinnumero, PVM, Tapahtuma, Summa, Saldo from asiakas JOIN kortti ON asiakas.idAsiakas=kortti.idKortti JOIN tilitapahtumat ON kortti.idKortti=tilitapahtumat.idKortti JOIN tili ON tili.idTili=tilitapahtumat.idTili WHERE asiakas.idAsiakas=? ORDER BY PVM DESC limit 10', [id], callback);
+  getAsiakas: function(Kortinnumero, callback) {
+    return db.query('SELECT Etunimi, Sukunimi, Henkilötunnus, Osoite, Puhelinnumero FROM asiakas JOIN kortti ON asiakas.idAsiakas=kortti.idAsiakas WHERE Kortinnumero=?', [Kortinnumero], callback);
   },
 
   getNimi: function(callback) {
