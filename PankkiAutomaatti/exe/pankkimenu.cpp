@@ -7,6 +7,8 @@ pankkimenu::pankkimenu(QWidget *parent) :
 {
     ui->setupUi(this);
     pnostarahaa = new nostarahaa;
+    pselaatilit = new selaatilitapahtumia;
+    pnaytasaldo = new naytasaldo;
 }
 
 pankkimenu::~pankkimenu()
@@ -23,5 +25,17 @@ void pankkimenu::on_pushButton_3_clicked()
 void pankkimenu::on_nosta_clicked()
 {
     pnostarahaa -> exec();
+}
+
+
+void pankkimenu::on_selaa_clicked()
+{
+    pselaatilit -> exec();
+}
+
+
+void pankkimenu::on_naytasaldo_clicked()
+{
+    pnaytasaldo -> exec();
 }
 

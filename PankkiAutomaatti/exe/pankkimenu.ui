@@ -11,9 +11,9 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Menu</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="selaa">
    <property name="geometry">
     <rect>
      <x>240</x>
@@ -52,7 +52,7 @@
     <string>Kirjaudu ulos</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="naytasaldo">
    <property name="geometry">
     <rect>
      <x>10</x>
@@ -73,6 +73,9 @@
      <width>461</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
