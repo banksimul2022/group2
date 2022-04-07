@@ -12,23 +12,29 @@ SOURCES += \
     kirjaudusisaan.cpp \
     main.cpp \
     mainwindow.cpp \
+    naytasaldo.cpp \
     nostarahaa.cpp \
     omasumma.cpp \
-    pankkimenu.cpp
+    pankkimenu.cpp \
+    selaatilitapahtumia.cpp
 
 HEADERS += \
     kirjaudusisaan.h \
     mainwindow.h \
+    naytasaldo.h \
     nostarahaa.h \
     omasumma.h \
-    pankkimenu.h
+    pankkimenu.h \
+    selaatilitapahtumia.h
 
 FORMS += \
     kirjaudusisaan.ui \
     mainwindow.ui \
+    naytasaldo.ui \
     nostarahaa.ui \
     omasumma.ui \
-    pankkimenu.ui
+    pankkimenu.ui \
+    selaatilitapahtumia.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
