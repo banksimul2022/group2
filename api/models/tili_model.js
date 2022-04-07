@@ -1,8 +1,8 @@
 const db = require('../database');
 
 const tili = {
-  getById: function(id, callback) {
-    return db.query('select * from tili where idTili=?', [id], callback);
+  getSaldo: function(Kortinnumero, callback) {
+    return db.query('select Saldo from tili join kortti on tili.idTili=kortti.idTili where Kortinnumero=?', [Kortinnumero], callback);
   },
 
   getAll: function(callback) {
@@ -21,8 +21,8 @@ const tili = {
   },
   update: function(id, tili, callback) {
     return db.query(
-      'update tili set Saldo=?,Säästötili=?, Tilinumero=? where idTili=?',
-      [tili.Saldo, tili.Säästötili, tili.Tilinumero, id],
+      'update tili set Saldo=? where idTili=?',
+      [tili.Saldo, id],
       callback
     );
   }

@@ -1,12 +1,8 @@
 const db = require('../database');
 
 const tilitapahtumat = {
-  getById: function(id, callback) {
-    return db.query('select * from tilitapahtumat where idTilitapahtumat=?', [id], callback);
-  },
-
-  getAll: function(callback) {
-    return db.query('select * from tilitapahtumat ORDER BY PVM DESC limit 10', callback);
+  getTilitapahtumat: function(Kortinnumero, callback) {
+    return db.query('select PVM, Tapahtuma, Summa from tilitapahtumat JOIN kortti ON tilitapahtumat.idKortti=kortti.idKortti where Kortinnumero=? ORDER BY PVM LIMIT 10', [Kortinnumero], callback);
   },
 
   add: function(tilitapahtumat, callback) {

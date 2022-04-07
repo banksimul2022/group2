@@ -2,25 +2,25 @@ const express = require('express');
 const router = express.Router();
 const tilitapahtumat = require('../models/tilitapahtumat_model');
 
-router.get('/:id?',
+router.get('/:Kortinnumero?',
  function(request, response) {
-  if (request.params.id) {
-    tilitapahtumat.getById(request.params.id, function(err, dbResult) {
+  if (request.params.Kortinnumero) {
+    tilitapahtumat.getTilitapahtumat(request.params.Kortinnumero, function(err, dbResult) {
       if (err) {
         response.json(err);
       } else {
         response.json(dbResult);
       }
     });
-  } else {
-    tilitapahtumat.getAll(function(err, dbResult) {
+  } /*else {
+    tilitapahtumat.getSaldo(request.params.Kortinnumero,function(err, dbResult) {
       if (err) {
         response.json(err);
       } else {
         response.json(dbResult);
       }
     });
-  }
+  } */
 });
 
 
