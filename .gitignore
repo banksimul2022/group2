@@ -1,5 +1,13 @@
 api/.env
 
-PankkiAutomaatti/build/
+PankkiAutomaatti/exe/build/
+PankkiAutomaatti/exe/*.user
 
-PankkiAutomaatti/*.user
+PankkiAutomaatti/DLLPinCode/build/
+PankkiAutomaatti/DLLPinCode/*.user
+
+PankkiAutomaatti/DLLRestAPI/build/
+PankkiAutomaatti/DLLRestAPI/*.user
+
+PankkiAutomaatti/DLLSerialPort/build/
+PankkiAutomaatti/DLLSerialPort/*.user
