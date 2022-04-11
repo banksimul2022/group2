@@ -11,14 +11,14 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    asiakas.cpp \
     dllrestapi.cpp \
+    login.cpp \
     url.cpp
 
 HEADERS += \
     DLLRestAPI_global.h \
-    asiakas.h \
     dllrestapi.h \
+    login.h \
     url.h
 
 # Default rules for deployment.
