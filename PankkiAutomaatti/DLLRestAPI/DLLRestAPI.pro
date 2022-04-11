@@ -1,4 +1,5 @@
 QT -= gui
+QT +=network
 
 TEMPLATE = lib
 DEFINES += DLLRESTAPI_LIBRARY
@@ -10,11 +11,15 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    dllrestapi.cpp
+    asiakas.cpp \
+    dllrestapi.cpp \
+    url.cpp
 
 HEADERS += \
     DLLRestAPI_global.h \
-    dllrestapi.h
+    asiakas.h \
+    dllrestapi.h \
+    url.h
 
 # Default rules for deployment.
 unix {
