@@ -1,18 +1,34 @@
 #include "dllpincode.h"
 
-DLLPinCode::DLLPinCode()
+
+void DLLPinCode::openDllDialog(QString kortinnumero)
 {
-    pExtraClass = new ExtraClass;
+    qDebug()<<kortinnumero;
+
+    objectDialog=new Dialog;
+    objectDialog->setCardNumber(kortinnumero);
+
+    qDebug()<<"setCardNumber funktio tehty";
+
+    objectDialog->exec();
+    dllValue=objectDialog->getDialogValue();
+
+    delete objectDialog;
+    objectDialog = nullptr;
 }
 
-DLLPinCode::~DLLPinCode()
+QString DLLPinCode::returnFromDll()
 {
-    delete pExtraClass;
-    pExtraClass = nullptr;
+    qDebug()<<dllValue;
+    return dllValue;
 }
 
-int DLLPinCode::getTries()
+void DLLPinCode::truefalse(bool x)
 {
-    var = ExtraClass().pwdTries();
-    return var;
+    if (x==false){
+        objectDialog->addTries();
+    }
+    else{
+        qDebug()<<x;
+    }
 }

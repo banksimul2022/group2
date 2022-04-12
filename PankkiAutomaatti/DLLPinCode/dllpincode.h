@@ -2,18 +2,17 @@
 #define DLLPINCODE_H
 
 #include "DLLPinCode_global.h"
-#include "extraclass.h"
+#include "dialog.h"
 
-
-class DLLPINCODE_EXPORT DLLPinCode
+class DLLPinCode
 {
 public:
-    DLLPinCode();
-    ~DLLPinCode();
-    int getTries();
+    void DLLPINCODE_EXPORT openDllDialog(QString);
+    QString DLLPINCODE_EXPORT returnFromDll();
+    void DLLPINCODE_EXPORT truefalse(bool);
 private:
-    ExtraClass *pExtraClass;
-    int var;
+    Dialog *objectDialog;
+    QString dllValue;
 };
 
 #endif // DLLPINCODE_H
