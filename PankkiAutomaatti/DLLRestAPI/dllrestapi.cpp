@@ -1,50 +1,29 @@
 #include "dllrestapi.h"
 
-
-DLLRestAPI::DLLRestAPI(QString asKortinnumero, QString asToken, QObject *parent) : QObject(parent)
+DLLRestAPI::DLLRestAPI()
 {
-    objectUrl = new Url;
-    asKortinnumero = kortinnumero;
-    asToken = webToken;
-    asiakasManager = new QNetworkAccessManager(this);
-    connect(asiakasManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(asiakasSlot(QNetworkReply*)));
+    qDebug()<<"DLLRestAPI muodostimessa";
+
+    objectLogin = new Login;
 }
 
 DLLRestAPI::~DLLRestAPI()
 {
-    delete asiakasManager;
-    asiakasManager = nullptr;
-    disconnect(asiakasManager, SIGNAL(finished (QNetworkReply*)),this, SLOT(gradeSlot(QNetworkReply*)));
+    qDebug()<<"DLLRestAPi tuhoajassa";
+
+    delete objectLogin;
+    objectLogin = nullptr;
 }
 
-void DLLRestAPI::getAsiakas()
+void DLLRestAPI::setPinKort(QString kortinnumero, QString pinkoodi)
 {
-    QString site_url = objectUrl->getBase_url()+"/asiakas/"+kortinnumero;
-    QNetworkRequest request((site_url));
-    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    qDebug()<<"setPinKort";
 
-    //WEBTOKEN ALKU
-    request.setRawHeader(QByteArray("Authorization"),(webToken));
-    //WEBTOKEN LOPPU
-
-
-    reply = asiakasManager->get(request);
-    response_data = asiakasManager->get(request)->readAll();
-
+    objectLogin->setPinKort(kortinnumero,pinkoodi);
+    objectLogin->getPin();
 }
 
-void DLLRestAPI::asiakasSlot(QNetworkAccessManager *reply)
+bool DLLRestAPI::getTrueFalse()
 {
-
-    qDebug() << response_data;
-    QJsonDocument json_doc = QJsonDocument::fromJson(response_data);
-       QJsonArray json_array = json_doc.array();
-       QString asiakas;
-       foreach (const QJsonValue &value, json_array) {
-           QJsonObject json_obj = value.toObject();
-           asiakas+=json_obj["Etunimi"].toString()+""+json_obj["Sukunimi"].toString()+"\r"+json_obj["Henkilötunnus"].toString()+"\r"+json_obj["Osoite"].toString()+"\n"+QString::number(json_obj["Puhelinnumero"].toInt())+"\r";
-       }
-
-       qDebug()<<asiakas;
-
+    return objectLogin->getResult();
 }

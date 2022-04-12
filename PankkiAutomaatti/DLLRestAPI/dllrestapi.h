@@ -2,37 +2,19 @@
 #define DLLRESTAPI_H
 
 #include "DLLRestAPI_global.h"
-#include "url.h"
 #include "login.h"
+#include <qstring.h>
 
-#include <QObject>
-#include <QtNetwork>
-#include <QNetworkAccessManager>
-#include <QJsonDocument>
-
-class DLLRESTAPI_EXPORT DLLRestAPI : public QObject
+class DLLRESTAPI_EXPORT DLLRestAPI
 {
-    Q_OBJECT
-
 public:
-    DLLRestAPI(QString asKortinnumero, QString asToken, QObject *parent = nullptr);
+    DLLRestAPI();
     ~DLLRestAPI();
-
-
-private slots:
-    void asiakasSlot(QNetworkAccessManager *reply);
-    void getAsiakas();
-
+    void setPinKort(QString kortinnumero, QString pinkoodi);
+    bool getTrueFalse();
 private:
-    QNetworkAccessManager *asiakasManager;
-    QNetworkReply *reply;
-    QByteArray response_data;
+    Login *objectLogin;
 
-    QString kortinnumero;
-    QString pinkoodi;
-    QByteArray webToken;
-
-    Url * objectUrl;
 };
 
 #endif // DLLRESTAPI_H
