@@ -10,7 +10,7 @@ public:
     QString getBase_url() const;
 
 private:
-    QString base_url;
+     QString base_url;
 };
 
 #endif // URL_H

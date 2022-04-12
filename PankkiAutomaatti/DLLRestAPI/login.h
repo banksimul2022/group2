@@ -12,15 +12,15 @@ class Login : public QObject
 {
     Q_OBJECT
 public:
-    explicit Login(QString asKortinnumero, QString asPinkoodi, QObject *parent = nullptr);
+    explicit Login(QObject *parent = nullptr);
     ~Login();
-    void loginClicked();
+    void setPinKort(QString kortinnumero, QString pinkoodi);
+    void getPin();
+    bool getResult();
 
 private slots:
-    void getPin (QNetworkReply *reply);
-
+    void loginSlot(QNetworkReply *reply);
 private:
-
     QNetworkAccessManager * postManager;
     QNetworkReply *reply;
     QByteArray response_data;
@@ -28,12 +28,10 @@ private:
     QString Kortinnumero;
     QString Pinkoodi;
     QByteArray token;
+    bool trueFalse;
 
     Url * objectUrl;
     QString base_url;
-
-signals:
-
 };
 
 #endif // LOGIN_H
