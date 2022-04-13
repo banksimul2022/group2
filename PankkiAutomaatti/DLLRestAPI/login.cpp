@@ -8,6 +8,7 @@ Login::Login(QObject *parent) : QObject(parent)
     base_url = objectUrl -> getBase_url();
 
     postManager = new QNetworkAccessManager(this);
+    my = new MySingleton;
 }
 
 Login::~Login()
@@ -50,6 +51,12 @@ bool Login::getResult()
     return trueFalse;
 }
 
+QByteArray Login::getToken()
+{
+    return token;
+}
+
+
 void Login::loginSlot(QNetworkReply *reply)
 {
     response_data=reply->readAll();
@@ -61,6 +68,7 @@ void Login::loginSlot(QNetworkReply *reply)
     {
         token = "Bearer "+response_data;
         qDebug()<<token;
+        my ->setToken(token);
         trueFalse = true;
         qDebug()<<"True false on: "<<trueFalse;
     }
