@@ -30,21 +30,20 @@ void Dialog::setCardNumber(QString cardnumber)
     ui->labelkortti->setText(Kortinnumero);
 }
 
-void Dialog::addTries()
-{
-    if(yritykset<=3){
-    yritykset++;
-    }
-    else{
-        yritykset=0;
-    }
-    qDebug()<<yritykset;
-}
-
 void Dialog::on_btnSet_clicked()
 {
     QString a=ui->textValue->text();
+    yritykset--;
+    qDebug()<<yritykset;
+    ui->labeltries->setNum(yritykset);
     this->setDialogValue(a);
-    this->close();
+    if(yritykset==0){
+        QWidget::close();
+    }
 }
 
+
+void Dialog::on_pushButton_clicked()
+{
+    QWidget::close();
+}
