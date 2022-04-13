@@ -14,6 +14,7 @@ SOURCES += \
     asiakas.cpp \
     dllrestapi.cpp \
     login.cpp \
+    mysingleton.cpp \
     url.cpp
 
 HEADERS += \
@@ -21,6 +22,7 @@ HEADERS += \
     asiakas.h \
     dllrestapi.h \
     login.h \
+    mysingleton.h \
     url.h
 
 # Default rules for deployment.
