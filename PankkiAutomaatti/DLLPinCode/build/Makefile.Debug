@@ -215,6 +215,7 @@ debug/moc_dialog.cpp: ../dialog.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
+		C:/Qt/5.15.2/mingw81_32/include/QtCore/QDebug \
 		debug/moc_predefs.h \
 		C:/Qt/5.15.2/mingw81_32/bin/moc.exe
 	C:\Qt\5.15.2\mingw81_32\bin\moc.exe $(DEFINES) --include "C:/Users/hieta/OneDrive/Tiedostot/Koulu/1 vuoden kevät projekti/Projekti github/group2/PankkiAutomaatti/DLLPinCode/build/debug/moc_predefs.h" -IC:/Qt/5.15.2/mingw81_32/mkspecs/win32-g++ -I"C:/Users/hieta/OneDrive/Tiedostot/Koulu/1 vuoden kevät projekti/Projekti github/group2/PankkiAutomaatti/DLLPinCode" -IC:/Qt/5.15.2/mingw81_32/include -IC:/Qt/5.15.2/mingw81_32/include/QtWidgets -IC:/Qt/5.15.2/mingw81_32/include/QtGui -IC:/Qt/5.15.2/mingw81_32/include/QtANGLE -IC:/Qt/5.15.2/mingw81_32/include/QtCore -I. -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_32/i686-w64-mingw32/include ..\dialog.h -o debug\moc_dialog.cpp
@@ -347,6 +348,7 @@ debug/dialog.o: ../dialog.cpp ../dialog.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
+		C:/Qt/5.15.2/mingw81_32/include/QtCore/QDebug \
 		ui_dialog.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtCore/QVariant \
 		C:/Qt/5.15.2/mingw81_32/include/QtWidgets/QApplication \
@@ -379,6 +381,7 @@ debug/dialog.o: ../dialog.cpp ../dialog.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtGui/qicon.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtWidgets/QSplitter \
 		C:/Qt/5.15.2/mingw81_32/include/QtWidgets/qsplitter.h \
+		C:/Qt/5.15.2/mingw81_32/include/QtWidgets/QVBoxLayout \
 		C:/Qt/5.15.2/mingw81_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\dialog.o ..\dialog.cpp
 
@@ -488,7 +491,8 @@ debug/dllpincode.o: ../dllpincode.cpp ../dllpincode.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtCore/qfile.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtCore/qfiledevice.h \
 		C:/Qt/5.15.2/mingw81_32/include/QtGui/qvector2d.h \
-		C:/Qt/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h
+		C:/Qt/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
+		C:/Qt/5.15.2/mingw81_32/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\dllpincode.o ..\dllpincode.cpp
 
 debug/moc_dialog.o: debug/moc_dialog.cpp 

@@ -15,19 +15,24 @@ class Dialog : public QDialog
 public:
     explicit Dialog(QWidget *parent = nullptr);
     ~Dialog();
-    void setDialogValue(QString);
-    QString getDialogValue();
+
     void setCardNumber(QString);
-    void addTries();
+    void setDialogValue(QString);
+
+    QString getDialogValue();
+
+    //void addTries();
 
 private slots:
     void on_btnSet_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::Dialog *ui;
     QString dialogValue;
     QString Kortinnumero;
-    int yritykset=0;
+    int yritykset=3;
 };
 
 #endif // DIALOG_H

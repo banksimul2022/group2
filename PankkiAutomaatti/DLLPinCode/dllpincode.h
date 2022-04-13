@@ -9,7 +9,6 @@ class DLLPinCode
 public:
     void DLLPINCODE_EXPORT openDllDialog(QString);
     QString DLLPINCODE_EXPORT returnFromDll();
-    void DLLPINCODE_EXPORT truefalse(bool);
 private:
     Dialog *objectDialog;
     QString dllValue;
