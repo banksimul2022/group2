@@ -68,6 +68,8 @@ void Login::loginSlot(QNetworkReply *reply)
     {
         token = "Bearer "+response_data;
         qDebug()<<token;
+        Singleton *s = s->getSingletonInstance();
+        s->setSingletonToken(token);
         my ->setToken(token);
         trueFalse = true;
         qDebug()<<"True false on: "<<trueFalse;

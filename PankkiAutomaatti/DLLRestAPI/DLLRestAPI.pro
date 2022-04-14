@@ -12,17 +12,21 @@ CONFIG += c++11
 
 SOURCES += \
     asiakas.cpp \
+    configurations.cpp \
     dllrestapi.cpp \
     login.cpp \
     mysingleton.cpp \
+    singleton.cpp \
     url.cpp
 
 HEADERS += \
     DLLRestAPI_global.h \
     asiakas.h \
+    configurations.h \
     dllrestapi.h \
     login.h \
     mysingleton.h \
+    singleton.h \
     url.h
 
 # Default rules for deployment.
