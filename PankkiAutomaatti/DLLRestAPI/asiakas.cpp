@@ -6,7 +6,7 @@ Asiakas::Asiakas(QObject *parent): QObject(parent)
     objectUrl = new Url;
     base_url = objectUrl -> getBase_url();
     my = new MySingleton;
-    webToken = my ->getToken();
+    //webToken = my ->getToken();
 }
 
 Asiakas::~Asiakas()
@@ -21,9 +21,12 @@ Asiakas::~Asiakas()
 void Asiakas::getAsiakas()
 {
     qDebug()<<"getAsiakas";
-    //QString site_url = objectUrl->getBase_url()+"/asiakas/"+Kortinnumero;
-    QNetworkRequest request((base_url+"/asiakas"+Kortinnumero));
+    QString site_url = objectUrl->getBase_url()+"/asiakas/"+Kortinnumero;
+    QNetworkRequest request((site_url));
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+
+    Singleton *s = s->getSingletonInstance();
+    webToken = s ->getSingletonToken();
 
     qDebug()<<"WebToken alku";
     qDebug()<<webToken;

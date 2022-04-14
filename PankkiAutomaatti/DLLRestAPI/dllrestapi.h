@@ -21,8 +21,6 @@ public:
 private:
     Login *objectLogin;
     Asiakas *objectAsiakas;
-    MySingleton *objectMySingleton;
-
 };
 
 #endif // DLLRESTAPI_H

@@ -8,6 +8,7 @@
 
 #include "url.h"
 #include "mysingleton.h"
+#include "singleton.h"
 
 class Asiakas : public QObject
 {

@@ -2,6 +2,7 @@
 #define MYSINGLETON_H
 
 #include <qstring.h>
+#include <QDebug>
 
 class MySingleton
 {

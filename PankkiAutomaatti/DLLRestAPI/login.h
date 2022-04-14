@@ -3,6 +3,7 @@
 
 #include "mysingleton.h"
 #include "url.h"
+#include "singleton.h"
 
 #include <QObject>
 #include <QtNetwork>

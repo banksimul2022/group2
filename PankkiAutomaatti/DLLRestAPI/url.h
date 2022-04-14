@@ -3,6 +3,7 @@
 
 #include <qstring.h>
 
+
 class Url
 {
 public:
