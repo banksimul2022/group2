@@ -6,22 +6,17 @@ Login::Login(QObject *parent) : QObject(parent)
 
     objectUrl = new Url;
     base_url = objectUrl -> getBase_url();
-
     postManager = new QNetworkAccessManager(this);
-    my = new MySingleton;
 }
 
 Login::~Login()
 {
-    qDebug()<<"Login tuhoajassa";
-
     delete objectUrl;
     objectUrl = nullptr;
 }
 
 void Login::setPinKort(QString kortinnumero, QString pinkoodi)
 {
-    qDebug()<<"setPinKort funktiossa";
     qDebug()<<kortinnumero;
     qDebug()<<pinkoodi;
 
@@ -42,18 +37,11 @@ void Login::getPin()
 
     connect(postManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(loginSlot(QNetworkReply*)));
     reply = postManager->post(request, QJsonDocument(jsonObj).toJson());
-
-    qDebug()<<"GetPin lähetetty post";
 }
 
 bool Login::getResult()
 {
     return trueFalse;
-}
-
-QByteArray Login::getToken()
-{
-    return token;
 }
 
 
@@ -70,7 +58,6 @@ void Login::loginSlot(QNetworkReply *reply)
         qDebug()<<token;
         Singleton *s = s->getSingletonInstance();
         s->setSingletonToken(token);
-        my ->setToken(token);
         trueFalse = true;
         qDebug()<<"True false on: "<<trueFalse;
     }

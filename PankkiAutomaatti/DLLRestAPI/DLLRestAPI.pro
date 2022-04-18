@@ -15,7 +15,7 @@ SOURCES += \
     configurations.cpp \
     dllrestapi.cpp \
     login.cpp \
-    mysingleton.cpp \
+    saldo.cpp \
     singleton.cpp \
     url.cpp
 
@@ -25,7 +25,7 @@ HEADERS += \
     configurations.h \
     dllrestapi.h \
     login.h \
-    mysingleton.h \
+    saldo.h \
     singleton.h \
     url.h
 

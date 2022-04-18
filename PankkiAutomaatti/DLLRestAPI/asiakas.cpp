@@ -5,8 +5,6 @@ Asiakas::Asiakas(QObject *parent): QObject(parent)
     asiakasManager = new QNetworkAccessManager(this);
     objectUrl = new Url;
     base_url = objectUrl -> getBase_url();
-    my = new MySingleton;
-    //webToken = my ->getToken();
 }
 
 Asiakas::~Asiakas()
@@ -18,14 +16,14 @@ Asiakas::~Asiakas()
     objectUrl = nullptr;
 }
 
-void Asiakas::getAsiakas()
+void Asiakas::setWebtoken()
 {
-    qDebug()<<"getAsiakas";
-    QString site_url = objectUrl->getBase_url()+"/asiakas/"+Kortinnumero;
+    qDebug()<<"asiakkaan setWebToken";
+    QString site_url = objectUrl->getBase_url()+"/asiakas/1111111111";
     QNetworkRequest request((site_url));
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
-    Singleton *s = s->getSingletonInstance();
+    Singleton * s = s->getSingletonInstance();
     webToken = s ->getSingletonToken();
 
     qDebug()<<"WebToken alku";
@@ -45,7 +43,7 @@ void Asiakas::setPinKort(QString asKortinnumero, QString asPinkoodi)
     Pinkoodi = asPinkoodi;
 }
 
-QString Asiakas::getTiedot()
+QString Asiakas::getAsiakas()
 {
     return asiakas;
 }

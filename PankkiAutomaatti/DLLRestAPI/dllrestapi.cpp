@@ -6,6 +6,7 @@ DLLRestAPI::DLLRestAPI()
 
     objectLogin = new Login;
     objectAsiakas = new Asiakas;
+    objectSaldo = new Saldo;
 }
 
 DLLRestAPI::~DLLRestAPI()
@@ -32,19 +33,24 @@ bool DLLRestAPI::getTrueFalse()
     return objectLogin->getResult();
 }
 
-QString DLLRestAPI::getTiedot()
+QString DLLRestAPI::getAsiakas()
 {
-    qDebug()<<"getTiedot";
-    //objectAsiakas->getAsiakas();
-    return objectAsiakas -> getTiedot();
-}
-
-QByteArray DLLRestAPI::getToken()
-{
-    return objectLogin -> getToken();
+    qDebug()<<"getAsiakas";
+    return objectAsiakas -> getAsiakas();
 }
 
 void DLLRestAPI::startAsiakas()
 {
-    objectAsiakas->getAsiakas();
+    objectAsiakas->setWebtoken();
+}
+
+QString DLLRestAPI::getSaldo()
+{
+    qDebug() << "getSaldo";
+    return objectSaldo->getSaldo();
+}
+
+void DLLRestAPI::startSaldo()
+{
+    objectSaldo->setWebToken();
 }
