@@ -7,7 +7,6 @@
 #include <QJsonDocument>
 
 #include "url.h"
-#include "mysingleton.h"
 #include "singleton.h"
 
 class Asiakas : public QObject
@@ -16,10 +15,9 @@ class Asiakas : public QObject
 public:
     explicit Asiakas( QObject *parent = nullptr);
     ~Asiakas();
-    void getAsiakas();
+    void setWebtoken();
     void setPinKort(QString asKortinnumero, QString asPinkoodi);
-    QString getTiedot();
-    void setToken(QByteArray token);
+    QString getAsiakas();
 
 private slots:
     void asiakasSlot(QNetworkReply *reply);
@@ -36,7 +34,6 @@ private:
     QString base_url;
 
     Url * objectUrl;
-    MySingleton * my = MySingleton::getInstance();
 
 
 signals:
