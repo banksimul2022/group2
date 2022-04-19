@@ -6,6 +6,7 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
+
 }
 
 Dialog::~Dialog()
@@ -50,21 +51,26 @@ void Dialog::setCardNumber(QString cardnumber)
 
 void Dialog::on_btnSet_clicked()
 {
+
     QString a=ui->textValue->text();
     ui->textValue->setText("");
+
     yritykset--;
     qDebug()<<yritykset;
     ui->labeltries->setNum(yritykset);
+
     this->setDialogValue(a);
 
     qDebug()<<"Salasana input";
     qDebug()<<a;
 
-
     if(yritykset==0){
         emit cardlocked();
-        QWidget::close();
+        qDebug()<<"cardlocked signaali lähetetty";
+        yritykset=3;
+        ui->labeltries->setNum(yritykset);
 
+        QWidget::close();
    }
 }
 
