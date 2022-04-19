@@ -27,7 +27,8 @@ private:
     QNetworkReply * reply;
     QByteArray response_data;
 
-    QString kortinnumero, pinkoodi, saldo;
+    QString Kortinnumero, saldo;
+    QString base_url;
     QByteArray webToken;
 
     Url *objectUrl;

@@ -4,6 +4,7 @@ Saldo::Saldo(QObject *parent) : QObject(parent)
 {
     saldoManager = new QNetworkAccessManager(this);
     objectUrl = new Url;
+    base_url = objectUrl -> getBase_url();
 }
 
 Saldo::~Saldo()
@@ -18,7 +19,11 @@ Saldo::~Saldo()
 void Saldo::setWebToken()
 {
     qDebug()<<"saldon setWebToken";
-    QString site_url = objectUrl->getBase_url()+"/tili/"+kortinnumero;
+
+    Singleton *a = a->getSingletonInstance();
+    a->setSingletonCardNum(Kortinnumero);
+
+    QString site_url = objectUrl->getBase_url()+"/tili/"+Kortinnumero;
     QNetworkRequest request((site_url));
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
@@ -34,13 +39,6 @@ void Saldo::setWebToken()
     connect(saldoManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(saldoSlot(QNetworkReply*)));
     reply = saldoManager->get(request);
     response_data = saldoManager->get(request)->readAll();
-}
-
-void Saldo::setPinKort(QString asKortinnumero, QString asPinkoodi)
-{
-    kortinnumero = asKortinnumero;
-    pinkoodi = asPinkoodi;
-    qDebug()<<kortinnumero;
 }
 
 QString Saldo::getSaldo()

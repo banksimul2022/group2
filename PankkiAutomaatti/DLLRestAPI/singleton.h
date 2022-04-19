@@ -22,7 +22,10 @@ class Singleton {
 
    //Getters and setters of related functions of realted configurations
    void setSingletonToken(QByteArray vol);
-   QByteArray getSingletonToken() ;
+   QByteArray getSingletonToken();
+
+   void setSingletonCardNum(QString Kort);
+   QString getSingletonCardNum();
 };
 
 #endif // SINGLETON_H

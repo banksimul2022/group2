@@ -16,7 +16,6 @@ public:
     explicit Asiakas( QObject *parent = nullptr);
     ~Asiakas();
     void setWebtoken();
-    void setPinKort(QString asKortinnumero, QString asPinkoodi);
     QString getAsiakas();
 
 private slots:
@@ -37,6 +36,7 @@ private:
 
 
 signals:
+    void sendAsiakas(QString);
 
 };
 
