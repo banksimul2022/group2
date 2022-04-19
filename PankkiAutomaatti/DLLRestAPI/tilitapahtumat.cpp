@@ -1,29 +1,29 @@
-#include "saldo.h"
+#include "tilitapahtumat.h"
 
-Saldo::Saldo(QObject *parent) : QObject(parent)
+Tilitapahtumat::Tilitapahtumat(QObject *parent) : QObject(parent)
 {
-    saldoManager = new QNetworkAccessManager(this);
+    tilitapahtumatManager = new QNetworkAccessManager(this);
     objectUrl = new Url;
     base_url = objectUrl -> getBase_url();
 }
 
-Saldo::~Saldo()
+Tilitapahtumat::~Tilitapahtumat()
 {
-    delete saldoManager;
-    saldoManager = nullptr;
+    delete tilitapahtumatManager;
+    tilitapahtumatManager = nullptr;
 
     delete objectUrl;
     objectUrl = nullptr;
 }
 
-void Saldo::setWebToken()
+void Tilitapahtumat::setWebToken()
 {
     qDebug()<<"saldon setWebToken";
 
     Singleton * a = a->getSingletonInstance();
     Kortinnumero = a ->getSingletonCardNum();
 
-    QString site_url = objectUrl->getBase_url()+"/tili/"+Kortinnumero;
+    QString site_url = objectUrl->getBase_url()+"/tilitapahtumat/"+Kortinnumero;
     QNetworkRequest request((site_url));
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
@@ -36,17 +36,17 @@ void Saldo::setWebToken()
     request.setRawHeader(QByteArray("Authorization"),(webToken));
 
     qDebug()<<"Connectia edeltävä";
-    connect(saldoManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(saldoSlot(QNetworkReply*)));
-    reply = saldoManager->get(request);
-    response_data = saldoManager->get(request)->readAll();
+    connect(tilitapahtumatManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(tilitapahtumatSlot(QNetworkReply*)));
+    reply = tilitapahtumatManager->get(request);
+    response_data = tilitapahtumatManager->get(request)->readAll();
 }
 
-QString Saldo::getSaldo()
+QString Tilitapahtumat::getTilitapahtumat()
 {
-    return saldo;
+    return tilitapahtumat;
 }
 
-void Saldo::saldoSlot(QNetworkReply *reply)
+void Tilitapahtumat::tilitapahtumatSlot(QNetworkReply *reply)
 {
     response_data=reply->readAll();
     qDebug() << response_data;
@@ -55,8 +55,8 @@ void Saldo::saldoSlot(QNetworkReply *reply)
 
        foreach (const QJsonValue &value, json_array) {
            QJsonObject json_obj = value.toObject();
-           saldo+=QString::number(json_obj["Saldo"].toInt());
+           tilitapahtumat+=json_obj["PVM"].toString()+"\r"+json_obj["Tapahtuma"].toString()+"\r"+QString::number(json_obj["Summa"].toInt())+"\r";
        }
 
-       qDebug()<<saldo;
+       qDebug()<<tilitapahtumat;
 }

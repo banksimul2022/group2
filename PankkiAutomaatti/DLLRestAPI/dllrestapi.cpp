@@ -7,6 +7,7 @@ DLLRestAPI::DLLRestAPI()
     objectLogin = new Login;
     objectAsiakas = new Asiakas;
     objectSaldo = new Saldo;
+    objectTilitapahtumat = new Tilitapahtumat;
 }
 
 DLLRestAPI::~DLLRestAPI()
@@ -54,3 +55,15 @@ void DLLRestAPI::startSaldo()
 {
     objectSaldo->setWebToken();
 }
+
+QString DLLRestAPI::getTilitapahtumat()
+{
+    qDebug() << "getTilitapahtumat";
+    return objectTilitapahtumat->getTilitapahtumat();
+}
+
+void DLLRestAPI::startTilitapahtumat()
+{
+    objectTilitapahtumat->setWebToken();
+}
+

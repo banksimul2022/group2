@@ -5,6 +5,7 @@
 #include "asiakas.h"
 #include "login.h"
 #include "saldo.h"
+#include "tilitapahtumat.h"
 #include <qstring.h>
 
 class DLLRESTAPI_EXPORT DLLRestAPI
@@ -22,10 +23,14 @@ public:
     QString getSaldo();
     void startSaldo();
 
+    QString getTilitapahtumat();
+    void startTilitapahtumat();
+
 private:
     Login *objectLogin;
     Asiakas *objectAsiakas;
     Saldo * objectSaldo;
+    Tilitapahtumat *objectTilitapahtumat;
 };
 
 #endif // DLLRESTAPI_H
