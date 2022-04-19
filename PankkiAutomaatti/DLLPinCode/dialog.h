@@ -21,7 +21,11 @@ public:
 
     QString getDialogValue();
 
-    //void addTries();
+signals:
+    void pin(QString dllValue);
+    void cardlocked();
+public slots:
+    void CheckPWD(QString);
 
 private slots:
     void on_btnSet_clicked();
@@ -30,8 +34,12 @@ private slots:
 
 private:
     Ui::Dialog *ui;
+
     QString dialogValue;
     QString Kortinnumero;
+
+    QString varpin = "2222";
+
     int yritykset=3;
 };
 
