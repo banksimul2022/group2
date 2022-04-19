@@ -22,3 +22,13 @@ QByteArray Singleton::getSingletonToken()
 {
     return this->config->token;
 }
+
+void Singleton::setSingletonCardNum(QString Kort)
+{
+    this->config->KortNum = Kort;
+}
+
+QString Singleton::getSingletonCardNum()
+{
+    return this->config->KortNum;
+}

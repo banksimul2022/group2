@@ -23,6 +23,9 @@ void Login::setPinKort(QString kortinnumero, QString pinkoodi)
     Kortinnumero = kortinnumero;
     Pinkoodi = pinkoodi;
 
+    Singleton *a = a->getSingletonInstance();
+    a->setSingletonCardNum(Kortinnumero);
+
 }
 
 void Login::getPin()

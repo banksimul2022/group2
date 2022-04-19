@@ -12,7 +12,7 @@ class Configurations
 public:
     Configurations();
     QByteArray token;
-    bool notification;
+    QString KortNum;
 };
 
 #endif // CONFIGURATIONS_H

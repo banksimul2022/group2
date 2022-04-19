@@ -19,7 +19,11 @@ Asiakas::~Asiakas()
 void Asiakas::setWebtoken()
 {
     qDebug()<<"asiakkaan setWebToken";
-    QString site_url = objectUrl->getBase_url()+"/asiakas/1111111111";
+
+    Singleton * a = a->getSingletonInstance();
+    Kortinnumero = a ->getSingletonCardNum();
+
+    QString site_url = objectUrl->getBase_url()+"/asiakas/"+Kortinnumero;
     QNetworkRequest request((site_url));
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
@@ -35,12 +39,6 @@ void Asiakas::setWebtoken()
     connect(asiakasManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(asiakasSlot(QNetworkReply*)));
     reply = asiakasManager->get(request);
     response_data = asiakasManager->get(request)->readAll();
-}
-
-void Asiakas::setPinKort(QString asKortinnumero, QString asPinkoodi)
-{
-    Kortinnumero = asKortinnumero;
-    Pinkoodi = asPinkoodi;
 }
 
 QString Asiakas::getAsiakas()
@@ -60,5 +58,6 @@ void Asiakas::asiakasSlot(QNetworkReply *reply)
            asiakas+=json_obj["Etunimi"].toString()+""+json_obj["Sukunimi"].toString()+"\r"+json_obj["Henkilötunnus"].toString()+"\r"+json_obj["Osoite"].toString()+"\n"+QString::number(json_obj["Puhelinnumero"].toInt())+"\r";
        }
 
+       emit sendAsiakas(asiakas);
        qDebug()<<asiakas;
 }
