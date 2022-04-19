@@ -60,9 +60,6 @@ void Dialog::on_btnSet_clicked()
     qDebug()<<"Salasana input";
     qDebug()<<a;
 
-    //if(a==varpin){
-    //    QWidget::close();
-    //}
 
     if(yritykset==0){
         emit cardlocked();
