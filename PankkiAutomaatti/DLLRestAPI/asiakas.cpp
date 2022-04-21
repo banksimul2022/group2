@@ -55,7 +55,7 @@ void Asiakas::asiakasSlot(QNetworkReply *reply)
 
        foreach (const QJsonValue &value, json_array) {
            QJsonObject json_obj = value.toObject();
-           asiakas+=json_obj["Etunimi"].toString()+""+json_obj["Sukunimi"].toString()+"\r"+json_obj["Henkilötunnus"].toString()+"\r"+json_obj["Osoite"].toString()+"\n"+QString::number(json_obj["Puhelinnumero"].toInt())+"\r";
+           asiakas+=json_obj["Etunimi"].toString()+""+json_obj["Sukunimi"].toString()+"\n"+json_obj["Henkilötunnus"].toString()+"\n"+json_obj["Osoite"].toString()+"\n"+json_obj["Puhelinnumero"].toString()+"\n";
        }
 
        emit sendAsiakas(asiakas);

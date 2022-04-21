@@ -5,6 +5,7 @@
 #include "nostarahaa.h"
 #include "selaatilitapahtumia.h"
 #include "naytasaldo.h"
+#include "dllrestapi.h"
 
 namespace Ui {
 class pankkimenu;
@@ -29,6 +30,7 @@ private slots:
 
 private:
     Ui::pankkimenu *ui;
+    DLLRestAPI * pDLLRestAPI;
     nostarahaa * pnostarahaa;
     selaatilitapahtumia * pselaatilit;
     naytasaldo * pnaytasaldo;

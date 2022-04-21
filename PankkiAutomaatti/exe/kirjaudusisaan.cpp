@@ -6,23 +6,44 @@ kirjaudusisaan::kirjaudusisaan(QWidget *parent) :
     ui(new Ui::kirjaudusisaan)
 {
     ui->setupUi(this);
+
+    pDLLRestAPI = new DLLRestAPI;
+
+    pDLLPinCode = new DLLPinCode;
+
     pPankkimenu = new pankkimenu;
+
+    connect( pDLLPinCode->objectDialog, SIGNAL(pin(QString)), this, SLOT(pinkoodi(QString)));
+
+    connect( pDLLRestAPI->objectLogin, SIGNAL(getTrueFalse(QString)), pDLLPinCode->objectDialog, SLOT (CheckPWD(QString)));
+
+    connect( pDLLRestAPI->objectLogin, SIGNAL(getTrueFalse(QString)), this, SLOT(trueFalse(QString)));
 }
 
 kirjaudusisaan::~kirjaudusisaan()
 {
     delete ui;
+    delete pPankkimenu;
+    pPankkimenu = nullptr;
+    disconnect(pDLLPinCode->objectDialog, SIGNAL(pin(QString)), this, SLOT(pinkoodi(QString)));
+
+    disconnect( this, SIGNAL(truefalse(QString)), pDLLPinCode->objectDialog, SLOT (checkPWD(QString)));
 }
 
-void kirjaudusisaan::on_palaaalkuikkunaan_clicked()
+void kirjaudusisaan::on_VALIAIKANAPPI_clicked()
 {
-    close();
+    pDLLPinCode->openDllDialog(kortnro);
 }
 
-
-void kirjaudusisaan::on_kirjaudu_clicked()
+void kirjaudusisaan::trueFalse(QString TrueFalse)
 {
-   close();
-   pPankkimenu -> exec();
+    if(TrueFalse!="false")
+        {
+            pPankkimenu -> exec();
+    }
 }
 
+void kirjaudusisaan::pinkoodi(QString pincode)
+{
+    pDLLRestAPI->setPinKort(kortnro,pincode);
+}

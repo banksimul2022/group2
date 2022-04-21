@@ -28,10 +28,12 @@ public:
 
     Login *objectLogin;
 
-private:   
     Asiakas *objectAsiakas;
     Saldo * objectSaldo;
     Tilitapahtumat *objectTilitapahtumat;
+
+private:   
+
 };
 
 #endif // DLLRESTAPI_H

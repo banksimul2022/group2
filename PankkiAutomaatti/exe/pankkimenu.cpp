@@ -6,6 +6,7 @@ pankkimenu::pankkimenu(QWidget *parent) :
     ui(new Ui::pankkimenu)
 {
     ui->setupUi(this);
+    pDLLRestAPI = new DLLRestAPI;
     pnostarahaa = new nostarahaa;
     pselaatilit = new selaatilitapahtumia;
     pnaytasaldo = new naytasaldo;
@@ -36,6 +37,7 @@ void pankkimenu::on_selaa_clicked()
 
 void pankkimenu::on_naytasaldo_clicked()
 {
+    pnaytasaldo->getAsiakas();
     pnaytasaldo -> exec();
 }
 

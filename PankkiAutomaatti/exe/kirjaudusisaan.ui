@@ -13,59 +13,30 @@
   <property name="windowTitle">
    <string>Kirjaudu sisään</string>
   </property>
-  <widget class="QLineEdit" name="lineEdit">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>80</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="maxLength">
-    <number>4</number>
-   </property>
-   <property name="echoMode">
-    <enum>QLineEdit::Password</enum>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="palaaalkuikkunaan">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>10</y>
-     <width>131</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Palaa aloitus ikkunaan</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="kirjaudu">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>80</y>
-     <width>91</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Kirjaudu sisään</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>50</y>
-     <width>271</width>
-     <height>16</height>
+     <x>120</x>
+     <y>40</y>
+     <width>151</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>Kirjoita pinkoodi ja jatka painamalla kirjaudu sisään</string>
+    <string>Aseta kortti kortinlukijaan</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="VALIAIKANAPPI">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>80</y>
+     <width>241</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HOMOJA OULUSTA</string>
    </property>
   </widget>
  </widget>
