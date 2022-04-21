@@ -27,11 +27,12 @@ public:
     void startTilitapahtumat();
 
     Login *objectLogin;
-
-private:   
     Asiakas *objectAsiakas;
     Saldo * objectSaldo;
     Tilitapahtumat *objectTilitapahtumat;
+
+private:    
+
 };
 
 #endif // DLLRESTAPI_H

@@ -33,6 +33,7 @@ private:
     Url *objectUrl;
 
 signals:
+    void sendTilitapahtumat(QString);
 
 };
 

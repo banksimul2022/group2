@@ -29,32 +29,14 @@ void DLLRestAPI::setPinKort(QString kortinnumero, QString pinkoodi)
     objectLogin->getPin();
 }
 
-QString DLLRestAPI::getAsiakas()
-{
-    qDebug()<<"getAsiakas";
-    return objectAsiakas -> getAsiakas();
-}
-
 void DLLRestAPI::startAsiakas()
 {
     objectAsiakas->setWebtoken();
 }
 
-QString DLLRestAPI::getSaldo()
-{
-    qDebug() << "getSaldo";
-    return objectSaldo->getSaldo();
-}
-
 void DLLRestAPI::startSaldo()
 {
     objectSaldo->setWebToken();
-}
-
-QString DLLRestAPI::getTilitapahtumat()
-{
-    qDebug() << "getTilitapahtumat";
-    return objectTilitapahtumat->getTilitapahtumat();
 }
 
 void DLLRestAPI::startTilitapahtumat()
