@@ -29,11 +29,6 @@ void DLLRestAPI::setPinKort(QString kortinnumero, QString pinkoodi)
     objectLogin->getPin();
 }
 
-bool DLLRestAPI::getTrueFalse()
-{
-    return objectLogin->getResult();
-}
-
 QString DLLRestAPI::getAsiakas()
 {
     qDebug()<<"getAsiakas";

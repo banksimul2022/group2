@@ -26,8 +26,9 @@ public:
     QString getTilitapahtumat();
     void startTilitapahtumat();
 
-private:
     Login *objectLogin;
+
+private:   
     Asiakas *objectAsiakas;
     Saldo * objectSaldo;
     Tilitapahtumat *objectTilitapahtumat;

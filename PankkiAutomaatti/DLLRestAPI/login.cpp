@@ -42,11 +42,6 @@ void Login::getPin()
     reply = postManager->post(request, QJsonDocument(jsonObj).toJson());
 }
 
-bool Login::getResult()
-{
-    return trueFalse;
-}
-
 
 void Login::loginSlot(QNetworkReply *reply)
 {
@@ -61,13 +56,12 @@ void Login::loginSlot(QNetworkReply *reply)
         qDebug()<<token;
         Singleton *s = s->getSingletonInstance();
         s->setSingletonToken(token);
-        trueFalse = true;
-        qDebug()<<"True false on: "<<trueFalse;
+        trueFalse = "true";
     }
     else
     {
-        trueFalse = false;
-        qDebug()<<"True false on: "<<trueFalse;
+        trueFalse = "false";
     }
        qDebug()<<"If else lopetettu getPin lopussa";
+       emit getTrueFalse(trueFalse);
 }
