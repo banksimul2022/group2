@@ -34,6 +34,7 @@ private:
     Url *objectUrl;
 
 signals:
+    void sendSaldo(QString);
 
 };
 

@@ -32,6 +32,7 @@ public:
     Saldo * objectSaldo;
     Tilitapahtumat *objectTilitapahtumat;
 
+
 private:   
 
 };

@@ -41,10 +41,6 @@ void Tilitapahtumat::setWebToken()
     response_data = tilitapahtumatManager->get(request)->readAll();
 }
 
-QString Tilitapahtumat::getTilitapahtumat()
-{
-    return tilitapahtumat;
-}
 
 void Tilitapahtumat::tilitapahtumatSlot(QNetworkReply *reply)
 {
@@ -59,4 +55,5 @@ void Tilitapahtumat::tilitapahtumatSlot(QNetworkReply *reply)
        }
 
        qDebug()<<tilitapahtumat;
+       emit sendTilitapahtumat(tilitapahtumat);
 }

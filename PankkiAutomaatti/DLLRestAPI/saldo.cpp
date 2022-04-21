@@ -41,11 +41,6 @@ void Saldo::setWebToken()
     response_data = saldoManager->get(request)->readAll();
 }
 
-QString Saldo::getSaldo()
-{
-    return saldo;
-}
-
 void Saldo::saldoSlot(QNetworkReply *reply)
 {
     response_data=reply->readAll();
@@ -59,4 +54,5 @@ void Saldo::saldoSlot(QNetworkReply *reply)
        }
 
        qDebug()<<saldo;
+       emit sendSaldo(saldo);
 }
