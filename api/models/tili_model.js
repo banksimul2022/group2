@@ -19,10 +19,10 @@ const tili = {
   delete: function(id, callback) {
     return db.query('delete from tili where idTili=?', [id], callback);
   },
-  update: function(id, tili, callback) {
+  update: function(Kortinnumero, tili, callback) {
     return db.query(
-      'update tili set Saldo=? where idTili=?',
-      [tili.Saldo, id],
+      'update tili join kortti on tili.idTili=kortti.idTili set Saldo=? where Kortinnumero=?',
+      [tili.Saldo, Kortinnumero],
       callback
     );
   }

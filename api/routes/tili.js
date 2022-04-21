@@ -48,9 +48,9 @@ function(request, response) {
 });
 
 
-router.put('/:id', 
+router.put('/:Kortinnumero', 
 function(request, response) {
-  tili.update(request.params.id, request.body, function(err, dbResult) {
+  tili.update(request.params.Kortinnumero, request.body, function(err, dbResult) {
     if (err) {
       response.json(err);
     } else {
