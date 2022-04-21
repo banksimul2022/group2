@@ -249,6 +249,7 @@ Makefile: PankkiAutomaatti.pro X:/Koodaus/5.15.2/mingw81_32/mkspecs/win32-g++/qm
 		PankkiAutomaatti.pro \
 		X:/Koodaus/5.15.2/mingw81_32/lib/Qt5Widgets.prl \
 		X:/Koodaus/5.15.2/mingw81_32/lib/Qt5Gui.prl \
+		X:/Koodaus/5.15.2/mingw81_32/lib/Qt5Network.prl \
 		X:/Koodaus/5.15.2/mingw81_32/lib/Qt5Core.prl \
 		X:/Koodaus/5.15.2/mingw81_32/lib/qtmain.prl \
 		X:/Koodaus/5.15.2/mingw81_32/mkspecs/features/build_pass.prf
@@ -432,6 +433,7 @@ X:/Koodaus/5.15.2/mingw81_32/mkspecs/features/lex.prf:
 PankkiAutomaatti.pro:
 X:/Koodaus/5.15.2/mingw81_32/lib/Qt5Widgets.prl:
 X:/Koodaus/5.15.2/mingw81_32/lib/Qt5Gui.prl:
+X:/Koodaus/5.15.2/mingw81_32/lib/Qt5Network.prl:
 X:/Koodaus/5.15.2/mingw81_32/lib/Qt5Core.prl:
 X:/Koodaus/5.15.2/mingw81_32/lib/qtmain.prl:
 X:/Koodaus/5.15.2/mingw81_32/mkspecs/features/build_pass.prf:

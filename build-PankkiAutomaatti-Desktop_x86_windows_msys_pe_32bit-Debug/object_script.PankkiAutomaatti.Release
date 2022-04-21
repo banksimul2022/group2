@@ -1,0 +1,11 @@
+release/kirjaudusisaan.o
+release/main.o
+release/mainwindow.o
+release/nostarahaa.o
+release/omasumma.o
+release/pankkimenu.o
+release/moc_kirjaudusisaan.o
+release/moc_mainwindow.o
+release/moc_nostarahaa.o
+release/moc_omasumma.o
+release/moc_pankkimenu.o
