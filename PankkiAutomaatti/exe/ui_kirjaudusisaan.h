@@ -13,7 +13,6 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
@@ -21,30 +20,20 @@ QT_BEGIN_NAMESPACE
 class Ui_kirjaudusisaan
 {
 public:
-    QLineEdit *lineEdit;
-    QPushButton *palaaalkuikkunaan;
-    QPushButton *kirjaudu;
     QLabel *label;
+    QPushButton *VALIAIKANAPPI;
 
     void setupUi(QDialog *kirjaudusisaan)
     {
         if (kirjaudusisaan->objectName().isEmpty())
             kirjaudusisaan->setObjectName(QString::fromUtf8("kirjaudusisaan"));
         kirjaudusisaan->resize(400, 121);
-        lineEdit = new QLineEdit(kirjaudusisaan);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(20, 80, 131, 24));
-        lineEdit->setMaxLength(4);
-        lineEdit->setEchoMode(QLineEdit::Password);
-        palaaalkuikkunaan = new QPushButton(kirjaudusisaan);
-        palaaalkuikkunaan->setObjectName(QString::fromUtf8("palaaalkuikkunaan"));
-        palaaalkuikkunaan->setGeometry(QRect(20, 10, 131, 24));
-        kirjaudu = new QPushButton(kirjaudusisaan);
-        kirjaudu->setObjectName(QString::fromUtf8("kirjaudu"));
-        kirjaudu->setGeometry(QRect(170, 80, 91, 24));
         label = new QLabel(kirjaudusisaan);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(20, 50, 271, 16));
+        label->setGeometry(QRect(120, 40, 151, 41));
+        VALIAIKANAPPI = new QPushButton(kirjaudusisaan);
+        VALIAIKANAPPI->setObjectName(QString::fromUtf8("VALIAIKANAPPI"));
+        VALIAIKANAPPI->setGeometry(QRect(69, 80, 241, 24));
 
         retranslateUi(kirjaudusisaan);
 
@@ -54,9 +43,8 @@ public:
     void retranslateUi(QDialog *kirjaudusisaan)
     {
         kirjaudusisaan->setWindowTitle(QCoreApplication::translate("kirjaudusisaan", "Kirjaudu sis\303\244\303\244n", nullptr));
-        palaaalkuikkunaan->setText(QCoreApplication::translate("kirjaudusisaan", "Palaa aloitus ikkunaan", nullptr));
-        kirjaudu->setText(QCoreApplication::translate("kirjaudusisaan", "Kirjaudu sis\303\244\303\244n", nullptr));
-        label->setText(QCoreApplication::translate("kirjaudusisaan", "Kirjoita pinkoodi ja jatka painamalla kirjaudu sis\303\244\303\244n", nullptr));
+        label->setText(QCoreApplication::translate("kirjaudusisaan", "Aseta kortti kortinlukijaan", nullptr));
+        VALIAIKANAPPI->setText(QCoreApplication::translate("kirjaudusisaan", "HOMOJA OULUSTA", nullptr));
     } // retranslateUi
 
 };

@@ -16,6 +16,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QTextEdit>
 
 QT_BEGIN_NAMESPACE
 
@@ -23,10 +24,10 @@ class Ui_naytasaldo
 {
 public:
     QPushButton *palaasaldosta;
-    QLineEdit *lineEdit;
-    QListWidget *listWidget;
-    QLineEdit *lineEdit_2;
+    QListWidget *tilitapahtumatedit;
+    QLineEdit *saldoedit;
     QLabel *label;
+    QTextEdit *asiakasedit;
 
     void setupUi(QDialog *naytasaldo)
     {
@@ -36,19 +37,18 @@ public:
         palaasaldosta = new QPushButton(naytasaldo);
         palaasaldosta->setObjectName(QString::fromUtf8("palaasaldosta"));
         palaasaldosta->setGeometry(QRect(10, 10, 121, 41));
-        lineEdit = new QLineEdit(naytasaldo);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(150, 10, 201, 41));
-        lineEdit->setReadOnly(true);
-        listWidget = new QListWidget(naytasaldo);
-        listWidget->setObjectName(QString::fromUtf8("listWidget"));
-        listWidget->setGeometry(QRect(10, 110, 341, 181));
-        lineEdit_2 = new QLineEdit(naytasaldo);
-        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
-        lineEdit_2->setGeometry(QRect(152, 63, 201, 41));
+        tilitapahtumatedit = new QListWidget(naytasaldo);
+        tilitapahtumatedit->setObjectName(QString::fromUtf8("tilitapahtumatedit"));
+        tilitapahtumatedit->setGeometry(QRect(10, 190, 341, 101));
+        saldoedit = new QLineEdit(naytasaldo);
+        saldoedit->setObjectName(QString::fromUtf8("saldoedit"));
+        saldoedit->setGeometry(QRect(150, 140, 201, 41));
         label = new QLabel(naytasaldo);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(110, 70, 81, 31));
+        label->setGeometry(QRect(110, 150, 81, 31));
+        asiakasedit = new QTextEdit(naytasaldo);
+        asiakasedit->setObjectName(QString::fromUtf8("asiakasedit"));
+        asiakasedit->setGeometry(QRect(150, 10, 201, 121));
 
         retranslateUi(naytasaldo);
 

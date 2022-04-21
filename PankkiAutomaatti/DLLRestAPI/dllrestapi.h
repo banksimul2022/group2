@@ -27,11 +27,13 @@ public:
     void startTilitapahtumat();
 
     Login *objectLogin;
+
     Asiakas *objectAsiakas;
     Saldo * objectSaldo;
     Tilitapahtumat *objectTilitapahtumat;
 
-private:    
+
+private:   
 
 };
 
