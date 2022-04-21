@@ -17,7 +17,6 @@ public:
     ~Login();
     void setPinKort(QString kortinnumero, QString pinkoodi);
     void getPin();
-    bool getResult();
 
 private slots:
     void loginSlot(QNetworkReply *reply);
@@ -28,11 +27,14 @@ private:
 
     QString Kortinnumero;
     QString Pinkoodi;
+    QString trueFalse;
     QByteArray token;
-    bool trueFalse;
 
     Url * objectUrl;
     QString base_url;
+
+signals:
+    void getTrueFalse(QString);
 };
 
 #endif // LOGIN_H

@@ -17,6 +17,7 @@ SOURCES += \
     login.cpp \
     saldo.cpp \
     singleton.cpp \
+    tilitapahtumat.cpp \
     url.cpp
 
 HEADERS += \
@@ -27,6 +28,7 @@ HEADERS += \
     login.h \
     saldo.h \
     singleton.h \
+    tilitapahtumat.h \
     url.h
 
 # Default rules for deployment.
