@@ -6,11 +6,12 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
-
 }
 
 Dialog::~Dialog()
 {
+    qDebug()<<"dialog.cpp tuhoajassa";
+    yritykset=3;
     delete ui;
     ui = nullptr;
 }
@@ -37,6 +38,7 @@ void Dialog::CheckPWD(QString x)
 
     if (x!="false"){
         qDebug()<<"if lauseen sisällä";
+        yritykset=3;
         QWidget::close();
     }
     qDebug()<<"If lauseen ohi mennyt";
@@ -47,6 +49,7 @@ void Dialog::setCardNumber(QString cardnumber)
 {
     Kortinnumero=cardnumber;
     ui->labelkortti->setText(Kortinnumero);
+    ui->labeltries->setNum(yritykset);
 }
 
 void Dialog::on_btnSet_clicked()
@@ -77,5 +80,6 @@ void Dialog::on_btnSet_clicked()
 
 void Dialog::on_pushButton_clicked()
 {
+    yritykset=3;
     QWidget::close();
 }
