@@ -47,6 +47,6 @@ void DLLRestAPI::startTilitapahtumat()
 
 void DLLRestAPI::startPutSaldo()
 {
-
+    objectPutSaldo->updateSaldo();
 }
 
