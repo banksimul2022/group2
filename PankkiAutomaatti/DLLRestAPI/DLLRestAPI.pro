@@ -15,6 +15,7 @@ SOURCES += \
     configurations.cpp \
     dllrestapi.cpp \
     login.cpp \
+    putsaldo.cpp \
     saldo.cpp \
     singleton.cpp \
     tilitapahtumat.cpp \
@@ -26,6 +27,7 @@ HEADERS += \
     configurations.h \
     dllrestapi.h \
     login.h \
+    putsaldo.h \
     saldo.h \
     singleton.h \
     tilitapahtumat.h \

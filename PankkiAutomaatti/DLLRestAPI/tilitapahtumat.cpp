@@ -51,7 +51,7 @@ void Tilitapahtumat::tilitapahtumatSlot(QNetworkReply *reply)
 
        foreach (const QJsonValue &value, json_array) {
            QJsonObject json_obj = value.toObject();
-           tilitapahtumat+=json_obj["PVM"].toString()+"\r"+json_obj["Tapahtuma"].toString()+"\r"+QString::number(json_obj["Summa"].toInt())+"\r";
+           tilitapahtumat=json_obj["PVM"].toString()+"\r"+json_obj["Tapahtuma"].toString()+"\r"+QString::number(json_obj["Summa"].toInt())+"\r";
        }
 
        qDebug()<<tilitapahtumat;

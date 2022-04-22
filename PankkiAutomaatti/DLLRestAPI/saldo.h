@@ -16,8 +16,6 @@ public:
     explicit Saldo(QObject *parent = nullptr);
     ~Saldo();
     void setWebToken();
-    void setPinKort(QString asKortinnumero, QString asPinkoodi);
-    QString getSaldo();
 
 private slots:
     void saldoSlot(QNetworkReply *reply);
