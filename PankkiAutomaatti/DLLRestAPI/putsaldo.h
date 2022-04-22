@@ -18,6 +18,7 @@ public:
 
 private slots:
     void updateSaldoSlot (QNetworkReply *reply);
+    void getLoppuSaldo(double);
 
 signals:
 
@@ -28,9 +29,10 @@ private:
 
     Url *objectUrl;
 
-    QString Kortinnumero, saatuSaldo;
+    QString Kortinnumero;
     QString base_url;
     QByteArray webToken;
+    double saatuSaldo;
 
 };
 

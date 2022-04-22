@@ -17,7 +17,9 @@ putSaldo::~putSaldo()
 
 void putSaldo::updateSaldo()
 {
+    qDebug()<<"updateSlot";
     QJsonObject jsonObj;
+    qDebug()<<saatuSaldo;
     jsonObj.insert("Saldo",saatuSaldo);
 
     Singleton * a = a->getSingletonInstance();
@@ -26,6 +28,9 @@ void putSaldo::updateSaldo()
     QString site_url = objectUrl->getBase_url()+"/tili/"+Kortinnumero;
     QNetworkRequest request((site_url));
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+
+    Singleton *s = s->getSingletonInstance();
+    webToken = s ->getSingletonToken();
 
     request.setRawHeader(QByteArray("Authorization"),(webToken));
 
@@ -40,4 +45,10 @@ void putSaldo::updateSaldoSlot(QNetworkReply *reply)
     qDebug()<<response_data;
     reply->deleteLater();
     putManager->deleteLater();
+}
+
+void putSaldo::getLoppuSaldo(double loppuSaldo)
+{
+    saatuSaldo = loppuSaldo;
+    qDebug()<<loppuSaldo;
 }
