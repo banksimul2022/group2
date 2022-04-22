@@ -8,6 +8,7 @@ DLLRestAPI::DLLRestAPI()
     objectAsiakas = new Asiakas;
     objectSaldo = new Saldo;
     objectTilitapahtumat = new Tilitapahtumat;
+    objectPutSaldo = new putSaldo;
 }
 
 DLLRestAPI::~DLLRestAPI()
@@ -42,5 +43,10 @@ void DLLRestAPI::startSaldo()
 void DLLRestAPI::startTilitapahtumat()
 {
     objectTilitapahtumat->setWebToken();
+}
+
+void DLLRestAPI::startPutSaldo()
+{
+
 }
 

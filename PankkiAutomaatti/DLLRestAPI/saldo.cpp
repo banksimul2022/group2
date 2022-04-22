@@ -30,9 +30,6 @@ void Saldo::setWebToken()
     Singleton *s = s->getSingletonInstance();
     webToken = s ->getSingletonToken();
 
-    qDebug()<<"WebToken alku";
-    qDebug()<<webToken;
-
     request.setRawHeader(QByteArray("Authorization"),(webToken));
 
     qDebug()<<"Connectia edeltävä";
@@ -50,7 +47,7 @@ void Saldo::saldoSlot(QNetworkReply *reply)
 
        foreach (const QJsonValue &value, json_array) {
            QJsonObject json_obj = value.toObject();
-           saldo+=QString::number(json_obj["Saldo"].toInt());
+           saldo=QString::number(json_obj["Saldo"].toInt());
        }
 
        qDebug()<<saldo;
