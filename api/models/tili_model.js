@@ -2,7 +2,7 @@ const db = require('../database');
 
 const tili = {
   getSaldo: function(Kortinnumero, callback) {
-    return db.query('select Saldo from tili join kortti on tili.idTili=kortti.idTili where Kortinnumero=?', [Kortinnumero], callback);
+    return db.query('select * from tili join kortti on tili.idTili=kortti.idTili where Kortinnumero=?', [Kortinnumero], callback);
   },
 
   getAll: function(callback) {

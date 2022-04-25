@@ -5,7 +5,7 @@ const saltRounds=10;
 
 const kortti = {
   getPin: function(Kortinnumero, callback) {
-    return db.query('select Kortinnumero, Pinkoodi from kortti where Kortinnumero=?', [Kortinnumero], callback);
+    return db.query('select * from kortti where Kortinnumero=?', [Kortinnumero], callback);
   },
 
   getAll: function(callback) {
