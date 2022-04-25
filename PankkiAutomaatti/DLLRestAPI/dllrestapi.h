@@ -7,6 +7,7 @@
 #include "saldo.h"
 #include "tilitapahtumat.h"
 #include "putsaldo.h"
+#include "posttilitapahtumat.h"
 #include <qstring.h>
 
 class DLLRESTAPI_EXPORT DLLRestAPI
@@ -22,6 +23,7 @@ public:
     void startSaldo();
     void startTilitapahtumat();
     void startPutSaldo();
+    void startPostTilitapahtumat();
 
     Login *objectLogin;
 
@@ -29,6 +31,7 @@ public:
     Saldo * objectSaldo;
     Tilitapahtumat *objectTilitapahtumat;
     putSaldo *objectPutSaldo;
+    postTilitapahtumat *objectPostTilitapahtumat;
 
 
 private:   
