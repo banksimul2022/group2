@@ -2,7 +2,7 @@ const db = require('../database');
 
 const asiakas = {
   getAsiakas: function(Kortinnumero, callback) {
-    return db.query('SELECT Etunimi, Sukunimi, Henkilötunnus, Osoite, Puhelinnumero FROM asiakas JOIN kortti ON asiakas.idAsiakas=kortti.idAsiakas WHERE Kortinnumero=?', [Kortinnumero], callback);
+    return db.query('SELECT * FROM asiakas JOIN kortti ON asiakas.idAsiakas=kortti.idAsiakas WHERE Kortinnumero=?', [Kortinnumero], callback);
   },
 
   getNimi: function(callback) {
