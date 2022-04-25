@@ -54,6 +54,6 @@ void Tilitapahtumat::tilitapahtumatSlot(QNetworkReply *reply)
            tilitapahtumat=json_obj["PVM"].toString()+"\r"+json_obj["Tapahtuma"].toString()+"\r"+QString::number(json_obj["Summa"].toInt())+"\r";
        }
 
-       qDebug()<<tilitapahtumat;
+       //qDebug()<<tilitapahtumat;
        emit sendTilitapahtumat(tilitapahtumat);
 }

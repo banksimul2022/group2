@@ -9,6 +9,7 @@ DLLRestAPI::DLLRestAPI()
     objectSaldo = new Saldo;
     objectTilitapahtumat = new Tilitapahtumat;
     objectPutSaldo = new putSaldo;
+    objectPostTilitapahtumat = new postTilitapahtumat;
 }
 
 DLLRestAPI::~DLLRestAPI()
@@ -48,5 +49,10 @@ void DLLRestAPI::startTilitapahtumat()
 void DLLRestAPI::startPutSaldo()
 {
     objectPutSaldo->updateSaldo();
+}
+
+void DLLRestAPI::startPostTilitapahtumat()
+{
+    objectPostTilitapahtumat->addTilitapahtuma();
 }
 

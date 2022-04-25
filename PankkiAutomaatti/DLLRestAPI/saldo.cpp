@@ -48,8 +48,13 @@ void Saldo::saldoSlot(QNetworkReply *reply)
        foreach (const QJsonValue &value, json_array) {
            QJsonObject json_obj = value.toObject();
            saldo=QString::number(json_obj["Saldo"].toInt());
+           idKortti=QString::number(json_obj["idKortti"].toInt());
+           idTili=QString::number(json_obj["idTili"].toInt());
+
        }
 
-       qDebug()<<saldo;
+       //qDebug()<<saldo;
+       qDebug()<<"Tässä on idKortti: " + idKortti + " ja tässä idTili: " + idTili;
+       emit sendID(idKortti, idTili);
        emit sendSaldo(saldo);
 }

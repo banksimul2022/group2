@@ -25,14 +25,15 @@ private:
     QNetworkReply * reply;
     QByteArray response_data;
 
-    QString Kortinnumero, saldo;
-    QString base_url;
+    QString Kortinnumero, saldo, base_url;
+    QString idKortti, idTili;
     QByteArray webToken;
 
     Url *objectUrl;
 
 signals:
     void sendSaldo(QString);
+    void sendID(QString, QString);
 
 };
 
