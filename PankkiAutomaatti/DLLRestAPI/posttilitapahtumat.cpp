@@ -22,7 +22,6 @@ postTilitapahtumat::~postTilitapahtumat()
 void postTilitapahtumat::addTilitapahtuma()
 {
     QJsonObject jsonObj;
-    //jsonObj.insert("idTilitapahtumat","NULL");
     jsonObj.insert("PVM",timeDate);
     jsonObj.insert("Tapahtuma","NOSTO");
     jsonObj.insert("Summa",saatuSumma);

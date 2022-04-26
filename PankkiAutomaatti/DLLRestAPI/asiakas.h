@@ -31,12 +31,14 @@ private:
     QByteArray webToken;
     QString asiakas;
     QString base_url;
+    QString nimi;
 
     Url * objectUrl;
 
 
 signals:
     void sendAsiakas(QString);
+    void sendNimi(QString);
 
 };
 

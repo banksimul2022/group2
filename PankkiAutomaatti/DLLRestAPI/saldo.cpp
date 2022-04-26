@@ -50,7 +50,6 @@ void Saldo::saldoSlot(QNetworkReply *reply)
            saldo=QString::number(json_obj["Saldo"].toInt());
            idKortti=QString::number(json_obj["idKortti"].toInt());
            idTili=QString::number(json_obj["idTili"].toInt());
-
        }
 
        //qDebug()<<saldo;

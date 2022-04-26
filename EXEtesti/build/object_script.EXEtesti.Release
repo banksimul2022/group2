@@ -1,0 +1,13 @@
+release/main.o
+release/mainwindow.o
+release/naytasaldo.o
+release/nostarahaa.o
+release/omasumma.o
+release/selaatilitapahtumia.o
+release/valikko.o
+release/moc_mainwindow.o
+release/moc_naytasaldo.o
+release/moc_nostarahaa.o
+release/moc_omasumma.o
+release/moc_selaatilitapahtumia.o
+release/moc_valikko.o
