@@ -253,15 +253,10 @@ debug/moc_kirjaudusisaan.cpp: kirjaudusisaan.h \
 		nostarahaa.h \
 		omasumma.h \
 		selaatilitapahtumia.h \
-		naytasaldo.h \
-		../DLLPinCode/dllpincode.h \
-		../DLLPinCode/DLLPinCode_global.h \
-		../DLLPinCode/dialog.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
 		../DLLRestAPI/dllrestapi.h \
 		../DLLRestAPI/DLLRestAPI_global.h \
 		../DLLRestAPI/asiakas.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetwork \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetworkDepends \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCore \
@@ -459,6 +454,14 @@ debug/moc_kirjaudusisaan.cpp: kirjaudusisaan.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		../DLLRestAPI/putsaldo.h \
+		../DLLRestAPI/posttilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
+		naytasaldo.h \
+		../DLLPinCode/dllpincode.h \
+		../DLLPinCode/DLLPinCode_global.h \
+		../DLLPinCode/dialog.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
 		debug/moc_predefs.h \
 		X:/Koodaus/5.15.2/mingw81_32/bin/moc.exe
 	X:\Koodaus\5.15.2\mingw81_32\bin\moc.exe $(DEFINES) --include "X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/exe/debug/moc_predefs.h" -IX:/Koodaus/5.15.2/mingw81_32/mkspecs/win32-g++ -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/exe" -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/DLLPinCode" -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/DLLRestAPI" -IX:/Koodaus/5.15.2/mingw81_32/include -IX:/Koodaus/5.15.2/mingw81_32/include/QtWidgets -IX:/Koodaus/5.15.2/mingw81_32/include/QtGui -IX:/Koodaus/5.15.2/mingw81_32/include/QtANGLE -IX:/Koodaus/5.15.2/mingw81_32/include/QtNetwork -IX:/Koodaus/5.15.2/mingw81_32/include/QtCore -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++ -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32 -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed -IX:/Koodaus/Tools/mingw810_32/i686-w64-mingw32/include kirjaudusisaan.h -o debug\moc_kirjaudusisaan.cpp
@@ -577,15 +580,10 @@ debug/moc_mainwindow.cpp: mainwindow.h \
 		nostarahaa.h \
 		omasumma.h \
 		selaatilitapahtumia.h \
-		naytasaldo.h \
-		../DLLPinCode/dllpincode.h \
-		../DLLPinCode/DLLPinCode_global.h \
-		../DLLPinCode/dialog.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
 		../DLLRestAPI/dllrestapi.h \
 		../DLLRestAPI/DLLRestAPI_global.h \
 		../DLLRestAPI/asiakas.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetwork \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetworkDepends \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCore \
@@ -783,6 +781,14 @@ debug/moc_mainwindow.cpp: mainwindow.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		../DLLRestAPI/putsaldo.h \
+		../DLLRestAPI/posttilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
+		naytasaldo.h \
+		../DLLPinCode/dllpincode.h \
+		../DLLPinCode/DLLPinCode_global.h \
+		../DLLPinCode/dialog.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
 		debug/moc_predefs.h \
 		X:/Koodaus/5.15.2/mingw81_32/bin/moc.exe
 	X:\Koodaus\5.15.2\mingw81_32\bin\moc.exe $(DEFINES) --include "X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/exe/debug/moc_predefs.h" -IX:/Koodaus/5.15.2/mingw81_32/mkspecs/win32-g++ -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/exe" -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/DLLPinCode" -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/DLLRestAPI" -IX:/Koodaus/5.15.2/mingw81_32/include -IX:/Koodaus/5.15.2/mingw81_32/include/QtWidgets -IX:/Koodaus/5.15.2/mingw81_32/include/QtGui -IX:/Koodaus/5.15.2/mingw81_32/include/QtANGLE -IX:/Koodaus/5.15.2/mingw81_32/include/QtNetwork -IX:/Koodaus/5.15.2/mingw81_32/include/QtCore -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++ -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32 -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed -IX:/Koodaus/Tools/mingw810_32/i686-w64-mingw32/include mainwindow.h -o debug\moc_mainwindow.cpp
@@ -892,6 +898,210 @@ debug/moc_naytasaldo.cpp: naytasaldo.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfiledevice.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qvector2d.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
+		../DLLRestAPI/dllrestapi.h \
+		../DLLRestAPI/DLLRestAPI_global.h \
+		../DLLRestAPI/asiakas.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetwork \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetworkDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCore \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCoreDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracteventdispatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventloop.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractitemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractnativeeventfilter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracttransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydataops.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydatapointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbasictimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbitarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbuffer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbytearraymatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcalendar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdatetime.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborcommon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qregularexpression.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/quuid.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcbormap.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamreader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfloat16.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamwriter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcollator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineoption.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineparser.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qconcatenatetablesproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcryptographichash.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdeadlinetimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qelapsedtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdiriterator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeasingcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qendian.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventtransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qexception.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfactoryinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileselector.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QStringList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfilesystemwatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfinalstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuture.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfutureinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrunnable.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresultstore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturesynchronizer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturewatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qhistorystate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qidentityproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qisenum.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qitemselectionmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsondocument.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibrary.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibraryinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qversionnumber.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlinkedlist.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlockfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qloggingcategory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmath.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmessageauthenticationcode.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmetaobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedata.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedatabase.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimetype.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qobjectcleanuphandler.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qoperatingsystemversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qparallelanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpauseanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qplugin.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpluginloader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qprocess.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpropertyanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qvariantanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qqueue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrandom.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qreadwritelock.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresource.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsavefile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopedvaluerollback.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopeguard.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsequentialanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsettings.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsharedmemory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignalmapper.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignaltransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsocketnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsortfilterproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstack.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstandardpaths.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstatemachine.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstorageinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstringlistmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsystemsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporarydir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporaryfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextboundaryfinder.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextcodec.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthread.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadpool.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadstorage.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimeline.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimezone.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtranslator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtransposeproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtypetraits.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwaitcondition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDeadlineTimer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwineventnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qxmlstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtcoreversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkglobal.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetwork-config.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractnetworkcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkrequest.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QSharedDataPointer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QString \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QUrl \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVariant \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdnslookup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdtls.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslerror.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssl.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QFlags \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostaddress.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhstspolicy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttp2configuration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttpmultipart.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QByteArray \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QIODevice \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkRequest \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkaccessmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVector \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslConfiguration \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QMetaType \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfigmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookie.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookiejar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdatagram.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdiskcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkproxy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkreply.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkAccessManager \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworksession.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qocspresponse.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qpassworddigestor.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCryptographicHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificateextension.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcipher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssldiffiehellmanparameters.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslellipticcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslkey.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qudpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QJsonDocument \
+		../DLLRestAPI/url.h \
+		../DLLRestAPI/singleton.h \
+		../DLLRestAPI/configurations.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCoreApplication \
+		../DLLRestAPI/login.h \
+		../DLLRestAPI/saldo.h \
+		../DLLRestAPI/tilitapahtumat.h \
+		../DLLRestAPI/putsaldo.h \
+		../DLLRestAPI/posttilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
 		debug/moc_predefs.h \
 		X:/Koodaus/5.15.2/mingw81_32/bin/moc.exe
 	X:\Koodaus\5.15.2\mingw81_32\bin\moc.exe $(DEFINES) --include "X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/exe/debug/moc_predefs.h" -IX:/Koodaus/5.15.2/mingw81_32/mkspecs/win32-g++ -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/exe" -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/DLLPinCode" -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/DLLRestAPI" -IX:/Koodaus/5.15.2/mingw81_32/include -IX:/Koodaus/5.15.2/mingw81_32/include/QtWidgets -IX:/Koodaus/5.15.2/mingw81_32/include/QtGui -IX:/Koodaus/5.15.2/mingw81_32/include/QtANGLE -IX:/Koodaus/5.15.2/mingw81_32/include/QtNetwork -IX:/Koodaus/5.15.2/mingw81_32/include/QtCore -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++ -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32 -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed -IX:/Koodaus/Tools/mingw810_32/i686-w64-mingw32/include naytasaldo.h -o debug\moc_naytasaldo.cpp
@@ -1223,6 +1433,210 @@ debug/moc_pankkimenu.cpp: pankkimenu.h \
 		nostarahaa.h \
 		omasumma.h \
 		selaatilitapahtumia.h \
+		../DLLRestAPI/dllrestapi.h \
+		../DLLRestAPI/DLLRestAPI_global.h \
+		../DLLRestAPI/asiakas.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetwork \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetworkDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCore \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCoreDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracteventdispatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventloop.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractitemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractnativeeventfilter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracttransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydataops.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydatapointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbasictimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbitarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbuffer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbytearraymatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcalendar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdatetime.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborcommon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qregularexpression.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/quuid.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcbormap.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamreader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfloat16.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamwriter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcollator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineoption.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineparser.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qconcatenatetablesproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcryptographichash.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdeadlinetimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qelapsedtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdiriterator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeasingcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qendian.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventtransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qexception.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfactoryinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileselector.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QStringList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfilesystemwatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfinalstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuture.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfutureinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrunnable.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresultstore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturesynchronizer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturewatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qhistorystate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qidentityproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qisenum.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qitemselectionmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsondocument.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibrary.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibraryinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qversionnumber.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlinkedlist.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlockfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qloggingcategory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmath.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmessageauthenticationcode.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmetaobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedata.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedatabase.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimetype.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qobjectcleanuphandler.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qoperatingsystemversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qparallelanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpauseanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qplugin.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpluginloader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qprocess.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpropertyanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qvariantanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qqueue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrandom.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qreadwritelock.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresource.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsavefile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopedvaluerollback.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopeguard.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsequentialanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsettings.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsharedmemory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignalmapper.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignaltransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsocketnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsortfilterproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstack.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstandardpaths.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstatemachine.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstorageinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstringlistmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsystemsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporarydir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporaryfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextboundaryfinder.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextcodec.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthread.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadpool.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadstorage.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimeline.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimezone.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtranslator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtransposeproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtypetraits.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwaitcondition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDeadlineTimer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwineventnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qxmlstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtcoreversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkglobal.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetwork-config.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractnetworkcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkrequest.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QSharedDataPointer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QString \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QUrl \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVariant \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdnslookup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdtls.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslerror.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssl.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QFlags \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostaddress.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhstspolicy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttp2configuration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttpmultipart.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QByteArray \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QIODevice \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkRequest \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkaccessmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVector \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslConfiguration \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QMetaType \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfigmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookie.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookiejar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdatagram.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdiskcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkproxy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkreply.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkAccessManager \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworksession.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qocspresponse.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qpassworddigestor.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCryptographicHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificateextension.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcipher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssldiffiehellmanparameters.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslellipticcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslkey.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qudpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QJsonDocument \
+		../DLLRestAPI/url.h \
+		../DLLRestAPI/singleton.h \
+		../DLLRestAPI/configurations.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCoreApplication \
+		../DLLRestAPI/login.h \
+		../DLLRestAPI/saldo.h \
+		../DLLRestAPI/tilitapahtumat.h \
+		../DLLRestAPI/putsaldo.h \
+		../DLLRestAPI/posttilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
 		naytasaldo.h \
 		debug/moc_predefs.h \
 		X:/Koodaus/5.15.2/mingw81_32/bin/moc.exe
@@ -1333,6 +1747,210 @@ debug/moc_selaatilitapahtumia.cpp: selaatilitapahtumia.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfiledevice.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qvector2d.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
+		../DLLRestAPI/dllrestapi.h \
+		../DLLRestAPI/DLLRestAPI_global.h \
+		../DLLRestAPI/asiakas.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetwork \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetworkDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCore \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCoreDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracteventdispatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventloop.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractitemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractnativeeventfilter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracttransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydataops.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydatapointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbasictimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbitarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbuffer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbytearraymatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcalendar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdatetime.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborcommon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qregularexpression.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/quuid.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcbormap.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamreader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfloat16.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamwriter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcollator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineoption.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineparser.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qconcatenatetablesproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcryptographichash.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdeadlinetimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qelapsedtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdiriterator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeasingcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qendian.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventtransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qexception.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfactoryinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileselector.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QStringList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfilesystemwatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfinalstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuture.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfutureinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrunnable.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresultstore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturesynchronizer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturewatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qhistorystate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qidentityproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qisenum.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qitemselectionmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsondocument.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibrary.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibraryinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qversionnumber.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlinkedlist.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlockfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qloggingcategory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmath.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmessageauthenticationcode.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmetaobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedata.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedatabase.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimetype.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qobjectcleanuphandler.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qoperatingsystemversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qparallelanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpauseanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qplugin.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpluginloader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qprocess.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpropertyanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qvariantanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qqueue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrandom.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qreadwritelock.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresource.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsavefile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopedvaluerollback.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopeguard.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsequentialanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsettings.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsharedmemory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignalmapper.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignaltransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsocketnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsortfilterproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstack.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstandardpaths.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstatemachine.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstorageinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstringlistmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsystemsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporarydir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporaryfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextboundaryfinder.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextcodec.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthread.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadpool.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadstorage.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimeline.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimezone.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtranslator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtransposeproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtypetraits.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwaitcondition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDeadlineTimer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwineventnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qxmlstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtcoreversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkglobal.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetwork-config.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractnetworkcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkrequest.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QSharedDataPointer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QString \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QUrl \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVariant \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdnslookup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdtls.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslerror.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssl.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QFlags \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostaddress.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhstspolicy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttp2configuration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttpmultipart.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QByteArray \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QIODevice \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkRequest \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkaccessmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVector \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslConfiguration \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QMetaType \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfigmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookie.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookiejar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdatagram.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdiskcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkproxy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkreply.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkAccessManager \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworksession.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qocspresponse.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qpassworddigestor.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCryptographicHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificateextension.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcipher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssldiffiehellmanparameters.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslellipticcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslkey.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qudpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QJsonDocument \
+		../DLLRestAPI/url.h \
+		../DLLRestAPI/singleton.h \
+		../DLLRestAPI/configurations.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCoreApplication \
+		../DLLRestAPI/login.h \
+		../DLLRestAPI/saldo.h \
+		../DLLRestAPI/tilitapahtumat.h \
+		../DLLRestAPI/putsaldo.h \
+		../DLLRestAPI/posttilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
 		debug/moc_predefs.h \
 		X:/Koodaus/5.15.2/mingw81_32/bin/moc.exe
 	X:\Koodaus\5.15.2\mingw81_32\bin\moc.exe $(DEFINES) --include "X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/exe/debug/moc_predefs.h" -IX:/Koodaus/5.15.2/mingw81_32/mkspecs/win32-g++ -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/exe" -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/DLLPinCode" -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/DLLRestAPI" -IX:/Koodaus/5.15.2/mingw81_32/include -IX:/Koodaus/5.15.2/mingw81_32/include/QtWidgets -IX:/Koodaus/5.15.2/mingw81_32/include/QtGui -IX:/Koodaus/5.15.2/mingw81_32/include/QtANGLE -IX:/Koodaus/5.15.2/mingw81_32/include/QtNetwork -IX:/Koodaus/5.15.2/mingw81_32/include/QtCore -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++ -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32 -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed -IX:/Koodaus/Tools/mingw810_32/i686-w64-mingw32/include selaatilitapahtumia.h -o debug\moc_selaatilitapahtumia.cpp
@@ -1493,15 +2111,10 @@ debug/kirjaudusisaan.o: kirjaudusisaan.cpp kirjaudusisaan.h \
 		nostarahaa.h \
 		omasumma.h \
 		selaatilitapahtumia.h \
-		naytasaldo.h \
-		../DLLPinCode/dllpincode.h \
-		../DLLPinCode/DLLPinCode_global.h \
-		../DLLPinCode/dialog.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
 		../DLLRestAPI/dllrestapi.h \
 		../DLLRestAPI/DLLRestAPI_global.h \
 		../DLLRestAPI/asiakas.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetwork \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetworkDepends \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCore \
@@ -1699,19 +2312,15 @@ debug/kirjaudusisaan.o: kirjaudusisaan.cpp kirjaudusisaan.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
-		ui_kirjaudusisaan.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLabel \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlabel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qframe.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h
+		../DLLRestAPI/putsaldo.h \
+		../DLLRestAPI/posttilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
+		naytasaldo.h \
+		../DLLPinCode/dllpincode.h \
+		../DLLPinCode/DLLPinCode_global.h \
+		../DLLPinCode/dialog.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
+		ui_kirjaudusisaan.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\kirjaudusisaan.o kirjaudusisaan.cpp
 
 debug/main.o: main.cpp mainwindow.h \
@@ -1828,15 +2437,10 @@ debug/main.o: main.cpp mainwindow.h \
 		nostarahaa.h \
 		omasumma.h \
 		selaatilitapahtumia.h \
-		naytasaldo.h \
-		../DLLPinCode/dllpincode.h \
-		../DLLPinCode/DLLPinCode_global.h \
-		../DLLPinCode/dialog.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
 		../DLLRestAPI/dllrestapi.h \
 		../DLLRestAPI/DLLRestAPI_global.h \
 		../DLLRestAPI/asiakas.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetwork \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetworkDepends \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCore \
@@ -2034,6 +2638,14 @@ debug/main.o: main.cpp mainwindow.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		../DLLRestAPI/putsaldo.h \
+		../DLLRestAPI/posttilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
+		naytasaldo.h \
+		../DLLPinCode/dllpincode.h \
+		../DLLPinCode/DLLPinCode_global.h \
+		../DLLPinCode/dialog.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
@@ -2155,15 +2767,10 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		nostarahaa.h \
 		omasumma.h \
 		selaatilitapahtumia.h \
-		naytasaldo.h \
-		../DLLPinCode/dllpincode.h \
-		../DLLPinCode/DLLPinCode_global.h \
-		../DLLPinCode/dialog.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
 		../DLLRestAPI/dllrestapi.h \
 		../DLLRestAPI/DLLRestAPI_global.h \
 		../DLLRestAPI/asiakas.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetwork \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetworkDepends \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCore \
@@ -2361,25 +2968,15 @@ debug/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
-		ui_mainwindow.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QAction \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qaction.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qactiongroup.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QMenu \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qmenu.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QMenuBar \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qmenubar.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QStatusBar \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qstatusbar.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QWidget
+		../DLLRestAPI/putsaldo.h \
+		../DLLRestAPI/posttilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
+		naytasaldo.h \
+		../DLLPinCode/dllpincode.h \
+		../DLLPinCode/DLLPinCode_global.h \
+		../DLLPinCode/dialog.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o mainwindow.cpp
 
 debug/naytasaldo.o: naytasaldo.cpp naytasaldo.h \
@@ -2487,46 +3084,211 @@ debug/naytasaldo.o: naytasaldo.cpp naytasaldo.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfiledevice.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qvector2d.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
-		ui_naytasaldo.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVariant \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
+		../DLLRestAPI/dllrestapi.h \
+		../DLLRestAPI/DLLRestAPI_global.h \
+		../DLLRestAPI/asiakas.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetwork \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetworkDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCore \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCoreDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracteventdispatcher.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventloop.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLabel \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlabel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qframe.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLineEdit \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlineedit.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextcursor.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextformat.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qpen.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextoption.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QListWidget \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlistwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlistview.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractitemview.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractscrollarea.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractitemmodel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qitemselectionmodel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractitemdelegate.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qstyleoption.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractspinbox.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qvalidator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractnativeeventfilter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracttransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydataops.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydatapointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbasictimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbitarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbuffer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbytearraymatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcalendar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdatetime.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborcommon.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qregularexpression.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qslider.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractslider.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qstyle.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qtabbar.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qtabwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qrubberband.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/quuid.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcbormap.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamreader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfloat16.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamwriter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcollator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineoption.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineparser.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qconcatenatetablesproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcryptographichash.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdeadlinetimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qelapsedtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdiriterator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeasingcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qendian.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventtransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qexception.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfactoryinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileselector.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QStringList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfilesystemwatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfinalstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuture.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfutureinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrunnable.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresultstore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturesynchronizer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturewatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qhistorystate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qidentityproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qisenum.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qitemselectionmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsondocument.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibrary.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibraryinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qversionnumber.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlinkedlist.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlockfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qloggingcategory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmath.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmessageauthenticationcode.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmetaobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedata.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedatabase.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimetype.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qobjectcleanuphandler.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qoperatingsystemversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qparallelanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpauseanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qplugin.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpluginloader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qprocess.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpropertyanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qvariantanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qqueue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrandom.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qreadwritelock.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresource.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsavefile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopedvaluerollback.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopeguard.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsequentialanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsettings.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsharedmemory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignalmapper.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignaltransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsocketnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsortfilterproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstack.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstandardpaths.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstatemachine.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstorageinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstringlistmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsystemsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporarydir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporaryfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextboundaryfinder.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextcodec.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthread.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadpool.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadstorage.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimeline.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimezone.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtranslator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtransposeproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtypetraits.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwaitcondition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDeadlineTimer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwineventnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qxmlstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtcoreversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkglobal.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetwork-config.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractnetworkcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkrequest.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QSharedDataPointer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QString \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QUrl \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVariant \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdnslookup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdtls.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslerror.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssl.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QFlags \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostaddress.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhstspolicy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttp2configuration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttpmultipart.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QByteArray \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QIODevice \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkRequest \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkaccessmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVector \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslConfiguration \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QMetaType \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfigmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookie.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookiejar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdatagram.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdiskcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkproxy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkreply.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkAccessManager \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworksession.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qocspresponse.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qpassworddigestor.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCryptographicHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificateextension.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcipher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssldiffiehellmanparameters.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslellipticcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslkey.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qudpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QJsonDocument \
+		../DLLRestAPI/url.h \
+		../DLLRestAPI/singleton.h \
+		../DLLRestAPI/configurations.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCoreApplication \
+		../DLLRestAPI/login.h \
+		../DLLRestAPI/saldo.h \
+		../DLLRestAPI/tilitapahtumat.h \
+		../DLLRestAPI/putsaldo.h \
+		../DLLRestAPI/posttilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
+		ui_naytasaldo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\naytasaldo.o naytasaldo.cpp
 
 debug/nostarahaa.o: nostarahaa.cpp nostarahaa.h \
@@ -2635,19 +3397,7 @@ debug/nostarahaa.o: nostarahaa.cpp nostarahaa.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qvector2d.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
 		omasumma.h \
-		ui_nostarahaa.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVariant \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventloop.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h
+		ui_nostarahaa.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\nostarahaa.o nostarahaa.cpp
 
 debug/omasumma.o: omasumma.cpp omasumma.h \
@@ -2755,28 +3505,7 @@ debug/omasumma.o: omasumma.cpp omasumma.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfiledevice.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qvector2d.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
-		ui_omasumma.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVariant \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventloop.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLabel \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlabel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qframe.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLineEdit \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlineedit.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextcursor.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextformat.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qpen.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextoption.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h
+		ui_omasumma.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\omasumma.o omasumma.cpp
 
 debug/pankkimenu.o: pankkimenu.cpp pankkimenu.h \
@@ -2887,27 +3616,212 @@ debug/pankkimenu.o: pankkimenu.cpp pankkimenu.h \
 		nostarahaa.h \
 		omasumma.h \
 		selaatilitapahtumia.h \
-		naytasaldo.h \
-		ui_pankkimenu.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVariant \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
+		../DLLRestAPI/dllrestapi.h \
+		../DLLRestAPI/DLLRestAPI_global.h \
+		../DLLRestAPI/asiakas.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetwork \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetworkDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCore \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCoreDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracteventdispatcher.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventloop.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLineEdit \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlineedit.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qframe.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextcursor.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextformat.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qpen.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextoption.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractitemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractnativeeventfilter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracttransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydataops.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydatapointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbasictimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbitarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbuffer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbytearraymatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcalendar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdatetime.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborcommon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qregularexpression.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/quuid.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcbormap.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamreader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfloat16.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamwriter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcollator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineoption.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineparser.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qconcatenatetablesproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcryptographichash.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdeadlinetimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qelapsedtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdiriterator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeasingcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qendian.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventtransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qexception.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfactoryinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileselector.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QStringList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfilesystemwatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfinalstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuture.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfutureinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrunnable.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresultstore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturesynchronizer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturewatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qhistorystate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qidentityproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qisenum.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qitemselectionmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsondocument.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibrary.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibraryinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qversionnumber.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlinkedlist.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlockfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qloggingcategory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmath.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmessageauthenticationcode.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmetaobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedata.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedatabase.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimetype.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qobjectcleanuphandler.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qoperatingsystemversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qparallelanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpauseanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qplugin.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpluginloader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qprocess.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpropertyanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qvariantanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qqueue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrandom.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qreadwritelock.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresource.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsavefile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopedvaluerollback.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopeguard.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsequentialanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsettings.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsharedmemory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignalmapper.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignaltransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsocketnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsortfilterproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstack.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstandardpaths.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstatemachine.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstorageinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstringlistmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsystemsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporarydir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporaryfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextboundaryfinder.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextcodec.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthread.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadpool.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadstorage.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimeline.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimezone.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtranslator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtransposeproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtypetraits.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwaitcondition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDeadlineTimer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwineventnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qxmlstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtcoreversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkglobal.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetwork-config.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractnetworkcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkrequest.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QSharedDataPointer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QString \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QUrl \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVariant \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdnslookup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdtls.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslerror.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssl.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QFlags \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostaddress.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhstspolicy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttp2configuration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttpmultipart.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QByteArray \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QIODevice \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkRequest \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkaccessmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVector \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslConfiguration \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QMetaType \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfigmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookie.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookiejar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdatagram.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdiskcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkproxy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkreply.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkAccessManager \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworksession.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qocspresponse.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qpassworddigestor.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCryptographicHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificateextension.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcipher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssldiffiehellmanparameters.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslellipticcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslkey.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qudpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QJsonDocument \
+		../DLLRestAPI/url.h \
+		../DLLRestAPI/singleton.h \
+		../DLLRestAPI/configurations.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCoreApplication \
+		../DLLRestAPI/login.h \
+		../DLLRestAPI/saldo.h \
+		../DLLRestAPI/tilitapahtumat.h \
+		../DLLRestAPI/putsaldo.h \
+		../DLLRestAPI/posttilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
+		naytasaldo.h \
+		ui_pankkimenu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\pankkimenu.o pankkimenu.cpp
 
 debug/selaatilitapahtumia.o: selaatilitapahtumia.cpp selaatilitapahtumia.h \
@@ -3015,42 +3929,211 @@ debug/selaatilitapahtumia.o: selaatilitapahtumia.cpp selaatilitapahtumia.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfiledevice.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qvector2d.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtouchdevice.h \
-		ui_selaatilitapahtumia.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVariant \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
+		../DLLRestAPI/dllrestapi.h \
+		../DLLRestAPI/DLLRestAPI_global.h \
+		../DLLRestAPI/asiakas.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QObject \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetwork \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QtNetworkDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCore \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QtCoreDepends \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracteventdispatcher.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventloop.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLabel \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlabel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qframe.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QListWidget \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlistwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlistview.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractitemview.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractscrollarea.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractitemmodel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qitemselectionmodel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractitemdelegate.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qstyleoption.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractspinbox.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qvalidator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractnativeeventfilter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstractstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qabstracttransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydataops.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qarraydatapointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbasictimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbitarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbuffer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qbytearraymatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcalendar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdatetime.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborcommon.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qregularexpression.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qslider.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractslider.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qstyle.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qtabbar.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qtabwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qrubberband.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QSpinBox \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qspinbox.h
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/quuid.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcbormap.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamreader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfloat16.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcborstreamwriter.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcollator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineoption.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcommandlineparser.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcoreapplication.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qconcatenatetablesproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qcryptographichash.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdeadlinetimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qelapsedtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qdiriterator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeasingcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qendian.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qeventtransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qexception.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfactoryinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfileselector.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QStringList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfilesystemwatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfinalstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuture.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfutureinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrunnable.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresultstore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturesynchronizer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qfuturewatcher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qhistorystate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qidentityproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qisenum.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qitemselectionmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonarray.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonvalue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsondocument.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qjsonobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibrary.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlibraryinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qversionnumber.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlinkedlist.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qlockfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qloggingcategory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmath.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmessageauthenticationcode.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmetaobject.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedata.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimedatabase.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qmimetype.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qobjectcleanuphandler.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qoperatingsystemversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qparallelanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpauseanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qplugin.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpointer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpluginloader.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qprocess.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qpropertyanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qvariantanimation.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qqueue.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qrandom.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qreadwritelock.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qresource.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsavefile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopedvaluerollback.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qscopeguard.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsequentialanimationgroup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsettings.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsharedmemory.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignalmapper.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsignaltransition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsocketnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsortfilterproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstack.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstandardpaths.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstatemachine.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstorageinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qstringlistmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qsystemsemaphore.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporarydir.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtemporaryfile.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextboundaryfinder.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtextcodec.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthread.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadpool.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qthreadstorage.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimeline.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimer.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtimezone.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtranslator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtransposeproxymodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtypetraits.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwaitcondition.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDeadlineTimer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qwineventnotifier.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qxmlstream.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/qtcoreversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkglobal.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetwork-config.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractnetworkcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkrequest.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QSharedDataPointer \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QString \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QUrl \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVariant \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qabstractsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdnslookup.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qdtls.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslerror.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificate.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssl.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QFlags \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostaddress.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhostinfo.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhstspolicy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttp2configuration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qhttpmultipart.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QByteArray \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QIODevice \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkRequest \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qlocalsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkaccessmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QVector \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslConfiguration \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QMetaType \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfigmanager.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkconfiguration.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookie.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QList \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkcookiejar.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdatagram.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkdiskcache.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkinterface.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkproxy.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworkreply.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/QNetworkAccessManager \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qnetworksession.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qocspresponse.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qpassworddigestor.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCryptographicHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtcpserver.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsctpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcertificateextension.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslcipher.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qssldiffiehellmanparameters.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslellipticcurve.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QHash \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qsslkey.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qudpsocket.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtNetwork/qtnetworkversion.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QJsonDocument \
+		../DLLRestAPI/url.h \
+		../DLLRestAPI/singleton.h \
+		../DLLRestAPI/configurations.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QCoreApplication \
+		../DLLRestAPI/login.h \
+		../DLLRestAPI/saldo.h \
+		../DLLRestAPI/tilitapahtumat.h \
+		../DLLRestAPI/putsaldo.h \
+		../DLLRestAPI/posttilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
+		ui_selaatilitapahtumia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\selaatilitapahtumia.o selaatilitapahtumia.cpp
 
 debug/moc_kirjaudusisaan.o: debug/moc_kirjaudusisaan.cpp 

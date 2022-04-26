@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include <qstring.h>
+#include "dllrestapi.h"
 
 namespace Ui {
 class selaatilitapahtumia;
@@ -26,6 +27,8 @@ private slots:
 private:
     Ui::selaatilitapahtumia *ui;
     int value = 1;
+    DLLRestAPI * pDLLRestAPI;
+
 };
 
 #endif // SELAATILITAPAHTUMIA_H
