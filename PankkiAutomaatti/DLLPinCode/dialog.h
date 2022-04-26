@@ -16,7 +16,7 @@ public:
     explicit Dialog(QWidget *parent = nullptr);
     ~Dialog();
 
-    void setCardNumber(QString);
+    void setCardNumber();
     void setDialogValue(QString);
 
     QString getDialogValue();

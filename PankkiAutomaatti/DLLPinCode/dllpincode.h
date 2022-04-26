@@ -12,7 +12,7 @@ public:
     DLLPINCODE_EXPORT DLLPinCode(QObject *parent = nullptr);
     ~DLLPinCode();
 
-    void DLLPINCODE_EXPORT openDllDialog(QString);
+    void DLLPINCODE_EXPORT openDllDialog();
     QString DLLPINCODE_EXPORT returnFromDll();
 
     Dialog *objectDialog;
