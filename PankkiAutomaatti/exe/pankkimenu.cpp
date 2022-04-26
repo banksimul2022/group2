@@ -25,6 +25,7 @@ void pankkimenu::on_pushButton_3_clicked()
 
 void pankkimenu::on_nosta_clicked()
 {
+    pnostarahaa -> startUpdate();
     pnostarahaa -> exec();
 }
 
