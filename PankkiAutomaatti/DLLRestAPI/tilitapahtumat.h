@@ -24,6 +24,7 @@ public:
 
 private slots:
     void tilitapahtumatSlot(QNetworkReply *reply);
+    void setIDTilitapahtumat(int);
 
 private:
     QNetworkAccessManager * tilitapahtumatManager;
@@ -32,8 +33,8 @@ private:
 
     QString Kortinnumero, tilitapahtumat;
     QString base_url;
+    QString idTilitapahtumat;
     QByteArray webToken;
-    QString pvm, tapahtuma, summa;
 
     Url *objectUrl;
 

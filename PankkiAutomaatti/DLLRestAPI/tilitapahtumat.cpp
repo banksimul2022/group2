@@ -23,7 +23,7 @@ void Tilitapahtumat::setWebToken()
     Singleton * a = a->getSingletonInstance();
     Kortinnumero = a ->getSingletonCardNum();
 
-    QString site_url = objectUrl->getBase_url()+"/tilitapahtumat/"+Kortinnumero;
+    QString site_url = objectUrl->getBase_url()+"/tilitapahtumat/"+Kortinnumero+idTilitapahtumat;
     QNetworkRequest request((site_url));
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
@@ -51,12 +51,14 @@ void Tilitapahtumat::tilitapahtumatSlot(QNetworkReply *reply)
 
        foreach (const QJsonValue &value, json_array) {
            QJsonObject json_obj = value.toObject();
-           tilitapahtumat+="Päivämäärä: "+json_obj["PVM"].toString()+"\r"+"Tapahtuma: "+json_obj["Tapahtuma"].toString()+"\r"+"Summa: "+QString::number(json_obj["Summa"].toInt())+"\r";
-           pvm=json_obj["PVM"].toString();
-           tapahtuma=json_obj["Tapahtuma"].toString();
-           summa=QString::number(json_obj["Summa"].toInt());
+           tilitapahtumat+="Päivämäärä: "+json_obj["PVM"].toString()+"\r"+"Tapahtuma: "+json_obj["Tapahtuma"].toString()+"\r"+"Summa: "+QString::number(json_obj["Summa"].toInt())+"\n\n";
        }
 
        //qDebug()<<tilitapahtumat;
        emit sendTilitapahtumat(tilitapahtumat);
+}
+
+void Tilitapahtumat::setIDTilitapahtumat(int tulevaID)
+{
+    idTilitapahtumat = tulevaID;
 }
