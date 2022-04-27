@@ -1,4 +1,6 @@
 QT -= gui
+QT += serialport
+
 
 TEMPLATE = lib
 DEFINES += DLLSERIALPORT_LIBRARY
@@ -10,11 +12,13 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    dllserialport.cpp
+    dllserialport.cpp \
+    serialengine.cpp
 
 HEADERS += \
     DLLSerialPort_global.h \
-    dllserialport.h
+    dllserialport.h \
+    serialengine.h
 
 # Default rules for deployment.
 unix {

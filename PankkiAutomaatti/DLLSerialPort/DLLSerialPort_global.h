@@ -4,7 +4,7 @@
 #include <QtCore/qglobal.h>
 
 #if defined(DLLSERIALPORT_LIBRARY)
-#  define DLLSERIALPORT_EXPORT Q_DECL_EXPORT
+#define DLLSERIALPORT_EXPORT Q_DECL_EXPORT
 #else
 #  define DLLSERIALPORT_EXPORT Q_DECL_IMPORT
 #endif
