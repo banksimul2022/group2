@@ -17,6 +17,10 @@ public:
     ~naytasaldo();
     void getAsiakas();
 
+    void getSaldo();
+
+    void getTilitapahtumat();
+
 private slots:
     void on_pushButton_clicked();
 
@@ -24,10 +28,16 @@ private slots:
 
     void slotAsiakas(QString);
 
+    void slotSaldo(QString);
+
+    void slotTilitapahtumat(QString);
+
 private:
     Ui::naytasaldo *ui;
     DLLRestAPI * pDLLRestAPI;
     QString Asiakas;
+    QString Saldo;
+    QString Tilitapahtumat;
 };
 
 #endif // NAYTASALDO_H

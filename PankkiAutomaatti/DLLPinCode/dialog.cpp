@@ -6,12 +6,14 @@ Dialog::Dialog(QWidget *parent) :
     ui(new Ui::Dialog)
 {
     ui->setupUi(this);
+    ui->labeltries->setNum(yritykset);
 }
 
 Dialog::~Dialog()
 {
     qDebug()<<"dialog.cpp tuhoajassa";
     yritykset=3;
+    ui->labeltries->setNum(yritykset);
     delete ui;
     ui = nullptr;
 }
@@ -45,10 +47,8 @@ void Dialog::CheckPWD(QString x)
     qDebug()<<"Ei ole enää CheckPWD slotissa";
 }
 
-void Dialog::setCardNumber(QString cardnumber)
+void Dialog::setCardNumber()
 {
-    Kortinnumero=cardnumber;
-    ui->labelkortti->setText(Kortinnumero);
     ui->labeltries->setNum(yritykset);
 }
 

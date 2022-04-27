@@ -12,15 +12,8 @@ DLLPinCode::~DLLPinCode()
     objectDialog = nullptr;
 }
 
-void DLLPinCode::openDllDialog(QString kortinnumero)
+void DLLPinCode::openDllDialog()
 {
-    qDebug()<<kortinnumero;
-
-
-    objectDialog->setCardNumber(kortinnumero);
-
-    qDebug()<<"setCardNumber funktio tehty";
-
     objectDialog->exec();
     dllValue=objectDialog->getDialogValue();
 }
