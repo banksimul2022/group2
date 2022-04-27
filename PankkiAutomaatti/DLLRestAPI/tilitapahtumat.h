@@ -5,6 +5,8 @@
 #include <QtNetwork>
 #include <QNetworkAccessManager>
 #include <QJsonDocument>
+#include <QStandardItem>
+#include <QStandardItemModel>
 
 #include "url.h"
 #include "singleton.h"
@@ -16,6 +18,8 @@ public:
     explicit Tilitapahtumat(QObject *parent = nullptr);
     ~Tilitapahtumat();
     void setWebToken();
+    void asiakasLista();
+
     QString getTilitapahtumat();
 
 private slots:
@@ -29,6 +33,7 @@ private:
     QString Kortinnumero, tilitapahtumat;
     QString base_url;
     QByteArray webToken;
+    QString pvm, tapahtuma, summa;
 
     Url *objectUrl;
 
