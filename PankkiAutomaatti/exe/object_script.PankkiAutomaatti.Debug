@@ -1,3 +1,4 @@
+debug/errorsivu.o
 debug/kirjaudusisaan.o
 debug/main.o
 debug/mainwindow.o
@@ -6,6 +7,7 @@ debug/nostarahaa.o
 debug/omasumma.o
 debug/pankkimenu.o
 debug/selaatilitapahtumia.o
+debug/moc_errorsivu.o
 debug/moc_kirjaudusisaan.o
 debug/moc_mainwindow.o
 debug/moc_naytasaldo.o

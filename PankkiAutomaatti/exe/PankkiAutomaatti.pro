@@ -9,6 +9,7 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    errorsivu.cpp \
     kirjaudusisaan.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -19,6 +20,7 @@ SOURCES += \
     selaatilitapahtumia.cpp
 
 HEADERS += \
+    errorsivu.h \
     kirjaudusisaan.h \
     mainwindow.h \
     naytasaldo.h \
@@ -28,6 +30,7 @@ HEADERS += \
     selaatilitapahtumia.h
 
 FORMS += \
+    errorsivu.ui \
     kirjaudusisaan.ui \
     mainwindow.ui \
     naytasaldo.ui \

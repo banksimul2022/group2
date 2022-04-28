@@ -1,3 +1,4 @@
+release/errorsivu.o
 release/kirjaudusisaan.o
 release/main.o
 release/mainwindow.o
@@ -6,6 +7,7 @@ release/nostarahaa.o
 release/omasumma.o
 release/pankkimenu.o
 release/selaatilitapahtumia.o
+release/moc_errorsivu.o
 release/moc_kirjaudusisaan.o
 release/moc_mainwindow.o
 release/moc_naytasaldo.o

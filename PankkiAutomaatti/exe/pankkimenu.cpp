@@ -38,7 +38,7 @@ void pankkimenu::on_selaa_clicked()
 
 void pankkimenu::on_naytasaldo_clicked()
 {
-    pnaytasaldo->getAsiakas();
+    pnaytasaldo -> getAsiakas();
     pnaytasaldo -> exec();
 }
 
