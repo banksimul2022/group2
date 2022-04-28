@@ -53,11 +53,11 @@ void nostarahaa::on_kaksikymmenta_clicked()
 {
     summa = 20;
     loppuSaldo = muutettuSaldo - summa;
-    qDebug() << loppuSaldo;
     if (loppuSaldo <= -1){
         perrorsivu -> exec();
     }
     else{
+    qDebug() << loppuSaldo;
     emit sendLoppuSaldo(loppuSaldo);
     emit sendSumma(summa);
 
@@ -70,11 +70,11 @@ void nostarahaa::on_neljakymmenta_clicked()
 {
     summa = 40;
     loppuSaldo = muutettuSaldo - summa;
-    qDebug() << loppuSaldo;
     if (loppuSaldo <= -1){
         perrorsivu -> exec();
     }
     else{
+    qDebug() << loppuSaldo;
     emit sendLoppuSaldo(loppuSaldo);
     emit sendSumma(summa);
     pDLLRestAPI->startPutSaldo();
@@ -86,11 +86,11 @@ void nostarahaa::on_kuusikymmenta_clicked()
 {
     summa = 60;
     loppuSaldo = muutettuSaldo - summa;
-    qDebug() << loppuSaldo;
     if (loppuSaldo <= -1){
         perrorsivu -> exec();
     }
     else{
+    qDebug() << loppuSaldo;
     emit sendLoppuSaldo(loppuSaldo);
     emit sendSumma(summa);
     pDLLRestAPI->startPutSaldo();
@@ -102,11 +102,11 @@ void nostarahaa::on_sata_clicked()
 {
     summa = 100;
     loppuSaldo = muutettuSaldo - summa;
-    qDebug() << loppuSaldo;
     if (loppuSaldo <= -1){
         perrorsivu -> exec();
     }
     else{
+    qDebug() << loppuSaldo;
     emit sendLoppuSaldo(loppuSaldo);
     emit sendSumma(summa);
     pDLLRestAPI->startPutSaldo();
@@ -123,6 +123,7 @@ void nostarahaa::on_viisisataa_clicked()
         perrorsivu -> exec();
     }
     else{
+    qDebug() << loppuSaldo;
     emit sendLoppuSaldo(loppuSaldo);
     emit sendSumma(summa);
     pDLLRestAPI->startPutSaldo();

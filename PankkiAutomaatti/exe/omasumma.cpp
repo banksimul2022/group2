@@ -39,14 +39,16 @@ void omasumma::on_pushButton_2_clicked()
     QString ekasumma = ui->lineEdit->text();
     double summa = ekasumma.toDouble();
     loppuSaldo = muutettuSaldo - summa;
-    qDebug() << loppuSaldo;
     if (loppuSaldo <= -1){
         perrorsivu -> exec();
     }
+    else{
+    qDebug() << loppuSaldo;
     emit sendLoppuSaldo(loppuSaldo);
     emit sendSumma(summa);
     pDLLRestAPI->startPutSaldo();
     pDLLRestAPI->startPostTilitapahtumat();
+    }
 }
 
 void omasumma::saldoSlot(QString saatuSaldo)
