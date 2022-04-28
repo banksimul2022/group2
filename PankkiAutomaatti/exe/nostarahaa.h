@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "omasumma.h"
 #include "dllrestapi.h"
+#include "errorsivu.h"
 namespace Ui {
 class nostarahaa;
 }
@@ -39,6 +40,7 @@ private:
     Ui::nostarahaa *ui;
     omasumma * pomasumma;
     DLLRestAPI * pDLLRestAPI;
+    errorsivu * perrorsivu;
 
     QString alkuSaldo;
     double loppuSaldo, muutettuSaldo, summa;

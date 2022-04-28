@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "dllrestapi.h"
+#include "errorsivu.h"
 
 namespace Ui {
 class omasumma;
@@ -31,6 +32,7 @@ private:
     DLLRestAPI * pDLLRestAPI;
     double loppuSaldo, muutettuSaldo, summa;
     QString alkuSaldo;
+    errorsivu * perrorsivu;
 
 signals:
     void sendLoppuSaldo(double);

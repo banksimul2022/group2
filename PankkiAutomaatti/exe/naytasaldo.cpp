@@ -7,6 +7,8 @@ naytasaldo::naytasaldo(QWidget *parent) :
 {
     ui->setupUi(this);
     pDLLRestAPI = new DLLRestAPI;
+    getAsiakas();
+
 
     connect( pDLLRestAPI->objectAsiakas, SIGNAL( sendAsiakas(QString)), this, SLOT(slotAsiakas(QString)));
 

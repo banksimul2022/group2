@@ -7,6 +7,7 @@ omasumma::omasumma(QWidget *parent) :
 {
     ui->setupUi(this);
     pDLLRestAPI = new DLLRestAPI;
+    perrorsivu = new errorsivu;
 
     connect(pDLLRestAPI->objectSaldo, SIGNAL(sendSaldo(QString)), this, SLOT(saldoSlot(QString)));
     connect(this, SIGNAL(sendLoppuSaldo(double)), pDLLRestAPI->objectPutSaldo, SLOT(getLoppuSaldo(double)));
@@ -39,6 +40,9 @@ void omasumma::on_pushButton_2_clicked()
     double summa = ekasumma.toDouble();
     loppuSaldo = muutettuSaldo - summa;
     qDebug() << loppuSaldo;
+    if (loppuSaldo <= -1){
+        perrorsivu -> exec();
+    }
     emit sendLoppuSaldo(loppuSaldo);
     emit sendSumma(summa);
     pDLLRestAPI->startPutSaldo();
