@@ -16,6 +16,7 @@ class selaatilitapahtumia : public QDialog
 public:
     explicit selaatilitapahtumia(QWidget *parent = nullptr);
     ~selaatilitapahtumia();
+    void sendsignal(int);
 
 private slots:
     void on_palaamenuuntilitapahtumat_clicked();
@@ -24,10 +25,17 @@ private slots:
 
     void on_seuraava_clicked();
 
+    void slotTilitapahtumat(QString);
+
 private:
     Ui::selaatilitapahtumia *ui;
     int value = 1;
+    int idarvo = 11;
     DLLRestAPI * pDLLRestAPI;
+    QString tilitapahtumat;
+
+signals:
+    void tilitapahtumaid(int);
 
 };
 
