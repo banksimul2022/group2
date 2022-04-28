@@ -11,18 +11,20 @@ router.get('/:Kortinnumero?',
       } else {
         response.json(dbResult);
       }
-    });
-  } /*else {
-    tilitapahtumat.getSaldo(request.params.Kortinnumero,function(err, dbResult) {
-      if (err) {
-        response.json(err);
-      } else {
-        response.json(dbResult);
-      }
-    });
-  } */
-});
+    })}
+  });
 
+  router.get('/:Kortinnumero?/:idTilitapahtumat?',
+  function(request, response) {
+   if (request.params.Kortinnumero) {
+     tilitapahtumat.ten(request.params.Kortinnumero,request.params.idTilitapahtumat, function(err, dbResult) {
+       if (err) {
+         response.json(err);
+       } else {
+         response.json(dbResult);
+       }
+     })}
+   });
 
 router.post('/', 
 function(request, response) {
