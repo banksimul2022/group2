@@ -61,6 +61,6 @@ void Asiakas::asiakasSlot(QNetworkReply *reply)
 
        emit sendAsiakas(asiakas);
        emit sendNimi(nimi);
-       qDebug()<<nimi;
-       //qDebug()<<asiakas;
+       //qDebug()<<nimi;
+       qDebug()<<"Asiakkaan tiedot: "+asiakas;
 }
