@@ -19,9 +19,11 @@ public:
 private:
     QString cardSerialNumber;
     QSerialPort *objectQSerialPort;
+    short SignalCounter;
 
 signals:
     void readySignal();
+    void sendCardSerialNumber(QString);
 
 private slots:
     void readPort();

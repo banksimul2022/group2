@@ -20,6 +20,8 @@ SerialEngine::SerialEngine(QObject *parent) : QObject(parent)
         qDebug()<<"Serial open ok";
 
     }
+    SignalCounter =0;
+    cardSerialNumber = "";
 }
 
 SerialEngine::~SerialEngine()
@@ -46,7 +48,16 @@ QString SerialEngine::returnCardNumber()
 
 void SerialEngine::readPort()
 {
-     qDebug()<<"ReadAll readPort slotissa" + objectQSerialPort->readAll();
-     cardSerialNumber = objectQSerialPort->readAll();
-     qDebug()<<"CardSerialNumber" + cardSerialNumber;
+    SignalCounter++;
+    // qDebug()<<"ReadAll readPort slotissa" + objectQSerialPort->readAll();
+     cardSerialNumber += objectQSerialPort->readAll();
+     qDebug()<<"CardSerialNumber: " + cardSerialNumber;
+
+     if (SignalCounter == 16){
+         SignalCounter = 0;
+         qDebug()<<"Tämä lähetetään: " + cardSerialNumber;
+         emit sendCardSerialNumber(cardSerialNumber);
+         cardSerialNumber = "";
+     }
+
 }
