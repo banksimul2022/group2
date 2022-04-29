@@ -9,9 +9,12 @@ nostarahaa::nostarahaa(QWidget *parent) :
     pomasumma = new omasumma;
     perrorsivu = new errorsivu;
     pDLLRestAPI = new DLLRestAPI;
+    pQTimer = new QTimer;
     startUpdate();
 
+    connect( pQTimer, SIGNAL(timeout()), this, SLOT(laskurinostaslot()));
 
+    pQTimer->start(10000);
 
 
     connect(pDLLRestAPI->objectSaldo, SIGNAL(sendSaldo(QString)), this, SLOT(saldoSlot(QString)));
@@ -35,6 +38,17 @@ void nostarahaa::startUpdate()
     pDLLRestAPI->startSaldo();
 }
 
+void nostarahaa::laskurinostaslot()
+{
+    qDebug() << "timer...";
+    if ( laskuri ==0){
+        close();
+    }
+    else{
+        laskuri = 0;
+    }
+}
+
 
 void nostarahaa::on_pushButton_7_clicked()
 {
@@ -51,6 +65,7 @@ void nostarahaa::on_oma_clicked()
 
 void nostarahaa::on_kaksikymmenta_clicked()
 {
+    laskuri = laskuri + 1;
     summa = 20;
     loppuSaldo = muutettuSaldo - summa;
     if (loppuSaldo <= -1){
@@ -68,6 +83,7 @@ void nostarahaa::on_kaksikymmenta_clicked()
 
 void nostarahaa::on_neljakymmenta_clicked()
 {
+    laskuri = laskuri + 1;
     summa = 40;
     loppuSaldo = muutettuSaldo - summa;
     if (loppuSaldo <= -1){
@@ -84,6 +100,7 @@ void nostarahaa::on_neljakymmenta_clicked()
 
 void nostarahaa::on_kuusikymmenta_clicked()
 {
+    laskuri = laskuri + 1;
     summa = 60;
     loppuSaldo = muutettuSaldo - summa;
     if (loppuSaldo <= -1){
@@ -100,6 +117,7 @@ void nostarahaa::on_kuusikymmenta_clicked()
 
 void nostarahaa::on_sata_clicked()
 {
+    laskuri = laskuri + 1;
     summa = 100;
     loppuSaldo = muutettuSaldo - summa;
     if (loppuSaldo <= -1){
@@ -116,6 +134,7 @@ void nostarahaa::on_sata_clicked()
 
 void nostarahaa::on_viisisataa_clicked()
 {
+    laskuri = laskuri + 1;
     summa = 500;
     loppuSaldo = muutettuSaldo - summa;
     qDebug() << loppuSaldo;

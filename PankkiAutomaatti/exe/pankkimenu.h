@@ -6,6 +6,7 @@
 #include "selaatilitapahtumia.h"
 #include "naytasaldo.h"
 #include "dllrestapi.h"
+#include <QTimer>
 
 namespace Ui {
 class pankkimenu;
@@ -18,6 +19,9 @@ class pankkimenu : public QDialog
 public:
     explicit pankkimenu(QWidget *parent = nullptr);
     ~pankkimenu();
+
+public slots:
+    void laskurislot();
 
 private slots:
     void on_pushButton_3_clicked();
@@ -34,6 +38,8 @@ private:
     nostarahaa * pnostarahaa;
     selaatilitapahtumia * pselaatilit;
     naytasaldo * pnaytasaldo;
+    QTimer * pQTimer;
+    int laskuri = 0;
 };
 
 #endif // PANKKIMENU_H

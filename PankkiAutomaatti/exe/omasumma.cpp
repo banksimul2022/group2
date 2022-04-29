@@ -8,6 +8,11 @@ omasumma::omasumma(QWidget *parent) :
     ui->setupUi(this);
     pDLLRestAPI = new DLLRestAPI;
     perrorsivu = new errorsivu;
+    pQTimer = new QTimer;
+
+    connect( pQTimer, SIGNAL(timeout()), this, SLOT(laskuriomaslot()));
+
+    pQTimer->start(10000);
 
     connect(pDLLRestAPI->objectSaldo, SIGNAL(sendSaldo(QString)), this, SLOT(saldoSlot(QString)));
     connect(this, SIGNAL(sendLoppuSaldo(double)), pDLLRestAPI->objectPutSaldo, SLOT(getLoppuSaldo(double)));
@@ -28,6 +33,17 @@ void omasumma::startUpdate()
     pDLLRestAPI->startSaldo();
 }
 
+void omasumma::laskuriomaslot()
+{
+    qDebug() << "timer...";
+    if ( laskuri ==0){
+        close();
+    }
+    else{
+        laskuri = 0;
+    }
+}
+
 void omasumma::on_pushButton_clicked()
 {
     close();
@@ -36,6 +52,7 @@ void omasumma::on_pushButton_clicked()
 
 void omasumma::on_pushButton_2_clicked()
 {
+    laskuri = laskuri + 1;
     QString ekasumma = ui->lineEdit->text();
     double summa = ekasumma.toDouble();
     loppuSaldo = muutettuSaldo - summa;

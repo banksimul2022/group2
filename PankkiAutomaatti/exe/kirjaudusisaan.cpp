@@ -13,11 +13,13 @@ kirjaudusisaan::kirjaudusisaan(QWidget *parent) :
 
     pPankkimenu = new pankkimenu;
 
+
     connect( pDLLPinCode->objectDialog, SIGNAL(pin(QString)), this, SLOT(pinkoodi(QString)));
 
     connect( pDLLRestAPI->objectLogin, SIGNAL(getTrueFalse(QString)), pDLLPinCode->objectDialog, SLOT (CheckPWD(QString)));
 
     connect( pDLLRestAPI->objectLogin, SIGNAL(getTrueFalse(QString)), this, SLOT(trueFalse(QString)));
+
 }
 
 kirjaudusisaan::~kirjaudusisaan()
@@ -32,7 +34,7 @@ kirjaudusisaan::~kirjaudusisaan()
 
 void kirjaudusisaan::on_VALIAIKANAPPI_clicked()
 {
-    pDLLPinCode->openDllDialog(kortnro);
+    pDLLPinCode->openDllDialog();
 }
 
 void kirjaudusisaan::trueFalse(QString TrueFalse)

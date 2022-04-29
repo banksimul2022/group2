@@ -568,6 +568,10 @@ release/moc_kirjaudusisaan.cpp: kirjaudusisaan.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
@@ -896,6 +900,9 @@ release/moc_mainwindow.cpp: mainwindow.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
@@ -1216,6 +1223,10 @@ release/moc_naytasaldo.cpp: naytasaldo.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
@@ -1530,6 +1541,10 @@ release/moc_nostarahaa.cpp: nostarahaa.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
@@ -1844,9 +1859,14 @@ release/moc_omasumma.cpp: omasumma.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
+		errorsivu.h \
 		release/moc_predefs.h \
 		X:/Koodaus/5.15.2/mingw81_32/bin/moc.exe
 	X:\Koodaus\5.15.2\mingw81_32\bin\moc.exe $(DEFINES) --include "X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/exe/release/moc_predefs.h" -IX:/Koodaus/5.15.2/mingw81_32/mkspecs/win32-g++ -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/exe" -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/DLLPinCode" -I"X:/Koulu(amk)/PROJEKTILAMMAS/group2/PankkiAutomaatti/DLLRestAPI" -IX:/Koodaus/5.15.2/mingw81_32/include -IX:/Koodaus/5.15.2/mingw81_32/include/QtWidgets -IX:/Koodaus/5.15.2/mingw81_32/include/QtGui -IX:/Koodaus/5.15.2/mingw81_32/include/QtANGLE -IX:/Koodaus/5.15.2/mingw81_32/include/QtNetwork -IX:/Koodaus/5.15.2/mingw81_32/include/QtCore -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++ -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32 -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include -IX:/Koodaus/Tools/mingw810_32/lib/gcc/i686-w64-mingw32/8.1.0/include-fixed -IX:/Koodaus/Tools/mingw810_32/i686-w64-mingw32/include omasumma.h -o release\moc_omasumma.cpp
@@ -2159,6 +2179,10 @@ release/moc_pankkimenu.cpp: pankkimenu.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
@@ -2475,6 +2499,10 @@ release/moc_selaatilitapahtumia.cpp: selaatilitapahtumia.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
@@ -2950,6 +2978,10 @@ release/kirjaudusisaan.o: kirjaudusisaan.cpp kirjaudusisaan.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
@@ -2960,19 +2992,7 @@ release/kirjaudusisaan.o: kirjaudusisaan.cpp kirjaudusisaan.h \
 		../DLLPinCode/DLLPinCode_global.h \
 		../DLLPinCode/dialog.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
-		ui_kirjaudusisaan.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLabel \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlabel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qframe.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h
+		ui_kirjaudusisaan.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\kirjaudusisaan.o kirjaudusisaan.cpp
 
 release/main.o: main.cpp mainwindow.h \
@@ -3289,6 +3309,9 @@ release/main.o: main.cpp mainwindow.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
@@ -3620,6 +3643,9 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
@@ -3630,25 +3656,7 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../DLLPinCode/DLLPinCode_global.h \
 		../DLLPinCode/dialog.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDebug \
-		ui_mainwindow.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QAction \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qaction.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qactiongroup.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QMenu \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qmenu.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QMenuBar \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qmenubar.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QStatusBar \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qstatusbar.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QWidget
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o mainwindow.cpp
 
 release/naytasaldo.o: naytasaldo.cpp naytasaldo.h \
@@ -3957,32 +3965,14 @@ release/naytasaldo.o: naytasaldo.cpp naytasaldo.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
-		ui_naytasaldo.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLabel \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlabel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qframe.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLineEdit \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlineedit.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextcursor.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextformat.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qpen.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextoption.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QTextEdit \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qtextedit.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractscrollarea.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextdocument.h
+		ui_naytasaldo.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\naytasaldo.o naytasaldo.cpp
 
 release/nostarahaa.o: nostarahaa.cpp nostarahaa.h \
@@ -4292,20 +4282,15 @@ release/nostarahaa.o: nostarahaa.cpp nostarahaa.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
 		errorsivu.h \
-		ui_nostarahaa.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h
+		ui_nostarahaa.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\nostarahaa.o nostarahaa.cpp
 
 release/omasumma.o: omasumma.cpp omasumma.h \
@@ -4614,28 +4599,15 @@ release/omasumma.o: omasumma.cpp omasumma.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
-		ui_omasumma.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLabel \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlabel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qframe.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLineEdit \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlineedit.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextcursor.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextformat.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qpen.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextoption.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h
+		errorsivu.h \
+		ui_omasumma.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\omasumma.o omasumma.cpp
 
 release/pankkimenu.o: pankkimenu.cpp pankkimenu.h \
@@ -4946,29 +4918,17 @@ release/pankkimenu.o: pankkimenu.cpp pankkimenu.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
 		errorsivu.h \
 		selaatilitapahtumia.h \
 		naytasaldo.h \
-		ui_pankkimenu.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLineEdit \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlineedit.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qframe.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextcursor.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextformat.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qpen.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qtextoption.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h
+		ui_pankkimenu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\pankkimenu.o pankkimenu.cpp
 
 release/selaatilitapahtumia.o: selaatilitapahtumia.cpp selaatilitapahtumia.h \
@@ -5277,39 +5237,14 @@ release/selaatilitapahtumia.o: selaatilitapahtumia.cpp selaatilitapahtumia.h \
 		../DLLRestAPI/login.h \
 		../DLLRestAPI/saldo.h \
 		../DLLRestAPI/tilitapahtumat.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItem \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qstandarditemmodel.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
+		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/QStandardItemModel \
 		../DLLRestAPI/putsaldo.h \
 		../DLLRestAPI/posttilitapahtumat.h \
 		X:/Koodaus/5.15.2/mingw81_32/include/QtCore/QDateTime \
-		ui_selaatilitapahtumia.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QApplication \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qdesktopwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qguiapplication.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qinputmethod.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QLabel \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlabel.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qframe.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QListWidget \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlistwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qlistview.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractitemview.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractscrollarea.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractitemdelegate.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qstyleoption.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractspinbox.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qvalidator.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtGui/qicon.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qslider.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractslider.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qstyle.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qtabbar.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qtabwidget.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qrubberband.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QPushButton \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qpushbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qabstractbutton.h \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/QSpinBox \
-		X:/Koodaus/5.15.2/mingw81_32/include/QtWidgets/qspinbox.h
+		ui_selaatilitapahtumia.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\selaatilitapahtumia.o selaatilitapahtumia.cpp
 
 release/moc_errorsivu.o: release/moc_errorsivu.cpp 

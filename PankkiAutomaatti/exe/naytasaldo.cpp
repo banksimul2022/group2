@@ -8,6 +8,11 @@ naytasaldo::naytasaldo(QWidget *parent) :
     ui->setupUi(this);
     pDLLRestAPI = new DLLRestAPI;
     getAsiakas();
+    pQTimer = new QTimer;
+
+    connect( pQTimer, SIGNAL(timeout()), this, SLOT(laskurinaytaslot()));
+
+    pQTimer->start(10000);
 
 
     connect( pDLLRestAPI->objectAsiakas, SIGNAL( sendAsiakas(QString)), this, SLOT(slotAsiakas(QString)));
@@ -27,6 +32,17 @@ void naytasaldo::getAsiakas()
     pDLLRestAPI->startAsiakas();
     pDLLRestAPI->startTilitapahtumat();
     pDLLRestAPI->startSaldo();
+}
+
+void naytasaldo::laskurinaytaslot()
+{
+    qDebug() << "timer...";
+    if ( laskuri ==0){
+        close();
+    }
+    else{
+        laskuri = 0;
+    }
 }
 
 void naytasaldo::on_pushButton_clicked()
