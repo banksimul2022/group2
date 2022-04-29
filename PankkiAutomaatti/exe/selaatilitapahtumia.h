@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <qstring.h>
 #include "dllrestapi.h"
+#include <QTimer>
 
 namespace Ui {
 class selaatilitapahtumia;
@@ -17,6 +18,9 @@ public:
     explicit selaatilitapahtumia(QWidget *parent = nullptr);
     ~selaatilitapahtumia();
     void sendsignal(int);
+
+public slots:
+    void laskuritilitslot();
 
 private slots:
     void on_palaamenuuntilitapahtumat_clicked();
@@ -33,6 +37,8 @@ private:
     int idarvo = 11;
     DLLRestAPI * pDLLRestAPI;
     QString tilitapahtumat;
+    QTimer * pQTimer;
+    int laskuri = 0;
 
 signals:
     void tilitapahtumaid(int);

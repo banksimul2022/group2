@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "dllrestapi.h"
+#include <QTimer>
 
 namespace Ui {
 class naytasaldo;
@@ -21,6 +22,9 @@ public:
 
     void getTilitapahtumat();
 
+public slots:
+    void laskurinaytaslot();
+
 private slots:
     void on_pushButton_clicked();
 
@@ -38,6 +42,8 @@ private:
     QString Asiakas;
     QString Saldo;
     QString Tilitapahtumat;
+    QTimer * pQTimer;
+    int laskuri = 0;
 };
 
 #endif // NAYTASALDO_H

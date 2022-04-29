@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "dllrestapi.h"
 #include "errorsivu.h"
+#include <QTimer>
 
 namespace Ui {
 class omasumma;
@@ -17,6 +18,9 @@ public:
     explicit omasumma(QWidget *parent = nullptr);
     ~omasumma();
     void startUpdate();
+
+public slots:
+    void laskuriomaslot();
 
 private slots:
     void on_pushButton_clicked();
@@ -33,6 +37,8 @@ private:
     double loppuSaldo, muutettuSaldo, summa;
     QString alkuSaldo;
     errorsivu * perrorsivu;
+    QTimer * pQTimer;
+    int laskuri = 0;
 
 signals:
     void sendLoppuSaldo(double);

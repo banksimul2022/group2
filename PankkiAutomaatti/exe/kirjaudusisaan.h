@@ -5,6 +5,7 @@
 #include "pankkimenu.h"
 #include "dllpincode.h"
 #include "dllrestapi.h"
+#include <QTimer>
 
 namespace Ui {
 class kirjaudusisaan;

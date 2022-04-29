@@ -5,6 +5,7 @@
 #include "omasumma.h"
 #include "dllrestapi.h"
 #include "errorsivu.h"
+#include <QTimer>
 namespace Ui {
 class nostarahaa;
 }
@@ -17,6 +18,9 @@ public:
     explicit nostarahaa(QWidget *parent = nullptr);
     ~nostarahaa();
     void startUpdate();
+
+public slots:
+    void laskurinostaslot();
 
 private slots:
     void on_pushButton_7_clicked();
@@ -41,6 +45,8 @@ private:
     omasumma * pomasumma;
     DLLRestAPI * pDLLRestAPI;
     errorsivu * perrorsivu;
+    QTimer * pQTimer;
+    int laskuri = 0;
 
     QString alkuSaldo;
     double loppuSaldo, muutettuSaldo, summa;
