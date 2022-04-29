@@ -41,6 +41,7 @@ void Dialog::CheckPWD(QString x)
     if (x!="false"){
         qDebug()<<"if lauseen sisällä";
         yritykset=3;
+        ui->labeltries->setNum(yritykset);
         QWidget::close();
     }
     qDebug()<<"If lauseen ohi mennyt";
@@ -81,5 +82,6 @@ void Dialog::on_btnSet_clicked()
 void Dialog::on_pushButton_clicked()
 {
     yritykset=3;
+    ui->labeltries->setNum(yritykset);
     QWidget::close();
 }
