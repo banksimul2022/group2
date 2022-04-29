@@ -52,7 +52,7 @@ void Saldo::saldoSlot(QNetworkReply *reply)
            idTili=QString::number(json_obj["idTili"].toInt());
        }
 
-       //qDebug()<<saldo;
+       qDebug()<<"Saldo DLL: "+saldo;
        qDebug()<<"Tässä on idKortti: " + idKortti + " ja tässä idTili: " + idTili;
        emit sendID(idKortti, idTili);
        emit sendSaldo(saldo);
