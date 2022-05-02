@@ -13,6 +13,7 @@ CONFIG += c++11
 SOURCES += \
     asiakas.cpp \
     configurations.cpp \
+    deletekortti.cpp \
     dllrestapi.cpp \
     login.cpp \
     posttilitapahtumat.cpp \
@@ -26,6 +27,7 @@ HEADERS += \
     DLLRestAPI_global.h \
     asiakas.h \
     configurations.h \
+    deletekortti.h \
     dllrestapi.h \
     login.h \
     posttilitapahtumat.h \
