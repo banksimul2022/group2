@@ -36,9 +36,9 @@ function(request, response) {
 });
 
 
-router.delete('/:id', 
+router.delete('/:Kortinnumero', 
 function(request, response) {
-  kortti.delete(request.params.id, function(err, dbResult) {
+  kortti.delete(request.params.Kortinnumero, function(err, dbResult) {
     if (err) {
       response.json(err);
     } else {

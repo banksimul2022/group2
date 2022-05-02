@@ -20,8 +20,8 @@ const kortti = {
       callback)
     });
   },
-  delete: function(id, callback) {
-    return db.query('delete from kortti where idKortti=?', [id], callback);
+  delete: function(Kortinnumero, callback) {
+    return db.query('delete from kortti where Kortinnumero=?', [Kortinnumero], callback);
   },
   update: function(id, kortti, callback) {
     bcrypt.hash(kortti.Pinkoodi, saltRounds, function(err, hash) {

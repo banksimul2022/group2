@@ -18,9 +18,6 @@ public:
     explicit Tilitapahtumat(QObject *parent = nullptr);
     ~Tilitapahtumat();
     void setWebToken();
-    void asiakasLista();
-
-    QString getTilitapahtumat();
 
 private slots:
     void tilitapahtumatSlot(QNetworkReply *reply);

@@ -8,6 +8,7 @@
 #include "tilitapahtumat.h"
 #include "putsaldo.h"
 #include "posttilitapahtumat.h"
+#include "deletekortti.h"
 #include <qstring.h>
 
 class DLLRESTAPI_EXPORT DLLRestAPI
@@ -32,6 +33,7 @@ public:
     Tilitapahtumat *objectTilitapahtumat;
     putSaldo *objectPutSaldo;
     postTilitapahtumat *objectPostTilitapahtumat;
+    DeleteKortti *objectDeleteKortti;
 
 
 private:   
