@@ -23,6 +23,8 @@ public:
 public slots:
     void laskurislot();
 
+    void rikokaikki();
+
 private slots:
     void on_pushButton_3_clicked();
 

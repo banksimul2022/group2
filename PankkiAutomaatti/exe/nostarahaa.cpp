@@ -95,6 +95,7 @@ void nostarahaa::on_neljakymmenta_clicked()
     emit sendSumma(summa);
     pDLLRestAPI->startPutSaldo();
     pDLLRestAPI->startPostTilitapahtumat();
+
     }
 }
 

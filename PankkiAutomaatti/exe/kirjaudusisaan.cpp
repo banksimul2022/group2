@@ -13,6 +13,10 @@ kirjaudusisaan::kirjaudusisaan(QWidget *parent) :
 
     pPankkimenu = new pankkimenu;
 
+    pDLLSerialPort = new DLLSerialPort;
+
+
+    connect( pDLLSerialPort->objectSerialEngine, SIGNAL(sendCardSerialNumber(QString)), this, SLOT(getCardNumber(QString)));
 
     connect( pDLLPinCode->objectDialog, SIGNAL(pin(QString)), this, SLOT(pinkoodi(QString)));
 
@@ -26,10 +30,19 @@ kirjaudusisaan::~kirjaudusisaan()
 {
     delete ui;
     delete pPankkimenu;
+    delete pDLLRestAPI;
+    delete pDLLPinCode;
+    delete pDLLSerialPort;
+    pDLLRestAPI = nullptr;
+    pDLLPinCode = nullptr;
     pPankkimenu = nullptr;
-    disconnect(pDLLPinCode->objectDialog, SIGNAL(pin(QString)), this, SLOT(pinkoodi(QString)));
+    pDLLSerialPort = nullptr;
+}
 
-    disconnect( this, SIGNAL(truefalse(QString)), pDLLPinCode->objectDialog, SLOT (checkPWD(QString)));
+void kirjaudusisaan::getCardNumber(QString x)
+{
+    qDebug()<<"getCardNumber slot";
+    ui-> label->setText(x);
 }
 
 void kirjaudusisaan::on_VALIAIKANAPPI_clicked()

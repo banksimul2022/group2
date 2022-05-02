@@ -6,6 +6,7 @@
 #include "dllpincode.h"
 #include "dllrestapi.h"
 #include <QTimer>
+#include "dllserialport.h"
 
 namespace Ui {
 class kirjaudusisaan;
@@ -18,6 +19,8 @@ class kirjaudusisaan : public QDialog
 public:
     explicit kirjaudusisaan(QWidget *parent = nullptr);
     ~kirjaudusisaan();
+public slots:
+    void getCardNumber(QString);
 
 private slots:
 
@@ -30,7 +33,11 @@ private:
     pankkimenu * pPankkimenu;
     DLLPinCode * pDLLPinCode;
     DLLRestAPI * pDLLRestAPI;
+    DLLSerialPort * pDLLSerialPort;
     QString kortnro = "1111111111";
+
+signals:
+    void sendCardSerialNumber(QString);
 };
 
 #endif // KIRJAUDUSISAAN_H
