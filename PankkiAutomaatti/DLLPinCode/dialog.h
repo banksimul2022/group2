@@ -25,6 +25,7 @@ signals:
     void pin(QString dllValue);
     void cardlocked();
     void loginClicked();
+    void loginok();
 
 public slots:
     void CheckPWD(QString);
