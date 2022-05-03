@@ -15,8 +15,8 @@ const kortti = {
   add: function(kortti, callback) {
     bcrypt.hash(kortti.Pinkoodi, saltRounds, function(err, hash){
     return db.query(
-      'insert into kortti (CVC,Kortinnumero,Vanhentumispäivä, Pinkoodi, Lukittu, idAsiakas, idTili) values(?,?,?,?,?,?,?)',
-      [kortti.CVC, kortti.Kortinnumero, kortti.Vanhentumispäivä, hash, kortti.Lukittu, kortti.idAsiakas, kortti.idTili],
+      'insert into kortti (CVC,Kortinnumero,Vanhentumispäivä, Pinkoodi, idAsiakas, idTili) values(?,?,?,?,?,?)',
+      [kortti.CVC, kortti.Kortinnumero, kortti.Vanhentumispäivä, hash, kortti.idAsiakas, kortti.idTili],
       callback)
     });
   },
