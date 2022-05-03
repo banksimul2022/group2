@@ -67,3 +67,11 @@ void pankkimenu::laskurislot()
         laskuri = 0;
     }
 }
+
+void pankkimenu::rikokaikki()
+{
+    close();
+    pnaytasaldo->close();
+    pnostarahaa->close();
+    pselaatilit->close();
+}

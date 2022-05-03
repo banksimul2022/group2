@@ -19,7 +19,7 @@ naytasaldo::naytasaldo(QWidget *parent) :
 
     connect( pDLLRestAPI->objectSaldo, SIGNAL( sendSaldo (QString)), this, SLOT(slotSaldo(QString)));
 
-    connect( pDLLRestAPI->objectTilitapahtumat, SIGNAL( sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
+    //connect( pDLLRestAPI->objectTilitapahtumat, SIGNAL( sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
 }
 
 naytasaldo::~naytasaldo()
@@ -29,6 +29,7 @@ naytasaldo::~naytasaldo()
 
 void naytasaldo::getAsiakas()
 {
+    connect( pDLLRestAPI->objectTilitapahtumat, SIGNAL( sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
     pDLLRestAPI->startAsiakas();
     pDLLRestAPI->startTilitapahtumat();
     pDLLRestAPI->startSaldo();
@@ -71,4 +72,5 @@ void naytasaldo::slotTilitapahtumat(QString tilitapahtumat)
 {
     Tilitapahtumat = tilitapahtumat;
     ui->tilitapahtumatedit->setText(Tilitapahtumat);
+    disconnect( pDLLRestAPI->objectTilitapahtumat, SIGNAL( sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
 }

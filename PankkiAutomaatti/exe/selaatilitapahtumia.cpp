@@ -8,15 +8,14 @@ selaatilitapahtumia::selaatilitapahtumia(QWidget *parent) :
     ui->setupUi(this);
     pDLLRestAPI = new DLLRestAPI;
     pQTimer = new QTimer;
-    /*qDebug()<<"JIFJEIFJEOFJEIOJFIEOFJIOJFEIOJFEIOJOEJIO PERKELE";
+    qDebug()<<"constructor";
+    pDLLRestAPI->startAsiakas();
+    pDLLRestAPI->startSaldo();
+
     connect( this, SIGNAL(tilitapahtumaid(int)), pDLLRestAPI->objectTilitapahtumat, SLOT(setIDTilitapahtumat(int)));
     connect(pDLLRestAPI->objectAsiakas, SIGNAL(sendAsiakas(QString)), this, SLOT(slotAsiakas(QString)));
     connect(pDLLRestAPI->objectSaldo, SIGNAL(sendSaldo(QString)), this, SLOT(slotSaldo(QString)));
-    connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
 
-    pDLLRestAPI->startAsiakas();
-    pDLLRestAPI->startSaldo();
-    sendsignal(idarvo);*/
     connect( pQTimer, SIGNAL(timeout()), this, SLOT(laskuritilitslot()));
 
     pQTimer->start(10000);
@@ -31,20 +30,11 @@ selaatilitapahtumia::~selaatilitapahtumia()
 
 void selaatilitapahtumia::sendsignal(int x)
 {
-
-    qDebug()<<"JIFJEIFJEOFJEIOJFIEOFJIOJFEIOJFEIOJOEJIO PERKELE";
-    connect( this, SIGNAL(tilitapahtumaid(int)), pDLLRestAPI->objectTilitapahtumat, SLOT(setIDTilitapahtumat(int)));
-    connect(pDLLRestAPI->objectAsiakas, SIGNAL(sendAsiakas(QString)), this, SLOT(slotAsiakas(QString)));
-    connect(pDLLRestAPI->objectSaldo, SIGNAL(sendSaldo(QString)), this, SLOT(slotSaldo(QString)));
     connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
-
+    emit tilitapahtumaid(x);
+    qDebug()<<"send signal";
     pDLLRestAPI->startAsiakas();
     pDLLRestAPI->startSaldo();
-
-    emit tilitapahtumaid(x);
-    qDebug()<<"JIFJEIFJEOFJEIOJFIEOFJIOJFEIOJFEIOJOEJIO wwdwdwdd";
-    pDLLRestAPI -> startTilitapahtumat();
-    ui -> textEdit -> setText(tilitapahtumat);
 }
 
 void selaatilitapahtumia::laskuritilitslot()
@@ -67,7 +57,9 @@ void selaatilitapahtumia::on_palaamenuuntilitapahtumat_clicked()
 void selaatilitapahtumia::on_aikaisempi_clicked()
 {
     value--;
-    qDebug()<<"JIFJEIFJEOFJEIOJFIEOFJIOJFEIOJFEIOJOEJIO saataa";
+    connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
+    laskuri = laskuri +1;
+    qDebug()<<"nappi aikaisempi";
     if (idarvo < 11){
 
     }
@@ -82,8 +74,10 @@ void selaatilitapahtumia::on_aikaisempi_clicked()
 void selaatilitapahtumia::on_seuraava_clicked()
 {
     value++;
+    connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
+    laskuri = laskuri +1;
     idarvo = idarvo + 10;
-    qDebug()<<"JIFJEIFJEOFJE";
+    qDebug()<<"nappi seuraava";
     sendsignal(idarvo);
     ui->spinBox->setValue(value);
 }
@@ -91,5 +85,8 @@ void selaatilitapahtumia::on_seuraava_clicked()
 void selaatilitapahtumia::slotTilitapahtumat(QString x)
 {
    tilitapahtumat = x;
+   qDebug()<<"coomers "+tilitapahtumat;
+   ui -> textEdit -> setText(tilitapahtumat);
+   disconnect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
 }
 
