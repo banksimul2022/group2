@@ -43,6 +43,9 @@ void Dialog::CheckPWD(QString x)
         qDebug()<<"if lauseen sisällä";
         yritykset=3;
         ui->labeltries->setNum(yritykset);
+
+        emit loginok();
+
         QWidget::close();
     }
 
