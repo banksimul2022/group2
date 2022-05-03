@@ -15,8 +15,9 @@ SOURCES += \
     configurations.cpp \
     dllrestapi.cpp \
     login.cpp \
+    lukitus.cpp \
     posttilitapahtumat.cpp \
-    putkortti.cpp \
+    putlukitus.cpp \
     putsaldo.cpp \
     saldo.cpp \
     singleton.cpp \
@@ -29,8 +30,9 @@ HEADERS += \
     configurations.h \
     dllrestapi.h \
     login.h \
+    lukitus.h \
     posttilitapahtumat.h \
-    putkortti.h \
+    putlukitus.h \
     putsaldo.h \
     saldo.h \
     singleton.h \
