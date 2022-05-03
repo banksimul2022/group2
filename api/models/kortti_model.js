@@ -15,21 +15,20 @@ const kortti = {
   add: function(kortti, callback) {
     bcrypt.hash(kortti.Pinkoodi, saltRounds, function(err, hash){
     return db.query(
-      'insert into kortti (CVC,Kortinnumero,Tyyppi,Vanhentumispäivä, Pinkoodi, idAsiakas, idTili) values(?,?,?,?,?,?,?)',
-      [kortti.CVC, kortti.Kortinnumero, kortti.Tyyppi, kortti.Vanhentumispäivä, hash, kortti.idAsiakas, kortti.idTili],
+      'insert into kortti (CVC,Kortinnumero,Vanhentumispäivä, Pinkoodi, Lukittu, idAsiakas, idTili) values(?,?,?,?,?,?,?)',
+      [kortti.CVC, kortti.Kortinnumero, kortti.Vanhentumispäivä, hash, kortti.Lukittu, kortti.idAsiakas, kortti.idTili],
       callback)
     });
   },
   delete: function(Kortinnumero, callback) {
     return db.query('delete from kortti where Kortinnumero=?', [Kortinnumero], callback);
   },
-  update: function(id, kortti, callback) {
-    bcrypt.hash(kortti.Pinkoodi, saltRounds, function(err, hash) {
+  update: function(Kortinnumero, kortti, callback) {
     return db.query(
-      'update kortti set CVC=?,Kortinnumero=?, Tyyppi=?, Vanhentumispäivä=?, Pinkoodi=?, idAsiakas=?, idTili=? where idKortti=?',
-      [kortti.CVC, kortti.Kortinnumero, kortti.Tyyppi, kortti.Vanhentumispäivä, hash, kortti.idAsiakas, kortti.idTili, id],
-      callback)
-    });
+      'update kortti set Lukittu=? where Kortinnumero=?',
+      [kortti.Lukittu, Kortinnumero],
+      callback
+    );
   }
 };
 module.exports = kortti;
