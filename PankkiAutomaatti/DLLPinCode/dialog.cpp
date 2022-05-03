@@ -45,6 +45,9 @@ void Dialog::CheckPWD(QString x)
         ui->labeltries->setNum(yritykset);
         QWidget::close();
     }
+
+    korttilukossa = "";
+
     qDebug()<<"If lauseen ohi mennyt";
     qDebug()<<"Ei ole enää CheckPWD slotissa";
 }
@@ -88,8 +91,6 @@ void Dialog::on_btnSet_clicked()
 
         yritykset=3;
         ui->labeltries->setNum(yritykset);
-
-        QWidget::close();
    }
 
     ui->label_2->setText("Väärä pinkoodi");

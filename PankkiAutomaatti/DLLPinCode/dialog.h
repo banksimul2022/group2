@@ -38,7 +38,7 @@ private slots:
 private:
     Ui::Dialog *ui;
 
-    QString korttilukossa;
+    QString korttilukossa = "";
     QString dialogValue;
     QString Kortinnumero;
 
