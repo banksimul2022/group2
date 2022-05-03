@@ -4,7 +4,6 @@ Tilitapahtumat::Tilitapahtumat(QObject *parent) : QObject(parent)
 {
     tilitapahtumatManager = new QNetworkAccessManager(this);
     objectUrl = new Url;
-    base_url = objectUrl -> getBase_url();
 }
 
 Tilitapahtumat::~Tilitapahtumat()

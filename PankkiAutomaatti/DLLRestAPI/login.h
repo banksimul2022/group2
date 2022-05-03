@@ -28,10 +28,10 @@ private:
     QString Kortinnumero;
     QString Pinkoodi;
     QString trueFalse;
+    QString base_url;
     QByteArray token;
 
     Url * objectUrl;
-    QString base_url;
 
 signals:
     void getTrueFalse(QString);

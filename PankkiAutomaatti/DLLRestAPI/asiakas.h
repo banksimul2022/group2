@@ -28,7 +28,7 @@ private:
 
     QString Kortinnumero, Pinkoodi;
     QByteArray webToken;
-    QString asiakas, nimi, lukittu;
+    QString asiakas, nimi;
 
     Url * objectUrl;
 
@@ -36,7 +36,6 @@ private:
 signals:
     void sendAsiakas(QString);
     void sendNimi(QString);
-    void sendLukitus(QString);
 
 };
 

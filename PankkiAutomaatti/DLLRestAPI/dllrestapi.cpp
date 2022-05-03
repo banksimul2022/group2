@@ -10,7 +10,8 @@ DLLRestAPI::DLLRestAPI()
     objectTilitapahtumat = new Tilitapahtumat;
     objectPutSaldo = new putSaldo;
     objectPostTilitapahtumat = new postTilitapahtumat;
-    objectPutKortti = new putKortti;
+    objectLukitus = new Lukitus;
+    objectPutLukitus = new putLukitus;
 }
 
 DLLRestAPI::~DLLRestAPI()
@@ -35,8 +36,11 @@ DLLRestAPI::~DLLRestAPI()
     delete objectPostTilitapahtumat;
     objectPostTilitapahtumat = nullptr;
 
-    delete objectPutKortti;
-    objectPutKortti = nullptr;
+    delete objectLukitus;
+    objectLukitus = nullptr;
+
+    delete objectPutLukitus;
+    objectPutLukitus = nullptr;
 }
 
 void DLLRestAPI::setPinKort(QString kortinnumero, QString pinkoodi)
