@@ -86,6 +86,7 @@ void selaatilitapahtumia::slotTilitapahtumat(QString x)
 {
    tilitapahtumat = x;
    qDebug()<<"coomers "+tilitapahtumat;
+   ui -> textEdit -> setText("");
    ui -> textEdit -> setText(tilitapahtumat);
    disconnect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
 }
