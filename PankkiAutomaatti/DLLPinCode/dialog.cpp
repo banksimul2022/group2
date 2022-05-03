@@ -23,8 +23,7 @@ void Dialog::setDialogValue(QString x)
 {
     dialogValue = x;
 
-    qDebug()<<"setDialogValue funktio";
-    qDebug()<<x;
+    qDebug()<<"setDialogValue funktio: " + x;
 
     emit pin(x);
 }
@@ -77,12 +76,15 @@ void Dialog::on_btnSet_clicked()
 
     this->setDialogValue(a);
 
-    qDebug()<<"Salasana input";
-    qDebug()<<a;
+    qDebug()<<"Salasana input: " + a;
+
+    emit loginClicked();
 
     if(yritykset==0){
         emit cardlocked();
+
         qDebug()<<"cardlocked signaali lähetetty";
+
         yritykset=3;
         ui->labeltries->setNum(yritykset);
 
