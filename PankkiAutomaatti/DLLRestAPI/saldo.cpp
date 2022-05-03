@@ -4,7 +4,6 @@ Saldo::Saldo(QObject *parent) : QObject(parent)
 {
     saldoManager = new QNetworkAccessManager(this);
     objectUrl = new Url;
-    base_url = objectUrl -> getBase_url();
 }
 
 Saldo::~Saldo()

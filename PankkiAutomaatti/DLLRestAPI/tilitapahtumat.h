@@ -28,7 +28,7 @@ private:
     QNetworkReply * reply;
     QByteArray response_data;
 
-    QString Kortinnumero, tilitapahtumat, base_url, muutettuID;
+    QString Kortinnumero, tilitapahtumat, muutettuID;
     int idTilitapahtumat;
     QByteArray webToken;
 

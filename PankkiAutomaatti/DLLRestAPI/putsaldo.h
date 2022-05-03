@@ -30,7 +30,6 @@ private:
     Url *objectUrl;
 
     QString Kortinnumero;
-    QString base_url;
     QByteArray webToken;
     double saatuSaldo;
 

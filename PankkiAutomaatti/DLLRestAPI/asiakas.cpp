@@ -31,9 +31,9 @@ void Asiakas::setWebtoken()
 
     qDebug()<<"WebToken alku";
     qDebug()<<webToken;
-    //WEBTOKEN ALKU
+
     request.setRawHeader(QByteArray("Authorization"),(webToken));
-    //WEBTOKEN LOPPU
+
     qDebug()<<"Connectia edeltävä";
     connect(asiakasManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(asiakasSlot(QNetworkReply*)));
     reply = asiakasManager->get(request);
@@ -56,13 +56,11 @@ void Asiakas::asiakasSlot(QNetworkReply *reply)
            QJsonObject json_obj = value.toObject();
            asiakas="Nimi: "+json_obj["Etunimi"].toString()+" "+json_obj["Sukunimi"].toString()+"\n"+"Henkilötunnus: "+json_obj["Henkilötunnus"].toString()+"\n"+"Osoite: "+json_obj["Osoite"].toString()+"\n"+"Puhelinnumero: "+json_obj["Puhelinnumero"].toString()+"\r";
            nimi=json_obj["Etunimi"].toString()+" "+json_obj["Sukunimi"].toString()+"\n";
-           lukittu=json_obj["Lukittu"].toString();
        }
 
        emit sendAsiakas(asiakas);
        emit sendNimi(nimi);
-       emit sendLukitus(lukittu);
        //qDebug()<<nimi;
        qDebug()<<"Asiakkaan tiedot";
-       qDebug()<<"Lukitus :"+lukittu;
+
 }

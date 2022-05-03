@@ -5,8 +5,8 @@ Login::Login(QObject *parent) : QObject(parent)
     qDebug()<<"Login muodostimessa";
 
     objectUrl = new Url;
-    base_url = objectUrl -> getBase_url();
     postManager = new QNetworkAccessManager(this);
+    base_url = objectUrl->getBase_url()+"/login";
 }
 
 Login::~Login()
@@ -41,7 +41,7 @@ void Login::getPin()
     jsonObj.insert("Kortinnumero", Kortinnumero);
     jsonObj.insert("Pinkoodi", Pinkoodi);
 
-    QNetworkRequest request((base_url+"/login"));
+    QNetworkRequest request((base_url));
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
     connect(postManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(loginSlot(QNetworkReply*)));
