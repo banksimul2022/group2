@@ -7,6 +7,7 @@ Dialog::Dialog(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->labeltries->setNum(yritykset);
+    ui->label_2->setText("Syötä pinkoodi");
 }
 
 Dialog::~Dialog()
@@ -48,6 +49,17 @@ void Dialog::CheckPWD(QString x)
     qDebug()<<"Ei ole enää CheckPWD slotissa";
 }
 
+void Dialog::ifcardlocked(QString x)
+{
+    qDebug()<<"ifcardlocked slotti sai: " + x;
+    korttilukossa = x;
+
+    if(korttilukossa=="1"){
+        qDebug()<<"if korttilukossa 1 sisällä";
+        ui->label_2->setText("Kortti lukossa");
+    }
+}
+
 void Dialog::setCardNumber()
 {
     ui->labeltries->setNum(yritykset);
@@ -76,6 +88,13 @@ void Dialog::on_btnSet_clicked()
 
         QWidget::close();
    }
+
+    ui->label_2->setText("Väärä pinkoodi");
+
+    if(korttilukossa=="1"){
+        qDebug()<<"if korttilukossa 1 sisällä";
+        ui->label_2->setText("Kortti lukossa");
+    }
 }
 
 

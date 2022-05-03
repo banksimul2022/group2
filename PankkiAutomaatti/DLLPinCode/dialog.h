@@ -27,6 +27,7 @@ signals:
 
 public slots:
     void CheckPWD(QString);
+    void ifcardlocked(QString);
 
 private slots:
     void on_btnSet_clicked();
@@ -36,6 +37,7 @@ private slots:
 private:
     Ui::Dialog *ui;
 
+    QString korttilukossa;
     QString dialogValue;
     QString Kortinnumero;
 
