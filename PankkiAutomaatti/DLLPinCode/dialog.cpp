@@ -38,7 +38,8 @@ void Dialog::CheckPWD(QString x)
     qDebug()<<"CheckPWD sai";
     qDebug()<<x;
 
-    if (x!="false"){
+    if (x!="false" && korttilukossa=="0"){
+        ui->label_2->setText("");
         qDebug()<<"if lauseen sisällä";
         yritykset=3;
         ui->labeltries->setNum(yritykset);
