@@ -26,12 +26,9 @@ private:
     QNetworkReply * reply;
     QByteArray response_data;
 
-    QString Kortinnumero;
-    QString Pinkoodi;
+    QString Kortinnumero, Pinkoodi;
     QByteArray webToken;
-    QString asiakas;
-    QString base_url;
-    QString nimi;
+    QString asiakas, nimi, lukittu;
 
     Url * objectUrl;
 
@@ -39,6 +36,7 @@ private:
 signals:
     void sendAsiakas(QString);
     void sendNimi(QString);
+    void sendLukitus(QString);
 
 };
 

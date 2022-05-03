@@ -11,6 +11,12 @@ Login::Login(QObject *parent) : QObject(parent)
 
 Login::~Login()
 {
+    delete reply;
+    reply = nullptr;
+
+    delete postManager;
+    postManager = nullptr;
+
     delete objectUrl;
     objectUrl = nullptr;
 }
@@ -46,9 +52,10 @@ void Login::getPin()
 void Login::loginSlot(QNetworkReply *reply)
 {
     response_data=reply->readAll();
+
     qDebug()<<response_data;
-    reply->deleteLater();
-    postManager->deleteLater();
+    //reply->deleteLater();
+    //postManager->deleteLater();
 
     if(response_data!="false")
     {
@@ -63,6 +70,7 @@ void Login::loginSlot(QNetworkReply *reply)
         trueFalse = "false";
     }
        qDebug()<<"If else lopetettu getPin lopussa";
-       emit getTrueFalse(trueFalse);
 
+       emit getTrueFalse(trueFalse);
+       disconnect(postManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(loginSlot(QNetworkReply*)));
 }

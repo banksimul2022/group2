@@ -4,7 +4,6 @@ Asiakas::Asiakas(QObject *parent): QObject(parent)
 {
     asiakasManager = new QNetworkAccessManager(this);
     objectUrl = new Url;
-    base_url = objectUrl -> getBase_url();
 }
 
 Asiakas::~Asiakas()
@@ -57,10 +56,13 @@ void Asiakas::asiakasSlot(QNetworkReply *reply)
            QJsonObject json_obj = value.toObject();
            asiakas="Nimi: "+json_obj["Etunimi"].toString()+" "+json_obj["Sukunimi"].toString()+"\n"+"Henkilötunnus: "+json_obj["Henkilötunnus"].toString()+"\n"+"Osoite: "+json_obj["Osoite"].toString()+"\n"+"Puhelinnumero: "+json_obj["Puhelinnumero"].toString()+"\r";
            nimi=json_obj["Etunimi"].toString()+" "+json_obj["Sukunimi"].toString()+"\n";
+           lukittu=json_obj["Lukittu"].toString();
        }
 
        emit sendAsiakas(asiakas);
        emit sendNimi(nimi);
+       emit sendLukitus(lukittu);
        //qDebug()<<nimi;
-       qDebug()<<"Asiakkaan tiedot: "+asiakas;
+       qDebug()<<"Asiakkaan tiedot";
+       qDebug()<<"Lukitus :"+lukittu;
 }
