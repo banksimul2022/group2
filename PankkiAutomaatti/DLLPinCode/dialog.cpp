@@ -41,6 +41,7 @@ void Dialog::ifcardlocked(QString x)
     if(korttilukossa=="1"){
         qDebug()<<"if korttilukossa 1 sisällä";
         ui->label_2->setText("Kortti lukossa");
+        ui->btnSet->setEnabled(false);
     }
     else{
         emit korttiok();
@@ -68,6 +69,16 @@ void Dialog::CheckPWD(QString x)
         QWidget::close();
     }
 
+    if(yritykset==0){                               //Tarkistaa onko yritykset nolla jos on ehto toteutuu.
+        emit cardlocked();                          //Lähettää signaalin että kortti lukitetaan.
+
+        qDebug()<<"cardlocked signaali lähetetty";  //qDebug, jotta näkee että ollaan if silmukassa.
+
+        yritykset=3;                                //Asetetaan taas yritykset kolmeen.
+        ui->labeltries->setNum(yritykset);          //Asetetaan yritykset labeliin.
+        ui->btnSet->setEnabled(false);
+   }
+
     korttilukossa = "";
 
     qDebug()<<"If lauseen ohi mennyt";
@@ -84,32 +95,27 @@ void Dialog::setCardNumber()
 void Dialog::on_btnSet_clicked()
 {
 
-    QString a=ui->textValue->text();                //Lukee lineedit tekstin muuttujaan
-    this->setDialogValue(a);
+    QString a=ui->textValue->text();                //Lukee lineedit tekstin muuttujaan.
+    this->setDialogValue(a);                        //Välittää DialogValue muuttujaan pinkoodin.
 
-    emit pin(a);                                    //Lähettää pinkoodin
-    emit loginClicked();                            //Lähettää signaalin että nappia on painettu
+    emit pin(a);                                    //Lähettää pinkoodin.
+    emit loginClicked();                            //Lähettää signaalin että nappia on painettu.
 
-    ui->textValue->setText("");
+    ui->textValue->setText("");                     //Asettaa lineedit kentän tyhjäksi.
 
 
 
-    qDebug()<<"Salasana input: " + a;
+    qDebug()<<"Salasana input: " + a;               //qDebug mikä kertoo pinkoodin joka on syötetty.
 
-    yritykset--;
-    qDebug()<<yritykset;
-    ui->labeltries->setNum(yritykset);
+    yritykset--;                                    //Miinustaa yhden yrityksen jokaisella painauksella.
+    qDebug()<<yritykset;                            //qDebug mikä kertoo yrityksien määrän.
+    ui->labeltries->setNum(yritykset);              //Asettaa yritykset labeliin.
 
-    if(yritykset==0){
-        emit cardlocked();
 
-        qDebug()<<"cardlocked signaali lähetetty";
 
-        yritykset=3;
-        ui->labeltries->setNum(yritykset);
-   }
+    ui->label_2->setText("Väärä pinkoodi");         //Asetetaan teksti labeliin.
 
-    ui->label_2->setText("Väärä pinkoodi");
+
 
     if(korttilukossa=="1"){
         qDebug()<<"if korttilukossa 1 sisällä";
@@ -118,10 +124,10 @@ void Dialog::on_btnSet_clicked()
 }
 
 
-void Dialog::on_pushButton_clicked()
+void Dialog::on_pushButton_clicked()                //Jos painetaan sulje nappia.
 {
-    yritykset=3;
-    ui->labeltries->setNum(yritykset);
-    ui->label_2->setText("Syötä pinkoodi");
+    yritykset=3;                                    //Yritykset asetetaan takaisin kolmeen.
+    ui->labeltries->setNum(yritykset);              //Asetetaan numero labeliin.
+    ui->label_2->setText("Syötä pinkoodi");         //Asetetaan teksti labeliin
     QWidget::close();
 }
