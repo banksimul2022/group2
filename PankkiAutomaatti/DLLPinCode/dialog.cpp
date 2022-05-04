@@ -15,6 +15,7 @@ Dialog::~Dialog()
     qDebug()<<"dialog.cpp tuhoajassa";
     yritykset=3;
     ui->labeltries->setNum(yritykset);
+
     delete ui;
     ui = nullptr;
 }
@@ -25,7 +26,9 @@ void Dialog::setDialogValue(QString x)
 
     qDebug()<<"setDialogValue funktio: " + x;
 
-    emit pin(x);
+    emit pin(x);                                //Lähettää pinkoodin
+
+
 }
 
 QString Dialog::getDialogValue()
@@ -87,6 +90,10 @@ void Dialog::on_btnSet_clicked()
 
     emit loginClicked();
 
+    while(korttilukossa==""){
+        qDebug()<<"While-loopissa korttilukossa on: " + korttilukossa;
+    }
+
     if(yritykset==0){
         emit cardlocked();
 
@@ -109,5 +116,6 @@ void Dialog::on_pushButton_clicked()
 {
     yritykset=3;
     ui->labeltries->setNum(yritykset);
+    ui->label_2->setText("Syötä pinkoodi");
     QWidget::close();
 }
