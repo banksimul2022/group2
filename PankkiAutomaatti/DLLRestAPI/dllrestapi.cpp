@@ -12,6 +12,7 @@ DLLRestAPI::DLLRestAPI()
     objectPostTilitapahtumat = new postTilitapahtumat;
     objectLukitus = new Lukitus;
     objectPutLukitus = new putLukitus;
+    objectMaxTilitapahtumat = new maxTilitapahtumat;
 }
 
 DLLRestAPI::~DLLRestAPI()
@@ -41,6 +42,9 @@ DLLRestAPI::~DLLRestAPI()
 
     delete objectPutLukitus;
     objectPutLukitus = nullptr;
+
+    delete objectMaxTilitapahtumat;
+    objectMaxTilitapahtumat = nullptr;
 }
 
 void DLLRestAPI::startAsiakas()
@@ -71,5 +75,10 @@ void DLLRestAPI::startPostTilitapahtumat()
 void DLLRestAPI::startLogin()
 {
     objectLogin->getPin();
+}
+
+void DLLRestAPI::startMaxTilitapahtumat()
+{
+    objectMaxTilitapahtumat->getMaxID();
 }
 
