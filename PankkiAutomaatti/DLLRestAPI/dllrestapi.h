@@ -18,9 +18,6 @@ public:
     DLLRestAPI();
     ~DLLRestAPI();
 
-    void setPinKort(QString kortinnumero, QString pinkoodi);
-    bool getTrueFalse();
-
     void startAsiakas();
     void startSaldo();
     void startTilitapahtumat();

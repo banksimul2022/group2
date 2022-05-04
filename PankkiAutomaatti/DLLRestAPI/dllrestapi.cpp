@@ -43,14 +43,6 @@ DLLRestAPI::~DLLRestAPI()
     objectPutLukitus = nullptr;
 }
 
-void DLLRestAPI::setPinKort(QString kortinnumero, QString pinkoodi)
-{
-    qDebug()<<"setPinKort";
-
-    objectLogin->setPinKort(kortinnumero,pinkoodi);
-    objectLogin->getPin();
-}
-
 void DLLRestAPI::startAsiakas()
 {
     objectAsiakas->setWebtoken();

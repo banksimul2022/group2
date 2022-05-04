@@ -32,3 +32,13 @@ QString Singleton::getSingletonCardNum()
 {
     return this->config->KortNum;
 }
+
+void Singleton::setSingletonPincode(QString Pin)
+{
+    this->config->PinCode = Pin;
+}
+
+QString Singleton::getSingletonPin()
+{
+    return this->config->PinCode;
+}
