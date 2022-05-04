@@ -8,6 +8,7 @@ Dialog::Dialog(QWidget *parent) :
     ui->setupUi(this);
     ui->labeltries->setNum(yritykset);
     ui->label_2->setText("Syötä pinkoodi");
+
 }
 
 Dialog::~Dialog()
@@ -15,6 +16,7 @@ Dialog::~Dialog()
     qDebug()<<"dialog.cpp tuhoajassa";
     yritykset=3;
     ui->labeltries->setNum(yritykset);
+    ui->btnSet->setEnabled(true);
 
     delete ui;
     ui = nullptr;
@@ -42,6 +44,7 @@ void Dialog::ifcardlocked(QString x)
         qDebug()<<"if korttilukossa 1 sisällä";
         ui->label_2->setText("Kortti lukossa");
         ui->btnSet->setEnabled(false);
+        ui->labeltries->setNum(0);              //Asettaa yritykset labeliin.
     }
     else{
         emit korttiok();
@@ -51,8 +54,7 @@ void Dialog::ifcardlocked(QString x)
 void Dialog::CheckPWD(QString x)
 {
 
-    qDebug()<<"CheckPWD sai";
-    qDebug()<<x;
+    qDebug()<<"CheckPWD sai: " + x;
 
     if (x!="false" && korttilukossa=="0"){
         emit loginok();
@@ -63,10 +65,19 @@ void Dialog::CheckPWD(QString x)
 
         yritykset=3;
         ui->labeltries->setNum(yritykset);
-
+        ui->label_2->setText("Syötä pinkoodi");         //Asetetaan teksti labeliin
 
 
         QWidget::close();
+    }
+
+    if(x!="true"){
+    ui->label_2->setText("Väärä pinkoodi");         //Asetetaan teksti labeliin.
+
+    yritykset--;                                    //Miinustaa yhden yrityksen jokaisella painauksella.
+    qDebug()<<yritykset;                            //qDebug mikä kertoo yrityksien määrän.
+
+
     }
 
     if(yritykset==0){                               //Tarkistaa onko yritykset nolla jos on ehto toteutuu.
@@ -107,13 +118,7 @@ void Dialog::on_btnSet_clicked()
 
     qDebug()<<"Salasana input: " + a;               //qDebug mikä kertoo pinkoodin joka on syötetty.
 
-    yritykset--;                                    //Miinustaa yhden yrityksen jokaisella painauksella.
-    qDebug()<<yritykset;                            //qDebug mikä kertoo yrityksien määrän.
-    ui->labeltries->setNum(yritykset);              //Asettaa yritykset labeliin.
 
-
-
-    ui->label_2->setText("Väärä pinkoodi");         //Asetetaan teksti labeliin.
 
 
 
@@ -129,5 +134,6 @@ void Dialog::on_pushButton_clicked()                //Jos painetaan sulje nappia
     yritykset=3;                                    //Yritykset asetetaan takaisin kolmeen.
     ui->labeltries->setNum(yritykset);              //Asetetaan numero labeliin.
     ui->label_2->setText("Syötä pinkoodi");         //Asetetaan teksti labeliin
+    ui->btnSet->setEnabled(true);
     QWidget::close();
 }
