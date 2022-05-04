@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const tilitapahtumat = require('../models/tilitapahtumat_model');
 
-/*
 router.get('/:Kortinnumero?',
  function(request, response) {
   if (request.params.Kortinnumero) {
@@ -13,7 +12,7 @@ router.get('/:Kortinnumero?',
         response.json(dbResult);
       }
     })}
-  });*/
+  });
 
   router.get('/:Kortinnumero?/:idTilitapahtumat?',
   function(request, response) {
