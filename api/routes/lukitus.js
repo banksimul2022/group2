@@ -4,23 +4,14 @@ const lukitus = require('../models/lukitus_model');
 
 router.get('/:Kortinnumero?',
  function(request, response) {
-  if (request.params.Kortinnumer) {
-    lukitus.getPin(request.params.Kortinnumero, function(err, dbResult) {
+  if (request.params.Kortinnumero) {
+    lukitus.getLukitus(request.params.Kortinnumero, function(err, dbResult) {
       if (err) {
         response.json(err);
       } else {
         response.json(dbResult);
       }
-    });
-  } else {
-    lukitus.getAll(function(err, dbResult) {
-      if (err) {
-        response.json(err);
-      } else {
-        response.json(dbResult);
-      }
-    });
-  }
+    })};
 });
 
 

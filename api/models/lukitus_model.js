@@ -5,9 +5,6 @@ const lukitus = {
     return db.query('SELECT * FROM lukitus JOIN kortti ON lukitus.idKortti=kortti.idKortti WHERE Kortinnumero=?', [Kortinnumero], callback);
   },
 
-  getNimi: function(callback) {
-    return db.query('select * from lukitus', callback);
-  },
   add: function(lukitus, callback) {
     return db.query(
       'insert into lukitus (Lukittu, idKortti) values(?,?)',

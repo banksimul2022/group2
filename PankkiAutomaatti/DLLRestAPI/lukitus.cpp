@@ -49,5 +49,10 @@ void Lukitus::getLukitusSlot(QNetworkReply *reply)
            QJsonObject json_obj = value.toObject();
            lukittu=json_obj["Lukittu"].toString();
        }
-    emit sendLukitus(lukittu);
+       emit sendLukitus(lukittu);
+}
+
+void Lukitus::receiveClicked()
+{
+    getLukitus();
 }

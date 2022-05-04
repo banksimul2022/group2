@@ -46,7 +46,7 @@ void Tilitapahtumat::tilitapahtumatSlot(QNetworkReply *reply)
     response_data=reply->readAll();
     qDebug() << response_data;
     QJsonDocument json_doc = QJsonDocument::fromJson(response_data);
-    QJsonArray json_array = json_doc.array();
+    QJsonArray json_array = json_doc.array();  
 
        foreach (const QJsonValue &value, json_array) {
            QJsonObject json_obj = value.toObject();
@@ -55,6 +55,7 @@ void Tilitapahtumat::tilitapahtumatSlot(QNetworkReply *reply)
 
        qDebug()<<"Tilitapahtumat";
        emit sendTilitapahtumat(tilitapahtumat);
+       tilitapahtumat = "";
 }
 
 void Tilitapahtumat::setIDTilitapahtumat(int tulevaID)
