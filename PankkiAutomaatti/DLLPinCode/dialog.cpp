@@ -22,7 +22,7 @@ Dialog::~Dialog()
 
 void Dialog::setDialogValue(QString x)
 {
-    emit pin(x);                                //Lähettää pinkoodin
+
     dialogValue = x;
 
     qDebug()<<"setDialogValue funktio: " + x;
@@ -33,8 +33,23 @@ QString Dialog::getDialogValue()
     return dialogValue;
 }
 
+void Dialog::ifcardlocked(QString x)
+{
+    qDebug()<<"ifcardlocked slotti sai: " + x;
+    korttilukossa = x;
+
+    if(korttilukossa=="1"){
+        qDebug()<<"if korttilukossa 1 sisällä";
+        ui->label_2->setText("Kortti lukossa");
+    }
+    else{
+        emit korttiok();
+    }
+}
+
 void Dialog::CheckPWD(QString x)
 {
+
     qDebug()<<"CheckPWD sai";
     qDebug()<<x;
 
@@ -59,16 +74,7 @@ void Dialog::CheckPWD(QString x)
     qDebug()<<"Ei ole enää CheckPWD slotissa";
 }
 
-void Dialog::ifcardlocked(QString x)
-{
-    qDebug()<<"ifcardlocked slotti sai: " + x;
-    korttilukossa = x;
 
-    if(korttilukossa=="1"){
-        qDebug()<<"if korttilukossa 1 sisällä";
-        ui->label_2->setText("Kortti lukossa");
-    }
-}
 
 void Dialog::setCardNumber()
 {
@@ -78,11 +84,15 @@ void Dialog::setCardNumber()
 void Dialog::on_btnSet_clicked()
 {
 
-    QString a=ui->textValue->text();
+    QString a=ui->textValue->text();                //Lukee lineedit tekstin muuttujaan
     this->setDialogValue(a);
+
+    emit pin(a);                                    //Lähettää pinkoodin
+    emit loginClicked();                            //Lähettää signaalin että nappia on painettu
+
     ui->textValue->setText("");
 
-    emit loginClicked();
+
 
     qDebug()<<"Salasana input: " + a;
 
