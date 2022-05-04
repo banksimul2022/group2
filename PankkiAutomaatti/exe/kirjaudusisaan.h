@@ -20,13 +20,12 @@ public:
     explicit kirjaudusisaan(QWidget *parent = nullptr);
     ~kirjaudusisaan();
 public slots:
-    void getCardNumber(QString);
+
 
 private slots:
 
     void on_VALIAIKANAPPI_clicked();
-    void trueFalse(QString);
-    void pinkoodi(QString);
+    void trueFalse();
 
 private:
     Ui::kirjaudusisaan *ui;

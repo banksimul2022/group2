@@ -22,7 +22,6 @@ nostarahaa::nostarahaa(QWidget *parent) :
     connect(pDLLRestAPI->objectSaldo, SIGNAL(sendID(QString, QString)), this, SLOT(slotID(QString, QString)));
     connect(this, SIGNAL(sendIDtoDLL(QString, QString)), pDLLRestAPI->objectPostTilitapahtumat, SLOT(idSlot(QString, QString)));
     connect(this, SIGNAL(sendSumma(double)), pDLLRestAPI->objectPostTilitapahtumat, SLOT(summaSlot(double)));
-    connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(TÄHÄN LÄHETTÄVÄ SIGNAALI(QString)), this, SLOT(slotTilitapahtumat(QString)));
 }
 
 nostarahaa::~nostarahaa()
