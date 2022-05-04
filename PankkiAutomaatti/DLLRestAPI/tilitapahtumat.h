@@ -28,7 +28,7 @@ private:
     QNetworkReply * reply;
     QByteArray response_data;
 
-    QString Kortinnumero, tilitapahtumat, muutettuID;
+    QString Kortinnumero, tilitapahtumat, muutettuID, maxID;
     int idTilitapahtumat;
     QByteArray webToken;
 
@@ -36,6 +36,7 @@ private:
 
 signals:
     void sendTilitapahtumat(QString);
+    void sendMaxID(QString);
 
 };
 
