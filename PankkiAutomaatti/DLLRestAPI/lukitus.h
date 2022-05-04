@@ -22,6 +22,7 @@ signals:
 
 private slots:
     void getLukitusSlot(QNetworkReply *reply);
+    void receiveClicked();
 
 private:
     QNetworkAccessManager * lukitusManager;

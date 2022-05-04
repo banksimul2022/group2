@@ -22,13 +22,10 @@ Dialog::~Dialog()
 
 void Dialog::setDialogValue(QString x)
 {
+    emit pin(x);                                //Lähettää pinkoodin
     dialogValue = x;
 
     qDebug()<<"setDialogValue funktio: " + x;
-
-    emit pin(x);                                //Lähettää pinkoodin
-
-
 }
 
 QString Dialog::getDialogValue()
@@ -42,12 +39,16 @@ void Dialog::CheckPWD(QString x)
     qDebug()<<x;
 
     if (x!="false" && korttilukossa=="0"){
+        emit loginok();
+
         ui->label_2->setText("");
+
         qDebug()<<"if lauseen sisällä";
+
         yritykset=3;
         ui->labeltries->setNum(yritykset);
 
-        emit loginok();
+
 
         QWidget::close();
     }
@@ -78,21 +79,16 @@ void Dialog::on_btnSet_clicked()
 {
 
     QString a=ui->textValue->text();
+    this->setDialogValue(a);
     ui->textValue->setText("");
+
+    emit loginClicked();
+
+    qDebug()<<"Salasana input: " + a;
 
     yritykset--;
     qDebug()<<yritykset;
     ui->labeltries->setNum(yritykset);
-
-    this->setDialogValue(a);
-
-    qDebug()<<"Salasana input: " + a;
-
-    emit loginClicked();
-
-    while(korttilukossa==""){
-        qDebug()<<"While-loopissa korttilukossa on: " + korttilukossa;
-    }
 
     if(yritykset==0){
         emit cardlocked();
