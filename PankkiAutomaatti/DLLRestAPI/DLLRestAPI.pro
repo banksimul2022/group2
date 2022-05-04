@@ -16,6 +16,7 @@ SOURCES += \
     dllrestapi.cpp \
     login.cpp \
     lukitus.cpp \
+    maxtilitapahtumat.cpp \
     posttilitapahtumat.cpp \
     putlukitus.cpp \
     putsaldo.cpp \
@@ -31,6 +32,7 @@ HEADERS += \
     dllrestapi.h \
     login.h \
     lukitus.h \
+    maxtilitapahtumat.h \
     posttilitapahtumat.h \
     putlukitus.h \
     putsaldo.h \

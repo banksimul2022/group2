@@ -10,6 +10,7 @@
 #include "posttilitapahtumat.h"
 #include "lukitus.h"
 #include "putlukitus.h"
+#include "maxtilitapahtumat.h"
 #include <qstring.h>
 
 class DLLRESTAPI_EXPORT DLLRestAPI
@@ -24,6 +25,7 @@ public:
     void startPutSaldo();
     void startPostTilitapahtumat();
     void startLogin();
+    void startMaxTilitapahtumat();
 
     Login *objectLogin;
 
@@ -34,6 +36,7 @@ public:
     postTilitapahtumat *objectPostTilitapahtumat;
     Lukitus *objectLukitus;
     putLukitus *objectPutLukitus;
+    maxTilitapahtumat *objectMaxTilitapahtumat;
 
 
 private:   
