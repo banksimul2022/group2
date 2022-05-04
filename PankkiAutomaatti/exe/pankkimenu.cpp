@@ -42,6 +42,7 @@ void pankkimenu::on_selaa_clicked()
 {
     laskuri = laskuri + 1;
     int x = 11;
+    pselaatilit -> startTilitapahtumat();
     pselaatilit -> sendsignal(x);
     pselaatilit -> exec();
 }

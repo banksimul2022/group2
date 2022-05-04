@@ -37,6 +37,12 @@ void selaatilitapahtumia::sendsignal(int x)
     pDLLRestAPI->startSaldo();
 }
 
+void selaatilitapahtumia::startTilitapahtumat()
+{
+    connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendMaxID(QString)), this, SLOT(setMaxID(QString)));
+    pDLLRestAPI->startTilitapahtumat();
+}
+
 void selaatilitapahtumia::laskuritilitslot()
 {
     qDebug() << "timer...";
@@ -60,14 +66,10 @@ void selaatilitapahtumia::on_aikaisempi_clicked()
     connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
     laskuri = laskuri +1;
     qDebug()<<"nappi aikaisempi";
-    if (idarvo < 11){
-
-    }
-    else{
-    idarvo = idarvo - 10;
+    idarvo = idarvo + 10;
     sendsignal(idarvo);
     ui->spinBox->setValue(value);
-    }
+
 }
 
 
@@ -75,8 +77,8 @@ void selaatilitapahtumia::on_seuraava_clicked()
 {
     value++;
     connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
-    laskuri = laskuri +1;
-    idarvo = idarvo + 10;
+    laskuri = laskuri + 1;
+    idarvo = idarvo - 10;
     qDebug()<<"nappi seuraava";
     sendsignal(idarvo);
     ui->spinBox->setValue(value);
@@ -86,8 +88,16 @@ void selaatilitapahtumia::slotTilitapahtumat(QString x)
 {
    tilitapahtumat = x;
    qDebug()<<"coomers "+tilitapahtumat;
-   ui -> textEdit -> setText("");
    ui -> textEdit -> setText(tilitapahtumat);
    disconnect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
+}
+
+void selaatilitapahtumia::setMaxID(QString id)
+{
+    maxID = id;
+    idarvo = maxID.toInt();
+    qDebug()<<idarvo;
+    qDebug()<<"pillupersepaskapaviaani";
+    disconnect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendMaxID(QString)), this, SLOT(setMaxID(QString)));
 }
 

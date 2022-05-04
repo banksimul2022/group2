@@ -18,6 +18,7 @@ public:
     explicit selaatilitapahtumia(QWidget *parent = nullptr);
     ~selaatilitapahtumia();
     void sendsignal(int);
+    void startTilitapahtumat();
 
 public slots:
     void laskuritilitslot();
@@ -31,14 +32,17 @@ private slots:
 
     void slotTilitapahtumat(QString);
 
+    void setMaxID(QString);
+
 private:
     Ui::selaatilitapahtumia *ui;
     int value = 1;
-    int idarvo = 11;
+    int idarvo;
     DLLRestAPI * pDLLRestAPI;
     QString tilitapahtumat;
     QTimer * pQTimer;
     int laskuri = 0;
+    QString maxID;
 
 signals:
     void tilitapahtumaid(int);
