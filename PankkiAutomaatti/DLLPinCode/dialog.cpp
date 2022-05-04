@@ -73,6 +73,7 @@ void Dialog::CheckPWD(QString x)
 
     if(x!="true"){
     ui->label_2->setText("Väärä pinkoodi");         //Asetetaan teksti labeliin.
+    ui->labeltries->setNum(yritykset);
 
     yritykset--;                                    //Miinustaa yhden yrityksen jokaisella painauksella.
     qDebug()<<yritykset;                            //qDebug mikä kertoo yrityksien määrän.
@@ -80,15 +81,7 @@ void Dialog::CheckPWD(QString x)
 
     }
 
-    if(yritykset==0){                               //Tarkistaa onko yritykset nolla jos on ehto toteutuu.
-        emit cardlocked();                          //Lähettää signaalin että kortti lukitetaan.
 
-        qDebug()<<"cardlocked signaali lähetetty";  //qDebug, jotta näkee että ollaan if silmukassa.
-
-        yritykset=3;                                //Asetetaan taas yritykset kolmeen.
-        ui->labeltries->setNum(yritykset);          //Asetetaan yritykset labeliin.
-        ui->btnSet->setEnabled(false);
-   }
 
     korttilukossa = "";
 
@@ -119,7 +112,15 @@ void Dialog::on_btnSet_clicked()
     qDebug()<<"Salasana input: " + a;               //qDebug mikä kertoo pinkoodin joka on syötetty.
 
 
+    if(yritykset==0){                               //Tarkistaa onko yritykset nolla jos on ehto toteutuu.
+        emit cardlocked();                          //Lähettää signaalin että kortti lukitetaan.
 
+        qDebug()<<"cardlocked signaali lähetetty";  //qDebug, jotta näkee että ollaan if silmukassa.
+
+        yritykset=3;                                //Asetetaan taas yritykset kolmeen.
+        ui->labeltries->setNum(yritykset);          //Asetetaan yritykset labeliin.
+        ui->btnSet->setEnabled(false);
+   }
 
 
     if(korttilukossa=="1"){
