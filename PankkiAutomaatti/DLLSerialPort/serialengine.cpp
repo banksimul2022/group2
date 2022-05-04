@@ -55,9 +55,24 @@ void SerialEngine::readPort()
 
      if (SignalCounter == 16){
          SignalCounter = 0;
-         qDebug()<<"Tämä lähetetään: " + cardSerialNumber;
-         emit sendCardSerialNumber(cardSerialNumber);
-         cardSerialNumber = "";
-     }
 
+     }
+    if(cardSerialNumber == "AAAAAAAAAAAAAAAA"){
+        cardSerialNumber = "1111111111111111";
+        qDebug()<<"Tämä lähetetään: " + cardSerialNumber;
+        emit sendCardSerialNumber(cardSerialNumber);
+        cardSerialNumber="";
+    }
+    if(cardSerialNumber == "BBBBBBBBBBBBBBBB"){
+        cardSerialNumber = "2222222222222222";
+        qDebug()<<"Tämä lähetetään: " + cardSerialNumber;
+        emit sendCardSerialNumber(cardSerialNumber);
+        cardSerialNumber="";
+    }
+    if(cardSerialNumber == "CCCCCCCCCCCCCCCC"){
+        cardSerialNumber = "3333333333333333";
+        qDebug()<<"Tämä lähetetään: " + cardSerialNumber;
+        emit sendCardSerialNumber(cardSerialNumber);
+        cardSerialNumber="";
+    }
 }
