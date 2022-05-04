@@ -39,8 +39,8 @@ void selaatilitapahtumia::sendsignal(int x)
 
 void selaatilitapahtumia::startTilitapahtumat()
 {
-    connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendMaxID(QString)), this, SLOT(setMaxID(QString)));
-    pDLLRestAPI->startTilitapahtumat();
+    connect(pDLLRestAPI->objectMaxTilitapahtumat, SIGNAL(sendMaxID(QString)), this, SLOT(setMaxID(QString)));
+    pDLLRestAPI->startMaxTilitapahtumat();
 }
 
 void selaatilitapahtumia::laskuritilitslot()
@@ -62,26 +62,38 @@ void selaatilitapahtumia::on_palaamenuuntilitapahtumat_clicked()
 
 void selaatilitapahtumia::on_aikaisempi_clicked()
 {
-    value--;
-    connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
+
     laskuri = laskuri +1;
     qDebug()<<"nappi aikaisempi";
+    if(idarvo > maxIDID){
+
+    }
+    else{
+    value--;
+    connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
     idarvo = idarvo + 10;
     sendsignal(idarvo);
     ui->spinBox->setValue(value);
-
+    }
 }
 
 
 void selaatilitapahtumia::on_seuraava_clicked()
 {
+    laskuri = laskuri + 1;
+    if(idarvo < 1){
+        idarvo = 1;
+        value = 1;
+        ui->spinBox->setValue(1);
+    }
+    else{
     value++;
     connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
-    laskuri = laskuri + 1;
     idarvo = idarvo - 10;
     qDebug()<<"nappi seuraava";
     sendsignal(idarvo);
     ui->spinBox->setValue(value);
+    }
 }
 
 void selaatilitapahtumia::slotTilitapahtumat(QString x)
@@ -95,9 +107,20 @@ void selaatilitapahtumia::slotTilitapahtumat(QString x)
 void selaatilitapahtumia::setMaxID(QString id)
 {
     maxID = id;
+    maxIDID = maxID.toInt();
     idarvo = maxID.toInt();
-    qDebug()<<idarvo;
-    qDebug()<<"pillupersepaskapaviaani";
-    disconnect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendMaxID(QString)), this, SLOT(setMaxID(QString)));
+    sendsignal(idarvo);
+    disconnect(pDLLRestAPI->objectMaxTilitapahtumat, SIGNAL(sendMaxID(QString)), this, SLOT(setMaxID(QString)));
 }
 
+void selaatilitapahtumia::slotAsiakas(QString asiakas)
+{
+    Asiakas = asiakas;
+    ui -> textEdit_2 -> setText(Asiakas);
+}
+
+void selaatilitapahtumia::slotSaldo(QString saldo)
+{
+    Saldo = saldo;
+    ui->textEdit_3->setText(Saldo);
+}
