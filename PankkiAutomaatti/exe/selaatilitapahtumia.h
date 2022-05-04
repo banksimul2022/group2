@@ -34,6 +34,10 @@ private slots:
 
     void setMaxID(QString);
 
+    void slotAsiakas(QString);
+
+    void slotSaldo(QString);
+
 private:
     Ui::selaatilitapahtumia *ui;
     int value = 1;
@@ -43,6 +47,9 @@ private:
     QTimer * pQTimer;
     int laskuri = 0;
     QString maxID;
+    int maxIDID;
+    QString Asiakas;
+    QString Saldo;
 
 signals:
     void tilitapahtumaid(int);

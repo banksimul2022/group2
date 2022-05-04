@@ -13,7 +13,6 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
-#include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QTextEdit>
@@ -24,12 +23,14 @@ class Ui_selaatilitapahtumia
 {
 public:
     QPushButton *palaamenuuntilitapahtumat;
-    QListWidget *listWidget;
     QPushButton *aikaisempi;
     QPushButton *seuraava;
     QSpinBox *spinBox;
     QLabel *label;
     QTextEdit *textEdit;
+    QTextEdit *textEdit_2;
+    QLabel *label_2;
+    QTextEdit *textEdit_3;
 
     void setupUi(QDialog *selaatilitapahtumia)
     {
@@ -41,9 +42,6 @@ public:
         palaamenuuntilitapahtumat = new QPushButton(selaatilitapahtumia);
         palaamenuuntilitapahtumat->setObjectName(QString::fromUtf8("palaamenuuntilitapahtumat"));
         palaamenuuntilitapahtumat->setGeometry(QRect(10, 10, 141, 51));
-        listWidget = new QListWidget(selaatilitapahtumia);
-        listWidget->setObjectName(QString::fromUtf8("listWidget"));
-        listWidget->setGeometry(QRect(180, 10, 371, 51));
         aikaisempi = new QPushButton(selaatilitapahtumia);
         aikaisempi->setObjectName(QString::fromUtf8("aikaisempi"));
         aikaisempi->setGeometry(QRect(380, 340, 161, 41));
@@ -159,6 +157,18 @@ public:
         textEdit = new QTextEdit(selaatilitapahtumia);
         textEdit->setObjectName(QString::fromUtf8("textEdit"));
         textEdit->setGeometry(QRect(10, 80, 361, 351));
+        textEdit_2 = new QTextEdit(selaatilitapahtumia);
+        textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
+        textEdit_2->setGeometry(QRect(170, 10, 371, 51));
+        textEdit_2->setReadOnly(true);
+        label_2 = new QLabel(selaatilitapahtumia);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(390, 90, 49, 16));
+        textEdit_3 = new QTextEdit(selaatilitapahtumia);
+        textEdit_3->setObjectName(QString::fromUtf8("textEdit_3"));
+        textEdit_3->setGeometry(QRect(440, 80, 104, 41));
+        textEdit_3->setLayoutDirection(Qt::LeftToRight);
+        textEdit_3->setReadOnly(true);
 
         retranslateUi(selaatilitapahtumia);
 
@@ -172,6 +182,7 @@ public:
         aikaisempi->setText(QCoreApplication::translate("selaatilitapahtumia", "Aikaisempi sivu", nullptr));
         seuraava->setText(QCoreApplication::translate("selaatilitapahtumia", "Seuraava sivu", nullptr));
         label->setText(QCoreApplication::translate("selaatilitapahtumia", "Sivunumero", nullptr));
+        label_2->setText(QCoreApplication::translate("selaatilitapahtumia", "Saldo :", nullptr));
     } // retranslateUi
 
 };

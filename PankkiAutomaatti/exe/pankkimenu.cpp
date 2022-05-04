@@ -14,6 +14,8 @@ pankkimenu::pankkimenu(QWidget *parent) :
 
     connect( pQTimer, SIGNAL(timeout()), this, SLOT(laskurislot()));
 
+    connect( pDLLRestAPI->objectAsiakas, SIGNAL( sendNimi(QString)), this, SLOT(asiakasslot(QString)));
+
     pQTimer->start(30000);
 }
 
@@ -22,6 +24,11 @@ pankkimenu::~pankkimenu()
     delete ui;
     pQTimer->stop();
     pQTimer = nullptr;
+}
+
+void pankkimenu::asiakas()
+{
+    pDLLRestAPI -> startAsiakas();
 }
 
 void pankkimenu::on_pushButton_3_clicked()
@@ -41,9 +48,7 @@ void pankkimenu::on_nosta_clicked()
 void pankkimenu::on_selaa_clicked()
 {
     laskuri = laskuri + 1;
-    int x = 11;
     pselaatilit -> startTilitapahtumat();
-    pselaatilit -> sendsignal(x);
     pselaatilit -> exec();
 }
 
@@ -53,6 +58,14 @@ void pankkimenu::on_naytasaldo_clicked()
     laskuri = laskuri + 1;
     pnaytasaldo -> getAsiakas();
     pnaytasaldo -> exec();
+}
+
+void pankkimenu::asiakasslot(QString asiakas)
+{
+    Asiakas = asiakas;
+    qDebug()<<Asiakas;
+    qDebug()<<"HOMO";
+    ui -> textEdit -> setText(Asiakas);
 }
 
 void pankkimenu::laskurislot()

@@ -69,6 +69,7 @@ void kirjaudusisaan::on_VALIAIKANAPPI_clicked()
 void kirjaudusisaan::trueFalse()
 {
     qDebug()<<"sisaan";
+    pPankkimenu -> asiakas();
     pPankkimenu -> exec();
 }
 

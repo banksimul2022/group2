@@ -20,6 +20,8 @@ public:
     explicit pankkimenu(QWidget *parent = nullptr);
     ~pankkimenu();
 
+    void asiakas();
+
 public slots:
     void laskurislot();
 
@@ -34,6 +36,8 @@ private slots:
 
     void on_naytasaldo_clicked();
 
+    void asiakasslot(QString);
+
 private:
     Ui::pankkimenu *ui;
     DLLRestAPI * pDLLRestAPI;
@@ -42,6 +46,7 @@ private:
     naytasaldo * pnaytasaldo;
     QTimer * pQTimer;
     int laskuri = 0;
+    QString Asiakas;
 };
 
 #endif // PANKKIMENU_H
