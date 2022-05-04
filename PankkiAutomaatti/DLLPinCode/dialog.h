@@ -26,6 +26,7 @@ signals:
     void cardlocked();
     void loginClicked();
     void loginok();
+    void korttiok();
 
 public slots:
     void CheckPWD(QString);
