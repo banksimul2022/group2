@@ -68,3 +68,8 @@ void DLLRestAPI::startPostTilitapahtumat()
     objectPostTilitapahtumat->addTilitapahtuma();
 }
 
+void DLLRestAPI::startLogin()
+{
+    objectLogin->getPin();
+}
+

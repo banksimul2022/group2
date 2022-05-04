@@ -23,6 +23,7 @@ public:
     void startTilitapahtumat();
     void startPutSaldo();
     void startPostTilitapahtumat();
+    void startLogin();
 
     Login *objectLogin;
 
