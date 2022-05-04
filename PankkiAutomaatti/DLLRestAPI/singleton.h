@@ -26,6 +26,9 @@ class Singleton {
 
    void setSingletonCardNum(QString Kort);
    QString getSingletonCardNum();
+
+   void setSingletonPincode(QString Pin);
+   QString getSingletonPin();
 };
 
 #endif // SINGLETON_H

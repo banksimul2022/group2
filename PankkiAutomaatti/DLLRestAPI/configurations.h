@@ -13,6 +13,7 @@ public:
     Configurations();
     QByteArray token;
     QString KortNum;
+    QString PinCode;
 };
 
 #endif // CONFIGURATIONS_H

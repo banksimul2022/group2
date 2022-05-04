@@ -15,20 +15,24 @@ class Login : public QObject
 public:
     explicit Login(QObject *parent = nullptr);
     ~Login();
-    void setPinKort(QString kortinnumero, QString pinkoodi);
     void getPin();
 
 private slots:
     void loginSlot(QNetworkReply *reply);
+    void receivePincode(QString);
+    void receiveSignal();
+
 private:
     QNetworkAccessManager * postManager;
     QNetworkReply *reply;
     QByteArray response_data;
 
+    QString kortnro = "1111111111";
     QString Kortinnumero;
     QString Pinkoodi;
     QString trueFalse;
     QString base_url;
+    QString lukittu;
     QByteArray token;
 
     Url * objectUrl;

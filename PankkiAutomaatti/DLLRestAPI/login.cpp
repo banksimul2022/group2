@@ -21,21 +21,16 @@ Login::~Login()
     objectUrl = nullptr;
 }
 
-void Login::setPinKort(QString kortinnumero, QString pinkoodi)
-{
-    qDebug()<<kortinnumero;
-    qDebug()<<pinkoodi;
-
-    Kortinnumero = kortinnumero;
-    Pinkoodi = pinkoodi;
-
-    Singleton *a = a->getSingletonInstance();
-    a->setSingletonCardNum(Kortinnumero);
-
-}
-
 void Login::getPin()
 {
+    Singleton * s = s->getSingletonInstance();
+    Pinkoodi = s ->getSingletonPin();
+    qDebug()<<"Saatu pinkoodi: "+Pinkoodi;
+
+    Singleton * u = u->getSingletonInstance();
+    Kortinnumero = u ->getSingletonCardNum();
+    qDebug()<<"Saatu kortinnumero: "+Kortinnumero;
+
     qDebug()<<"getPin alussa";
     QJsonObject jsonObj;
     jsonObj.insert("Kortinnumero", Kortinnumero);
@@ -73,4 +68,18 @@ void Login::loginSlot(QNetworkReply *reply)
 
        emit getTrueFalse(trueFalse);
        disconnect(postManager, SIGNAL(finished(QNetworkReply*)), this, SLOT(loginSlot(QNetworkReply*)));
+}
+
+void Login::receivePincode(QString pin)
+{
+    Singleton *a = a->getSingletonInstance();
+    a->setSingletonPincode(pin);
+
+    Singleton *b = b->getSingletonInstance();
+    b->setSingletonCardNum(kortnro);
+}
+
+void Login::receiveSignal()
+{
+    getPin();
 }
