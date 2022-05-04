@@ -16,6 +16,7 @@ Dialog::~Dialog()
     qDebug()<<"dialog.cpp tuhoajassa";
     yritykset=3;
     ui->labeltries->setNum(yritykset);
+
     ui->btnSet->setEnabled(true);
 
     delete ui;
@@ -44,7 +45,7 @@ void Dialog::ifcardlocked(QString x)
         qDebug()<<"if korttilukossa 1 sisällä";
         ui->label_2->setText("Kortti lukossa");
         ui->btnSet->setEnabled(false);
-        ui->labeltries->setNum(0);              //Asettaa yritykset labeliin.
+        ui->labeltries->setText("");                  //Asetetaan yritykset labeliin.
     }
     else{
         emit korttiok();
@@ -60,13 +61,14 @@ void Dialog::CheckPWD(QString x)
     ui->labeltries->setNum(yritykset);
 
 
+
     if(yritykset==0){                               //Tarkistaa onko yritykset nolla jos on ehto toteutuu.
         emit cardlocked();                          //Lähettää signaalin että kortti lukitetaan.
 
         qDebug()<<"cardlocked signaali lähetetty";  //qDebug, jotta näkee että ollaan if silmukassa.
 
         yritykset=3;                                //Asetetaan taas yritykset kolmeen.
-        ui->labeltries->setNum(0);                  //Asetetaan yritykset labeliin.
+        ui->labeltries->setText("");                  //Asetetaan yritykset labeliin.
         ui->btnSet->setEnabled(false);
         ui->label_2->setText("Kortti lukossa");
    }
@@ -74,6 +76,7 @@ void Dialog::CheckPWD(QString x)
 
     if(korttilukossa=="1"){
         qDebug()<<"if korttilukossa 1 sisällä";
+        ui->labeltries->setText("");                  //Asetetaan yritykset labeliin.
         ui->label_2->setText("Kortti lukossa");
     }
 
@@ -82,8 +85,6 @@ void Dialog::CheckPWD(QString x)
         ui->labeltries->setNum(yritykset);
 
         emit loginok();
-
-        ui->label_2->setText("");
 
         qDebug()<<"if lauseen sisällä";
 
@@ -104,7 +105,7 @@ void Dialog::CheckPWD(QString x)
 
 void Dialog::setCardNumber()
 {
-    ui->labeltries->setNum(yritykset);
+
 }
 
 void Dialog::on_btnSet_clicked()
@@ -116,6 +117,7 @@ void Dialog::on_btnSet_clicked()
     emit loginClicked();                            //Lähettää signaalin että nappia on painettu.
 
     ui->textValue->setText("");                     //Asettaa lineedit kentän tyhjäksi.
+
 }
 
 
