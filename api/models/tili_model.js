@@ -11,8 +11,8 @@ const tili = {
 
   add: function(tili, callback) {
     return db.query(
-      'insert into tili (Saldo,Säästötili,Tilinumero) values(?,?,?)',
-      [tili.Saldo, tili.Säästötili, tili.Tilinumero],
+      'insert into tili (Saldo,Tilinumero) values(?,?,?)',
+      [tili.Saldo, tili.Tilinumero],
       callback
     );
   },
