@@ -2,14 +2,14 @@
 
 Saldo::Saldo(QObject *parent) : QObject(parent)
 {
-    saldoManager = new QNetworkAccessManager(this);
+    getManager = new QNetworkAccessManager(this);
     objectUrl = new Url;
 }
 
 Saldo::~Saldo()
 {
-    delete saldoManager;
-    saldoManager = nullptr;
+    delete getManager;
+    getManager = nullptr;
 
     delete objectUrl;
     objectUrl = nullptr;
@@ -32,9 +32,9 @@ void Saldo::getSaldo()
     request.setRawHeader(QByteArray("Authorization"),(webToken));
 
     qDebug()<<"Connectia edeltävä";
-    connect(saldoManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(saldoSlot(QNetworkReply*)));
-    reply = saldoManager->get(request);
-    response_data = saldoManager->get(request)->readAll();
+    connect(getManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(saldoSlot(QNetworkReply*)));
+    reply = getManager->get(request);
+    response_data = getManager->get(request)->readAll();
 }
 
 void Saldo::saldoSlot(QNetworkReply *reply)

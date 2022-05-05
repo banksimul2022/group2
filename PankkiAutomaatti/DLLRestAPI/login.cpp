@@ -75,11 +75,15 @@ void Login::receivePincode(QString pin)
     Singleton *a = a->getSingletonInstance();
     a->setSingletonPincode(pin);
 
-    Singleton *b = b->getSingletonInstance();
-    b->setSingletonCardNum(kortnro);
 }
 
 void Login::receiveSignal()
 {
     postLogin();
+}
+
+void Login::receiveCardNum(QString cardNum)
+{
+    Singleton *b = b->getSingletonInstance();
+    b->setSingletonCardNum(cardNum);
 }
