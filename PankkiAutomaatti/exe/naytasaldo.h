@@ -16,9 +16,7 @@ class naytasaldo : public QDialog
 public:
     explicit naytasaldo(QWidget *parent = nullptr);
     ~naytasaldo();
-    void getAsiakas();
-
-    void getSaldo();
+    void startMaxID();
 
     void getTilitapahtumat();
 
@@ -36,14 +34,21 @@ private slots:
 
     void slotTilitapahtumat(QString);
 
+    void slotMaxID(QString);
+
 private:
     Ui::naytasaldo *ui;
     DLLRestAPI * pDLLRestAPI;
     QString Asiakas;
     QString Saldo;
     QString Tilitapahtumat;
+    QString tulevaID;
+    int maxID;
     QTimer * pQTimer;
     int laskuri = 0;
+
+signals:
+    void sendIDtoDLL(int);
 };
 
 #endif // NAYTASALDO_H

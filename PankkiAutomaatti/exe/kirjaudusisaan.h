@@ -26,6 +26,7 @@ private slots:
 
     void on_VALIAIKANAPPI_clicked();
     void trueFalse();
+    void getCardNumber(QString);
 
 private:
     Ui::kirjaudusisaan *ui;

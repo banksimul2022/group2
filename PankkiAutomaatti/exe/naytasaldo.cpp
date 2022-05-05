@@ -7,17 +7,19 @@ naytasaldo::naytasaldo(QWidget *parent) :
 {
     ui->setupUi(this);
     pDLLRestAPI = new DLLRestAPI;
-    getAsiakas();
     pQTimer = new QTimer;
 
     connect( pQTimer, SIGNAL(timeout()), this, SLOT(laskurinaytaslot()));
 
     pQTimer->start(10000);
 
+    qDebug() << "NÄYTÄSALDO KONSTRUKTORI";
 
     connect( pDLLRestAPI->objectAsiakas, SIGNAL( sendAsiakas(QString)), this, SLOT(slotAsiakas(QString)));
 
     connect( pDLLRestAPI->objectSaldo, SIGNAL( sendSaldo (QString)), this, SLOT(slotSaldo(QString)));
+
+    connect( this, SIGNAL(sendIDtoDLL(int)), pDLLRestAPI->objectTilitapahtumat, SLOT(setIDTilitapahtumat(int)));
 
     //connect( pDLLRestAPI->objectTilitapahtumat, SIGNAL( sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
 }
@@ -27,13 +29,20 @@ naytasaldo::~naytasaldo()
     delete ui;
 }
 
-void naytasaldo::getAsiakas()
+void naytasaldo::startMaxID()
 {
-    connect( pDLLRestAPI->objectTilitapahtumat, SIGNAL( sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
+    connect( pDLLRestAPI->objectMaxTilitapahtumat, SIGNAL(sendMaxID(QString)), this, SLOT(slotMaxID(QString)));
+    pDLLRestAPI->startMaxTilitapahtumat();
+}
+
+void naytasaldo::getTilitapahtumat()
+{
+    connect(pDLLRestAPI->objectTilitapahtumat, SIGNAL(sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
+    emit sendIDtoDLL(maxID);
     pDLLRestAPI->startAsiakas();
-    pDLLRestAPI->startTilitapahtumat();
     pDLLRestAPI->startSaldo();
 }
+
 
 void naytasaldo::laskurinaytaslot()
 {
@@ -73,4 +82,13 @@ void naytasaldo::slotTilitapahtumat(QString tilitapahtumat)
     Tilitapahtumat = tilitapahtumat;
     ui->tilitapahtumatedit->setText(Tilitapahtumat);
     disconnect( pDLLRestAPI->objectTilitapahtumat, SIGNAL( sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
+}
+
+void naytasaldo::slotMaxID(QString ID)
+{
+    tulevaID = ID;
+    maxID = tulevaID.toInt();
+    getTilitapahtumat();
+    disconnect( pDLLRestAPI->objectMaxTilitapahtumat, SIGNAL(sendMaxID(QString)), this, SLOT(slotMaxID(QString)));
+
 }

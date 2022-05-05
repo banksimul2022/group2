@@ -17,7 +17,7 @@ kirjaudusisaan::kirjaudusisaan(QWidget *parent) :
 
     connect(pDLLPinCode->objectDialog, SIGNAL(korttiok()), pDLLRestAPI->objectLogin, SLOT(receiveSignal()));
 
-    //connect( pDLLSerialPort->objectSerialEngine, SIGNAL(sendCardSerialNumber(QString)), this, SLOT(getCardNumber(QString)));
+    connect( pDLLSerialPort->objectSerialEngine, SIGNAL(sendCardSerialNumber(QString)), this, SLOT(getCardNumber(QString)));
 
     connect(pDLLPinCode->objectDialog, SIGNAL(pin(QString)), pDLLRestAPI->objectLogin, SLOT(receivePincode(QString)));
 
@@ -71,6 +71,11 @@ void kirjaudusisaan::trueFalse()
     qDebug()<<"sisaan";
     pPankkimenu -> asiakas();
     pPankkimenu -> exec();
+}
+
+void kirjaudusisaan::getCardNumber(QString)
+{
+
 }
 
 

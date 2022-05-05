@@ -579,18 +579,18 @@
   <widget class="QLineEdit" name="saldoedit">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>140</y>
-     <width>201</width>
-     <height>41</height>
+     <x>70</x>
+     <y>80</y>
+     <width>71</width>
+     <height>51</height>
     </rect>
    </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>150</y>
+     <x>20</x>
+     <y>90</y>
      <width>81</width>
      <height>31</height>
     </rect>
@@ -613,9 +613,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>210</y>
+     <y>139</y>
      <width>341</width>
-     <height>70</height>
+     <height>141</height>
     </rect>
    </property>
    <property name="palette">

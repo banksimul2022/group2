@@ -56,7 +56,7 @@ void pankkimenu::on_selaa_clicked()
 void pankkimenu::on_naytasaldo_clicked()
 {
     laskuri = laskuri + 1;
-    pnaytasaldo -> getAsiakas();
+    pnaytasaldo -> startMaxID();
     pnaytasaldo -> exec();
 }
 
@@ -64,7 +64,6 @@ void pankkimenu::asiakasslot(QString asiakas)
 {
     Asiakas = asiakas;
     qDebug()<<Asiakas;
-    qDebug()<<"HOMO";
     ui -> textEdit -> setText(Asiakas);
 }
 
