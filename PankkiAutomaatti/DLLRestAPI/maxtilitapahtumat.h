@@ -26,7 +26,7 @@ private slots:
     void getMaxIDSlot(QNetworkReply *reply);
 
 private:
-    QNetworkAccessManager * tilitapahtumatManager;
+    QNetworkAccessManager * getManager;
     QNetworkReply * reply;
     QByteArray response_data;
 

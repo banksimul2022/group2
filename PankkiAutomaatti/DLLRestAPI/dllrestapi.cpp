@@ -49,18 +49,14 @@ DLLRestAPI::~DLLRestAPI()
 
 void DLLRestAPI::startAsiakas()
 {
-    objectAsiakas->setWebtoken();
+    objectAsiakas->getAsiakas();
 }
 
 void DLLRestAPI::startSaldo()
 {
-    objectSaldo->setWebToken();
+    objectSaldo->getSaldo();
 }
 
-void DLLRestAPI::startTilitapahtumat()
-{
-    objectTilitapahtumat->setWebToken();
-}
 
 void DLLRestAPI::startPutSaldo()
 {
@@ -72,10 +68,6 @@ void DLLRestAPI::startPostTilitapahtumat()
     objectPostTilitapahtumat->addTilitapahtuma();
 }
 
-void DLLRestAPI::startLogin()
-{
-    objectLogin->getPin();
-}
 
 void DLLRestAPI::startMaxTilitapahtumat()
 {

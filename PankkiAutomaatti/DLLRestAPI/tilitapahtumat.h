@@ -17,22 +17,23 @@ class Tilitapahtumat : public QObject
 public:
     explicit Tilitapahtumat(QObject *parent = nullptr);
     ~Tilitapahtumat();
-    void setWebToken();
+    void getTilitapahtumat();
 
 private slots:
     void tilitapahtumatSlot(QNetworkReply *reply);
     void setIDTilitapahtumat(int);
 
 private:
-    QNetworkAccessManager * tilitapahtumatManager;
+    QNetworkAccessManager * getManager;
     QNetworkReply * reply;
     QByteArray response_data;
 
+    Url *objectUrl;
+
+    QByteArray webToken;
     QString Kortinnumero, tilitapahtumat, muutettuID, maxID;
     int idTilitapahtumat;
-    QByteArray webToken;
 
-    Url *objectUrl;
 
 signals:
     void sendTilitapahtumat(QString);

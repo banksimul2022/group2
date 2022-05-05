@@ -21,18 +21,20 @@ signals:
     void sendLukitus(QString);
 
 private slots:
-    void getLukitusSlot(QNetworkReply *reply);
+    void LukitusSlot(QNetworkReply *reply);
     void receiveClicked();
 
 private:
-    QNetworkAccessManager * lukitusManager;
+    QNetworkAccessManager * getManager;
     QNetworkReply * reply;
     QByteArray response_data;
+
+    Url * objectUrl;
 
     QString Kortinnumero, Pinkoodi, lukittu;
     QByteArray webToken;
 
-    Url * objectUrl;
+
 
 };
 

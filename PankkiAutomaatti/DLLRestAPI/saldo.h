@@ -15,7 +15,7 @@ class Saldo : public QObject
 public:
     explicit Saldo(QObject *parent = nullptr);
     ~Saldo();
-    void setWebToken();
+    void getSaldo();
 
 private slots:
     void saldoSlot(QNetworkReply *reply);

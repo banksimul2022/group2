@@ -15,7 +15,7 @@ Saldo::~Saldo()
     objectUrl = nullptr;
 }
 
-void Saldo::setWebToken()
+void Saldo::getSaldo()
 {
     qDebug()<<"saldon setWebToken";
 

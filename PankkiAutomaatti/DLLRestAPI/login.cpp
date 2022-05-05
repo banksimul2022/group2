@@ -21,7 +21,7 @@ Login::~Login()
     objectUrl = nullptr;
 }
 
-void Login::getPin()
+void Login::postLogin()
 {
     Singleton * s = s->getSingletonInstance();
     Pinkoodi = s ->getSingletonPin();
@@ -81,5 +81,5 @@ void Login::receivePincode(QString pin)
 
 void Login::receiveSignal()
 {
-    getPin();
+    postLogin();
 }

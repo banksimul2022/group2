@@ -2,20 +2,20 @@
 
 Tilitapahtumat::Tilitapahtumat(QObject *parent) : QObject(parent)
 {
-    tilitapahtumatManager = new QNetworkAccessManager(this);
+    getManager = new QNetworkAccessManager(this);
     objectUrl = new Url;
 }
 
 Tilitapahtumat::~Tilitapahtumat()
 {
-    delete tilitapahtumatManager;
-    tilitapahtumatManager = nullptr;
+    delete getManager;
+    getManager = nullptr;
 
     delete objectUrl;
     objectUrl = nullptr;
 }
 
-void Tilitapahtumat::setWebToken()
+void Tilitapahtumat::getTilitapahtumat()
 {
     qDebug()<<"saldon setWebToken";
 
@@ -35,9 +35,9 @@ void Tilitapahtumat::setWebToken()
     request.setRawHeader(QByteArray("Authorization"),(webToken));
 
     qDebug()<<"Connectia edeltävä";
-    connect(tilitapahtumatManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(tilitapahtumatSlot(QNetworkReply*)));
-    reply = tilitapahtumatManager->get(request);
-    response_data = tilitapahtumatManager->get(request)->readAll();
+    connect(getManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(tilitapahtumatSlot(QNetworkReply*)));
+    reply = getManager->get(request);
+    response_data = getManager->get(request)->readAll();
 }
 
 
@@ -63,5 +63,5 @@ void Tilitapahtumat::setIDTilitapahtumat(int tulevaID)
     idTilitapahtumat = tulevaID;
     muutettuID = QString::number(idTilitapahtumat);
     qDebug()<<"Tässä on muutettu id: "+muutettuID;
-    setWebToken();
+    getTilitapahtumat();
 }

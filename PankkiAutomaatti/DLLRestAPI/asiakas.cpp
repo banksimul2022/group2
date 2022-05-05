@@ -2,20 +2,20 @@
 
 Asiakas::Asiakas(QObject *parent): QObject(parent)
 {
-    asiakasManager = new QNetworkAccessManager(this);
+    getManager = new QNetworkAccessManager(this);
     objectUrl = new Url;
 }
 
 Asiakas::~Asiakas()
 {
-    delete asiakasManager;
-    asiakasManager = nullptr;
+    delete getManager;
+    getManager = nullptr;
 
     delete objectUrl;
     objectUrl = nullptr;
 }
 
-void Asiakas::setWebtoken()
+void Asiakas::getAsiakas()
 {
     qDebug()<<"asiakkaan setWebToken";
 
@@ -35,15 +35,11 @@ void Asiakas::setWebtoken()
     request.setRawHeader(QByteArray("Authorization"),(webToken));
 
     qDebug()<<"Connectia edeltävä";
-    connect(asiakasManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(asiakasSlot(QNetworkReply*)));
-    reply = asiakasManager->get(request);
-    response_data = asiakasManager->get(request)->readAll();
+    connect(getManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(asiakasSlot(QNetworkReply*)));
+    reply = getManager->get(request);
+    response_data = getManager->get(request)->readAll();
 }
 
-QString Asiakas::getAsiakas()
-{
-    return asiakas;
-}
 
 void Asiakas::asiakasSlot(QNetworkReply *reply)
 {
