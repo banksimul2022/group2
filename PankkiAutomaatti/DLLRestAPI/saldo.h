@@ -21,7 +21,7 @@ private slots:
     void saldoSlot(QNetworkReply *reply);
 
 private:
-    QNetworkAccessManager * saldoManager;
+    QNetworkAccessManager * getManager;
     QNetworkReply * reply;
     QByteArray response_data;
 

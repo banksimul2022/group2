@@ -21,6 +21,7 @@ private slots:
     void loginSlot(QNetworkReply *reply);
     void receivePincode(QString);
     void receiveSignal();
+    void receiveCardNum(QString);
 
 private:
     QNetworkAccessManager * postManager;
@@ -30,7 +31,6 @@ private:
     Url * objectUrl;
 
     QByteArray token;
-    QString kortnro = "1111111111";
     QString Kortinnumero;
     QString Pinkoodi;
     QString trueFalse;
