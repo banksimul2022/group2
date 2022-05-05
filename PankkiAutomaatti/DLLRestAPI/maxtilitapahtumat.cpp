@@ -2,14 +2,14 @@
 
 maxTilitapahtumat::maxTilitapahtumat(QObject *parent) : QObject(parent)
 {
-    tilitapahtumatManager = new QNetworkAccessManager(this);
+    getManager = new QNetworkAccessManager(this);
     objectUrl = new Url;
 }
 
 maxTilitapahtumat::~maxTilitapahtumat()
 {
-    delete tilitapahtumatManager;
-    tilitapahtumatManager = nullptr;
+    delete getManager;
+    getManager = nullptr;
 
     delete objectUrl;
     objectUrl = nullptr;
@@ -35,9 +35,9 @@ void maxTilitapahtumat::getMaxID()
     request.setRawHeader(QByteArray("Authorization"),(webToken));
 
     qDebug()<<"Connectia edeltävä";
-    connect(tilitapahtumatManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(getMaxIDSlot(QNetworkReply*)));
-    reply = tilitapahtumatManager->get(request);
-    response_data = tilitapahtumatManager->get(request)->readAll();
+    connect(getManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(getMaxIDSlot(QNetworkReply*)));
+    reply = getManager->get(request);
+    response_data = getManager->get(request)->readAll();
 }
 
 void maxTilitapahtumat::getMaxIDSlot(QNetworkReply *reply)

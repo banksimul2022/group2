@@ -21,10 +21,8 @@ public:
 
     void startAsiakas();
     void startSaldo();
-    void startTilitapahtumat();
     void startPutSaldo();
     void startPostTilitapahtumat();
-    void startLogin();
     void startMaxTilitapahtumat();
 
     Login *objectLogin;

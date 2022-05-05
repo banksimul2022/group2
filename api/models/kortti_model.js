@@ -20,15 +20,18 @@ const kortti = {
       callback)
     });
   },
+
   delete: function(Kortinnumero, callback) {
     return db.query('delete from kortti where Kortinnumero=?', [Kortinnumero], callback);
   },
+
   update: function(Kortinnumero, kortti, callback) {
+    bcrypt.hash(kortti.Pinkoodi, saltRounds, function(err, hash){
     return db.query(
-      'update kortti set Lukittu=? where Kortinnumero=?',
-      [kortti.Lukittu, Kortinnumero],
-      callback
-    );
+      'update kortti set CVC=?,Kortinnumero=?,Vanhentumispäivä=?,Pinkoodi=?,idAsiakas=?,idTili=? where Kortinnumero=?',
+      [kortti.CVC, kortti.Kortinnumero, kortti.Vanhentumispäivä, hash, kortti.idAsiakas, kortti.idTili, Kortinnumero],
+      callback)
+    });
   }
 };
 module.exports = kortti;

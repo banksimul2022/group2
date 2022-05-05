@@ -15,20 +15,18 @@ class Asiakas : public QObject
 public:
     explicit Asiakas( QObject *parent = nullptr);
     ~Asiakas();
-    void setWebtoken();
-    QString getAsiakas();
+    void getAsiakas();
 
 private slots:
     void asiakasSlot(QNetworkReply *reply);
 
 private:
-    QNetworkAccessManager * asiakasManager;
+    QNetworkAccessManager * getManager;
     QNetworkReply * reply;
     QByteArray response_data;
 
-    QString Kortinnumero, Pinkoodi;
+    QString Kortinnumero, Pinkoodi, asiakas, nimi;
     QByteArray webToken;
-    QString asiakas, nimi;
 
     Url * objectUrl;
 

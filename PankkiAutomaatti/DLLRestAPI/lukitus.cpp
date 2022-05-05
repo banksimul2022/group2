@@ -2,14 +2,14 @@
 
 Lukitus::Lukitus(QObject *parent) : QObject(parent)
 {
-    lukitusManager = new QNetworkAccessManager(this);
+    getManager = new QNetworkAccessManager(this);
     objectUrl = new Url;
 }
 
 Lukitus::~Lukitus()
 {
-    delete lukitusManager;
-    lukitusManager = nullptr;
+    delete getManager;
+    getManager = nullptr;
 
     delete objectUrl;
     objectUrl = nullptr;
@@ -33,12 +33,12 @@ void Lukitus::getLukitus()
     request.setRawHeader(QByteArray("Authorization"),(webToken));
 
     qDebug()<<"Connectia edeltävä";
-    connect(lukitusManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(getLukitusSlot(QNetworkReply*)));
-    reply = lukitusManager->get(request);
-    response_data = lukitusManager->get(request)->readAll();
+    connect(getManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(LukitusSlot(QNetworkReply*)));
+    reply = getManager->get(request);
+    response_data = getManager->get(request)->readAll();
 }
 
-void Lukitus::getLukitusSlot(QNetworkReply *reply)
+void Lukitus::LukitusSlot(QNetworkReply *reply)
 {
     response_data=reply->readAll();
     qDebug() << response_data;
