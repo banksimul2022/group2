@@ -159,14 +159,14 @@ public:
         textEdit->setGeometry(QRect(10, 80, 361, 351));
         textEdit_2 = new QTextEdit(selaatilitapahtumia);
         textEdit_2->setObjectName(QString::fromUtf8("textEdit_2"));
-        textEdit_2->setGeometry(QRect(170, 10, 371, 51));
+        textEdit_2->setGeometry(QRect(390, 80, 151, 181));
         textEdit_2->setReadOnly(true);
         label_2 = new QLabel(selaatilitapahtumia);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(390, 90, 49, 16));
+        label_2->setGeometry(QRect(390, 30, 49, 16));
         textEdit_3 = new QTextEdit(selaatilitapahtumia);
         textEdit_3->setObjectName(QString::fromUtf8("textEdit_3"));
-        textEdit_3->setGeometry(QRect(440, 80, 104, 41));
+        textEdit_3->setGeometry(QRect(430, 20, 111, 41));
         textEdit_3->setLayoutDirection(Qt::LeftToRight);
         textEdit_3->setReadOnly(true);
 

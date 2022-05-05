@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
@@ -26,6 +27,7 @@ public:
     QPushButton *sata;
     QPushButton *viisisataa;
     QPushButton *pushButton_7;
+    QLabel *label;
 
     void setupUi(QDialog *nostarahaa)
     {
@@ -215,6 +217,12 @@ public:
         pushButton_7 = new QPushButton(nostarahaa);
         pushButton_7->setObjectName(QString::fromUtf8("pushButton_7"));
         pushButton_7->setGeometry(QRect(470, 120, 141, 91));
+        label = new QLabel(nostarahaa);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(480, 35, 161, 31));
+        QFont font;
+        font.setPointSize(15);
+        label->setFont(font);
         neljakymmenta->raise();
         kaksikymmenta->raise();
         kuusikymmenta->raise();
@@ -222,6 +230,7 @@ public:
         sata->raise();
         viisisataa->raise();
         pushButton_7->raise();
+        label->raise();
 
         retranslateUi(nostarahaa);
 
@@ -238,6 +247,7 @@ public:
         sata->setText(QCoreApplication::translate("nostarahaa", "100 euroa", nullptr));
         viisisataa->setText(QCoreApplication::translate("nostarahaa", "500 euroa", nullptr));
         pushButton_7->setText(QCoreApplication::translate("nostarahaa", "Palaa aloitusn\303\244ytt\303\266\303\266n", nullptr));
+        label->setText(QString());
     } // retranslateUi
 
 };

@@ -663,10 +663,10 @@
   <widget class="QTextEdit" name="textEdit_2">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>10</y>
-     <width>371</width>
-     <height>51</height>
+     <x>390</x>
+     <y>80</y>
+     <width>151</width>
+     <height>181</height>
     </rect>
    </property>
    <property name="readOnly">
@@ -677,7 +677,7 @@
    <property name="geometry">
     <rect>
      <x>390</x>
-     <y>90</y>
+     <y>30</y>
      <width>49</width>
      <height>16</height>
     </rect>
@@ -689,9 +689,9 @@
   <widget class="QTextEdit" name="textEdit_3">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>80</y>
-     <width>104</width>
+     <x>430</x>
+     <y>20</y>
+     <width>111</width>
      <height>41</height>
     </rect>
    </property>

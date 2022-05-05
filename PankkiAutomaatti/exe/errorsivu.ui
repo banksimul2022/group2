@@ -16,10 +16,10 @@
   <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>10</x>
      <y>10</y>
-     <width>361</width>
-     <height>51</height>
+     <width>381</width>
+     <height>111</height>
     </rect>
    </property>
    <property name="palette">
@@ -572,6 +572,11 @@
      </disabled>
     </palette>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>Nostoa ei voitu suorittaa, tilillä ei ole tarpeeksi saldoa.</string>
    </property>
@@ -580,19 +585,6 @@
    </property>
    <property name="readOnly">
     <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="OKnappi">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>80</y>
-     <width>80</width>
-     <height>24</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>OK</string>
    </property>
   </widget>
  </widget>

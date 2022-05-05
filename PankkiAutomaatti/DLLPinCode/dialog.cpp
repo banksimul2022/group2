@@ -61,19 +61,6 @@ void Dialog::CheckPWD(QString x)
     ui->labeltries->setNum(yritykset);
 
 
-
-    if(yritykset==0){                               //Tarkistaa onko yritykset nolla jos on ehto toteutuu.
-        emit cardlocked();                          //Lähettää signaalin että kortti lukitetaan.
-
-        qDebug()<<"cardlocked signaali lähetetty";  //qDebug, jotta näkee että ollaan if silmukassa.
-
-        yritykset=3;                                //Asetetaan taas yritykset kolmeen.
-        ui->labeltries->setText("");                  //Asetetaan yritykset labeliin.
-        ui->btnSet->setEnabled(false);
-        ui->label_2->setText("Kortti lukossa");
-   }
-
-
     if(korttilukossa=="1"){
         qDebug()<<"if korttilukossa 1 sisällä";
         ui->labeltries->setText("");                  //Asetetaan yritykset labeliin.
@@ -94,6 +81,17 @@ void Dialog::CheckPWD(QString x)
 
         QWidget::close();
     }
+
+    if(yritykset==0){                               //Tarkistaa onko yritykset nolla jos on ehto toteutuu.
+        emit cardlocked();                          //Lähettää signaalin että kortti lukitetaan.
+
+        qDebug()<<"cardlocked signaali lähetetty";  //qDebug, jotta näkee että ollaan if silmukassa.
+
+        yritykset=3;                                //Asetetaan taas yritykset kolmeen.
+        ui->labeltries->setText("");                  //Asetetaan yritykset labeliin.
+        ui->btnSet->setEnabled(false);
+        ui->label_2->setText("Kortti lukossa");
+   }
 
     korttilukossa = "";                                 //Tyhjennetään korttilukossa muuttuja
 

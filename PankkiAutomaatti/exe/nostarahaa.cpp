@@ -26,6 +26,7 @@ nostarahaa::nostarahaa(QWidget *parent) :
 
 nostarahaa::~nostarahaa()
 {
+    ui->label->setText("");
     delete ui;
     ui = nullptr;
     delete pDLLRestAPI;
@@ -59,6 +60,7 @@ void nostarahaa::on_oma_clicked()
 {
     pomasumma -> startUpdate();
     pomasumma -> exec();
+    ui->label->setText("Rahaa nostettu");
 }
 
 
@@ -77,6 +79,7 @@ void nostarahaa::on_kaksikymmenta_clicked()
 
     pDLLRestAPI->startPostTilitapahtumat();
     pDLLRestAPI->startPutSaldo();
+    ui->label->setText("Rahaa nostettu");
     }
 }
 
@@ -94,7 +97,7 @@ void nostarahaa::on_neljakymmenta_clicked()
     emit sendSumma(summa);
     pDLLRestAPI->startPutSaldo();
     pDLLRestAPI->startPostTilitapahtumat();
-
+    ui->label->setText("Rahaa nostettu");
     }
 }
 
@@ -112,6 +115,7 @@ void nostarahaa::on_kuusikymmenta_clicked()
     emit sendSumma(summa);
     pDLLRestAPI->startPutSaldo();
     pDLLRestAPI->startPostTilitapahtumat();
+    ui->label->setText("Rahaa nostettu");
     }
 }
 
@@ -129,6 +133,7 @@ void nostarahaa::on_sata_clicked()
     emit sendSumma(summa);
     pDLLRestAPI->startPutSaldo();
     pDLLRestAPI->startPostTilitapahtumat();
+    ui->label->setText("Rahaa nostettu");
     }
 }
 
@@ -147,6 +152,7 @@ void nostarahaa::on_viisisataa_clicked()
     emit sendSumma(summa);
     pDLLRestAPI->startPutSaldo();
     pDLLRestAPI->startPostTilitapahtumat();
+    ui->label->setText("Rahaa nostettu");
     }
 }
 
