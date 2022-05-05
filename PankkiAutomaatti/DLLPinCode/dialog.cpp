@@ -67,10 +67,21 @@ void Dialog::CheckPWD(QString x)
         ui->label_2->setText("Kortti lukossa");
     }
 
+    if(yritykset==0){                               //Tarkistaa onko yritykset nolla jos on ehto toteutuu.
+        emit cardlocked();                          //Lähettää signaalin että kortti lukitetaan.
+
+        qDebug()<<"cardlocked signaali lähetetty";  //qDebug, jotta näkee että ollaan if silmukassa.
+
+        yritykset=3;                                //Asetetaan taas yritykset kolmeen.
+        ui->labeltries->setText("");                  //Asetetaan yritykset labeliin.
+        ui->btnSet->setEnabled(false);
+        ui->label_2->setText("Kortti lukossa");
+   }
+
     if (x!="false" && korttilukossa=="0"){
         yritykset=3;
         ui->labeltries->setNum(yritykset);
-
+        ui->btnSet->setEnabled(true);                   //Ottaa pushbuttonin pois käytöstä.
         emit loginok();
 
         qDebug()<<"if lauseen sisällä";
@@ -82,16 +93,7 @@ void Dialog::CheckPWD(QString x)
         QWidget::close();
     }
 
-    if(yritykset==0){                               //Tarkistaa onko yritykset nolla jos on ehto toteutuu.
-        emit cardlocked();                          //Lähettää signaalin että kortti lukitetaan.
 
-        qDebug()<<"cardlocked signaali lähetetty";  //qDebug, jotta näkee että ollaan if silmukassa.
-
-        yritykset=3;                                //Asetetaan taas yritykset kolmeen.
-        ui->labeltries->setText("");                  //Asetetaan yritykset labeliin.
-        ui->btnSet->setEnabled(false);
-        ui->label_2->setText("Kortti lukossa");
-   }
 
     korttilukossa = "";                                 //Tyhjennetään korttilukossa muuttuja
 
@@ -115,6 +117,7 @@ void Dialog::on_btnSet_clicked()
     emit loginClicked();                            //Lähettää signaalin että nappia on painettu.
 
     ui->textValue->setText("");                     //Asettaa lineedit kentän tyhjäksi.
+
 
 }
 

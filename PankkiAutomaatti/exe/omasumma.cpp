@@ -61,6 +61,7 @@ void omasumma::on_pushButton_2_clicked()
         perrorsivu -> exec();
     }
     else{
+    ui->label_2->setText("Rahaa nostettu");
     qDebug() << loppuSaldo;
     emit sendLoppuSaldo(loppuSaldo);
     emit sendSumma(summa);
