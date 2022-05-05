@@ -10,7 +10,6 @@ CONFIG += c++11
 
 SOURCES += \
     errorsivu.cpp \
-    kirjaudusisaan.cpp \
     main.cpp \
     mainwindow.cpp \
     naytasaldo.cpp \
@@ -21,7 +20,6 @@ SOURCES += \
 
 HEADERS += \
     errorsivu.h \
-    kirjaudusisaan.h \
     mainwindow.h \
     naytasaldo.h \
     nostarahaa.h \
@@ -31,7 +29,6 @@ HEADERS += \
 
 FORMS += \
     errorsivu.ui \
-    kirjaudusisaan.ui \
     mainwindow.ui \
     naytasaldo.ui \
     nostarahaa.ui \
@@ -55,8 +52,10 @@ INCLUDEPATH += $$PWD/../DLLRestAPI
 DEPENDPATH += $$PWD/../DLLRestAPI
 QT +=network
 
-win32: LIBS += -L$$PWD/../DLLSerialPort/build/debug/ -lDLLSerialPort
+
+QT +=serialport
+
+win32: LIBS += -L$$PWD/../DLLSerialPort/DLLSerialPort/build/debug/ -lDLLSerialPort
 
 INCLUDEPATH += $$PWD/../DLLSerialPort
 DEPENDPATH += $$PWD/../DLLSerialPort
-QT +=serialport

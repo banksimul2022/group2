@@ -5,7 +5,7 @@ SerialEngine::SerialEngine(QObject *parent) : QObject(parent)
     objectQSerialPort = new QSerialPort;
 
     qDebug()<<"serialengine.h konstruktori";
-    objectQSerialPort->setPortName("COM4");
+    objectQSerialPort->setPortName("COM3");
     objectQSerialPort->setBaudRate(9600);
             objectQSerialPort->setDataBits(QSerialPort::DataBits(8));
             objectQSerialPort->setParity(QSerialPort::Parity(0));

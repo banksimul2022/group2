@@ -564,17 +564,25 @@
    <string>Aloitusruutu</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="kirjaudusisaan">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>90</x>
+      <x>6</x>
       <y>10</y>
-      <width>461</width>
+      <width>781</width>
       <height>71</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
     <property name="text">
-     <string>Kirjaudu sisään</string>
+     <string>Syötä kortti</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
@@ -584,7 +592,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuPankkiautomaatti">

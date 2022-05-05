@@ -73,4 +73,3 @@ void DLLRestAPI::startMaxTilitapahtumat()
 {
     objectMaxTilitapahtumat->getMaxID();
 }
-
