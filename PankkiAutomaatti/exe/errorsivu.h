@@ -2,6 +2,7 @@
 #define ERRORSIVU_H
 
 #include <QDialog>
+#include <QTimer>
 
 namespace Ui {
 class errorsivu;
@@ -17,9 +18,10 @@ public:
     Ui::errorsivu *ui;
 
 private slots:
-    void on_OKnappi_clicked();
+    void timerSlot();
 
 private:
+    QTimer *pQTimer;
 };
 
 #endif // ERRORSIVU_H

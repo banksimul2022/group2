@@ -81,10 +81,8 @@ void selaatilitapahtumia::on_aikaisempi_clicked()
 void selaatilitapahtumia::on_seuraava_clicked()
 {
     laskuri = laskuri + 1;
-    if(idarvo < 1){
-        idarvo = 1;
-        value = 1;
-        ui->spinBox->setValue(1);
+    if(idarvo < 10){
+
     }
     else{
     value++;

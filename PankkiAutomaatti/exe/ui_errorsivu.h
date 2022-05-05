@@ -13,7 +13,6 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLineEdit>
-#include <QtWidgets/QPushButton>
 
 QT_BEGIN_NAMESPACE
 
@@ -21,7 +20,6 @@ class Ui_errorsivu
 {
 public:
     QLineEdit *lineEdit;
-    QPushButton *OKnappi;
 
     void setupUi(QDialog *errorsivu)
     {
@@ -30,7 +28,7 @@ public:
         errorsivu->resize(400, 134);
         lineEdit = new QLineEdit(errorsivu);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(20, 10, 361, 51));
+        lineEdit->setGeometry(QRect(10, 10, 381, 111));
         QPalette palette;
         QBrush brush(QColor(0, 0, 255, 255));
         brush.setStyle(Qt::SolidPattern);
@@ -125,11 +123,11 @@ public:
         palette.setBrush(QPalette::Disabled, QPalette::PlaceholderText, brush11);
 #endif
         lineEdit->setPalette(palette);
+        QFont font;
+        font.setPointSize(11);
+        lineEdit->setFont(font);
         lineEdit->setAlignment(Qt::AlignCenter);
         lineEdit->setReadOnly(true);
-        OKnappi = new QPushButton(errorsivu);
-        OKnappi->setObjectName(QString::fromUtf8("OKnappi"));
-        OKnappi->setGeometry(QRect(160, 80, 80, 24));
 
         retranslateUi(errorsivu);
 
@@ -140,7 +138,6 @@ public:
     {
         errorsivu->setWindowTitle(QCoreApplication::translate("errorsivu", "Dialog", nullptr));
         lineEdit->setText(QCoreApplication::translate("errorsivu", "Nostoa ei voitu suorittaa, tilill\303\244 ei ole tarpeeksi saldoa.", nullptr));
-        OKnappi->setText(QCoreApplication::translate("errorsivu", "OK", nullptr));
     } // retranslateUi
 
 };

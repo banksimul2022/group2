@@ -1204,6 +1204,24 @@
     <string>Palaa aloitusnäyttöön</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>35</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
   <zorder>neljakymmenta</zorder>
   <zorder>kaksikymmenta</zorder>
   <zorder>kuusikymmenta</zorder>
@@ -1211,6 +1229,7 @@
   <zorder>sata</zorder>
   <zorder>viisisataa</zorder>
   <zorder>pushButton_7</zorder>
+  <zorder>label</zorder>
  </widget>
  <resources/>
  <connections/>
