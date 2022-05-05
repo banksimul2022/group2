@@ -12,10 +12,10 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -25,7 +25,7 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QPushButton *kirjaudusisaan;
+    QLabel *label;
     QMenuBar *menubar;
     QMenu *menuPankkiautomaatti;
     QMenu *menualoitus;
@@ -132,13 +132,17 @@ public:
         MainWindow->setPalette(palette);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        kirjaudusisaan = new QPushButton(centralwidget);
-        kirjaudusisaan->setObjectName(QString::fromUtf8("kirjaudusisaan"));
-        kirjaudusisaan->setGeometry(QRect(90, 10, 461, 71));
+        label = new QLabel(centralwidget);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(6, 10, 781, 71));
+        QFont font;
+        font.setPointSize(24);
+        label->setFont(font);
+        label->setAlignment(Qt::AlignCenter);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menubar->setGeometry(QRect(0, 0, 800, 20));
         menuPankkiautomaatti = new QMenu(menubar);
         menuPankkiautomaatti->setObjectName(QString::fromUtf8("menuPankkiautomaatti"));
         menualoitus = new QMenu(menubar);
@@ -159,7 +163,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Aloitusruutu", nullptr));
-        kirjaudusisaan->setText(QCoreApplication::translate("MainWindow", "Kirjaudu sis\303\244\303\244n", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Sy\303\266t\303\244 kortti", nullptr));
         menuPankkiautomaatti->setTitle(QCoreApplication::translate("MainWindow", "Pankkiautomaatti", nullptr));
         menualoitus->setTitle(QCoreApplication::translate("MainWindow", "aloitus", nullptr));
     } // retranslateUi

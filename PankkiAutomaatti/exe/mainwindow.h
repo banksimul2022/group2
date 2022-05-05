@@ -2,7 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "kirjaudusisaan.h"
+#include "pankkimenu.h"
+#include "dllpincode.h"
+#include "dllrestapi.h"
+#include <QTimer>
+#include "dllserialport.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -16,10 +21,19 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_kirjaudusisaan_clicked();
+    void trueFalse();
+    void getCardNumber(QString);
 
 private:
     Ui::MainWindow *ui;
-    kirjaudusisaan * pKirjaudusisaan;
+
+    pankkimenu * pPankkimenu;
+    DLLPinCode * pDLLPinCode;
+    DLLRestAPI * pDLLRestAPI;
+    DLLSerialPort * pDLLSerialPort;
+    QString kortnro = "";
+
+signals:
+    void sendCardSerialNumberAPI(QString);
 };
 #endif // MAINWINDOW_H

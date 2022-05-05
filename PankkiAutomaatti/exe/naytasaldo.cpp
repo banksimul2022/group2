@@ -21,7 +21,6 @@ naytasaldo::naytasaldo(QWidget *parent) :
 
     connect( this, SIGNAL(sendIDtoDLL(int)), pDLLRestAPI->objectTilitapahtumat, SLOT(setIDTilitapahtumat(int)));
 
-    //connect( pDLLRestAPI->objectTilitapahtumat, SIGNAL( sendTilitapahtumat(QString)), this, SLOT(slotTilitapahtumat(QString)));
 }
 
 naytasaldo::~naytasaldo()
