@@ -1,3 +1,5 @@
+Pankkiautomaatti kansiossa on valmis exe ja DLL komponentit.
+
 ## .env
 
 1. Luo VSCodessa api-kansioon tiedosto nimellä .env ja kirjoita sinne: MY_TOKEN=
