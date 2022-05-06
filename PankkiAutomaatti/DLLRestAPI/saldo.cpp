@@ -8,6 +8,11 @@ Saldo::Saldo(QObject *parent) : QObject(parent)
 
 Saldo::~Saldo()
 {
+    disconnect(getManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(saldoSlot(QNetworkReply*)));
+
+    delete reply;
+    reply=nullptr;
+
     delete getManager;
     getManager = nullptr;
 
@@ -33,6 +38,7 @@ void Saldo::getSaldo()
 
     qDebug()<<"Connectia edeltävä";
     connect(getManager, SIGNAL(finished(QNetworkReply*)),this, SLOT(saldoSlot(QNetworkReply*)));
+
     reply = getManager->get(request);
     response_data = getManager->get(request)->readAll();
 }

@@ -25,6 +25,7 @@ public:
     QLabel *label;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
+    QLabel *label_2;
 
     void setupUi(QDialog *omasumma)
     {
@@ -199,12 +200,21 @@ public:
         label = new QLabel(omasumma);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(10, 80, 171, 31));
+        QFont font;
+        font.setPointSize(11);
+        label->setFont(font);
         pushButton = new QPushButton(omasumma);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setGeometry(QRect(10, 10, 131, 61));
         pushButton_2 = new QPushButton(omasumma);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setGeometry(QRect(210, 120, 101, 51));
+        label_2 = new QLabel(omasumma);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(166, 22, 121, 41));
+        QFont font1;
+        font1.setPointSize(12);
+        label_2->setFont(font1);
 
         retranslateUi(omasumma);
 
@@ -217,6 +227,7 @@ public:
         label->setText(QCoreApplication::translate("omasumma", "Kirjoita haluamasi summa", nullptr));
         pushButton->setText(QCoreApplication::translate("omasumma", "Palaa", nullptr));
         pushButton_2->setText(QCoreApplication::translate("omasumma", "Nosta", nullptr));
+        label_2->setText(QString());
     } // retranslateUi
 
 };

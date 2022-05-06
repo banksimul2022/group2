@@ -1132,6 +1132,11 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
    <property name="text">
     <string>Kirjoita haluamasi summa</string>
    </property>
@@ -1160,6 +1165,24 @@
    </property>
    <property name="text">
     <string>Nosta</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>166</x>
+     <y>22</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
